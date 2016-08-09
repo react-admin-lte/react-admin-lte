@@ -59,6 +59,12 @@ module.exports = config => {
       type: 'lcov',
       dir: 'coverage',
     },
+    customLaunchers: {
+      ChromeCi: {
+        base: 'Chrome',
+        flags: ['--no-sandbox'],
+      },
+    },
     browsers: env.BROWSER ? env.BROWSER.split(',') : ['Chrome'],
     singleRun: env.CONTINUOUS_INTEGRATION === 'true',
   });
