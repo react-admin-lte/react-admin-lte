@@ -1,1 +1,2 @@
-export { Box } from './Box'; // eslint-disable-line import/prefer-default-export
+export { Box } from './Box';
+export { Content } from './Content';
