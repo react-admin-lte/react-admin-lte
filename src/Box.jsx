@@ -35,7 +35,7 @@ const Box = ({
   }
 
   const spinner = loading
-    ? <div className="overaly"><FontAwesome name="refresh" spin /></div>
+    ? <div className="overlay"><FontAwesome name="refresh" spin /></div>
     : null;
 
   return (
