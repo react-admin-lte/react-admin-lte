@@ -1,0 +1,5 @@
+.gitignore
+karma.conf.js
+coverage/
+src/
+test/
