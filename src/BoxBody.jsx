@@ -6,7 +6,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  padding: false,
+  padding: true,
 };
 
 const BoxBody = ({
@@ -15,8 +15,8 @@ const BoxBody = ({
   padding,
 }) => {
   const classes = {
-    'boxy-body': true,
-    'no-padding': padding,
+    'box-body': true,
+    'no-padding': !padding,
   };
 
   return (
