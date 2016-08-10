@@ -2,9 +2,10 @@ import React from 'react';
 import classNames from 'classnames';
 
 import BoxTools from './BoxTools';
+import BoxTitle from './BoxTitle';
+import BoxUserBlock from './BoxUserBlock';
 
 const propTypes = {
-  title: React.PropTypes.string.isRequired,
   border: React.PropTypes.bool,
 };
 
@@ -15,7 +16,6 @@ const defaultProps = {
 const BoxHeader = ({
   className,
   children,
-  title,
   border,
 }) => {
   const classes = {
@@ -25,7 +25,6 @@ const BoxHeader = ({
 
   return (
     <div className={classNames(className, classes)}>
-      <h3 className="box-title">{title}</h3>
       {children}
     </div>
   );
@@ -35,5 +34,7 @@ BoxHeader.propTypes = propTypes;
 BoxHeader.defaultProps = defaultProps;
 
 BoxHeader.Tools = BoxTools;
+BoxHeader.Title = BoxTitle;
+BoxHeader.UserBlock = BoxUserBlock;
 
 export default BoxHeader;
