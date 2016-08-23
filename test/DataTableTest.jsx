@@ -1,7 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import test from 'tape';
-import { Row, Col } from 'react-bootstrap';
 
 import DataTable from '../src/DataTable';
 
@@ -10,7 +9,7 @@ test('<DataTable> controls', t => {
     controls={<div>stuff</div>}
   />);
 
-  t.ok(wrapper.contains(<Row><div>stuff</div></Row>), 'renders controls');
+  t.ok(wrapper.contains(<div>stuff</div>), 'renders controls');
   t.end();
 });
 
@@ -19,7 +18,7 @@ test('<DataTable> table', t => {
     table={<div>stuff</div>}
   />);
 
-  t.ok(wrapper.contains(<Col sm={12}><div>stuff</div></Col>), 'renders table');
+  t.ok(wrapper.contains(<div>stuff</div>), 'renders table');
   t.end();
 });
 
