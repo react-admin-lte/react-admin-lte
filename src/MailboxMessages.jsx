@@ -5,7 +5,7 @@ const propTypes = {
 };
 
 const MailboxMessages = ({ children }) => (
-  <div className="mailbox-messages">
+  <div className="table-responsive mailbox-messages">
     {children}
   </div>
 );
