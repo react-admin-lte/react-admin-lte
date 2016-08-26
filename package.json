@@ -16,9 +16,10 @@
   },
   "main": "lib/index.js",
   "peerDependencies": {
-    "classnames": ">=2.2.5",
     "react": ">=0.14.0",
-    "react-dom": ">=0.14.0"
+    "react-bootstrap": ">=0.30.0",
+    "react-dom": ">=0.14.0",
+    "react-fontawesome": ">=1.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -51,12 +52,11 @@
     "react": "^15.3.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0",
-    "react-fontawesome": "^1.1.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "react-bootstrap": "^0.30.3"
+    "classnames": "^2.2.5"
   }
 }
