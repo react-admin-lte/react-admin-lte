@@ -7,8 +7,8 @@
 [adminlte]: https://almsaeedstudio.com/preview
 [react]: http://facebook.github.io/react/
 
-[build-badge]: https://travis-ci.org/jonmpqts/react-admin-lte.svg?branch=master
-[build]: https://travis-ci.org/jonmpqts/react-admin-lte
+[build-badge]: https://travis-ci.org/jonmpqts/reactjs-admin-lte.svg?branch=master
+[build]: https://travis-ci.org/jonmpqts/reactjs-admin-lte
 
-[codecov-badge]: https://codecov.io/gh/jonmpqts/react-admin-lte/branch/master/graph/badge.svg
-[codecov]: https://codecov.io/gh/jonmpqts/react-admin-lte
+[codecov-badge]: https://codecov.io/gh/jonmpqts/reactjs-admin-lte/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/jonmpqts/reactjs-admin-lte
