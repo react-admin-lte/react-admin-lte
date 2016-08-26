@@ -4,3 +4,4 @@ export { Content } from './Content';
 export { Sidebar } from './Sidebar';
 export { Mailbox } from './Mailbox';
 export { LoginPage } from './LoginPage';
+export { DataTable } from './DataTable';
