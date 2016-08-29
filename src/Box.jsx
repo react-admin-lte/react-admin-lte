@@ -5,6 +5,8 @@ import FontAwesome from 'react-fontawesome';
 import BoxHeader from './BoxHeader';
 import BoxBody from './BoxBody';
 import BoxFooter from './BoxFooter';
+import BoxTitle from './BoxTitle';
+import BoxTools from './BoxTools';
 
 const propTypes = {
   style: React.PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
@@ -52,5 +54,7 @@ Box.defaultProps = defaultProps;
 Box.Header = BoxHeader;
 Box.Body = BoxBody;
 Box.Footer = BoxFooter;
+Box.Title = BoxTitle;
+Box.Tools = BoxTools;
 
 export default Box;
