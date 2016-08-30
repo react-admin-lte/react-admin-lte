@@ -9,13 +9,13 @@ and/or `BoxFooter`s in a `Box`, and then render any children you want inside of 
 specific containers.
 
 ### Sub-components
- - [Box](#Box)
-   - [Box.Body](#Box-Body)
-   - [Box.Footer](#Box-Footer)
-   - [Box.Header](#Box-Header)
-     - [Box.Header.Title](#Box-Title)
-     - [Box.Header.Tools](#Box-Tools)
-     - [Box.Header.UserBlock](#Box-User-Block)
+ - [Box](#box)
+   - [Box.Body](#box-body)
+   - [Box.Footer](#box-footer)
+   - [Box.Header](#box-header)
+     - [Box.Header.Title](#box-title)
+     - [Box.Header.Tools](#box-tools)
+     - [Box.Header.UserBlock](#box-user-block)
 
 ---
 
