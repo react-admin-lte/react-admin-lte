@@ -2,11 +2,11 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import test from 'tape';
 
-import UserPanelImage from '../src/UserPanelImage';
+import SidebarUserPanelImage from '../src/SidebarUserPanelImage';
 
-test('<UserPanelImage>', t => {
+test('<SidebarUserPanelImage>', t => {
   const tImg = <img src="#" />
-  const wrapper = shallow(<UserPanelImage image={tImg} />);
+  const wrapper = shallow(<SidebarUserPanelImage image={tImg} />);
 
   t.ok(wrapper.contains(<div className="pull-left image">
       <img src="#" />
