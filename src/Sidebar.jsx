@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SidebarToggle from './SidebarToggle';
 import SidebarUserPanel from './SidebarUserPanel';
 import SidebarMenu from './SidebarMenu';
 
@@ -16,7 +15,6 @@ const Sidebar = ({ children }) => (
   </aside>
 );
 
-Sidebar.Toggle = SidebarToggle;
 Sidebar.UserPanel = SidebarUserPanel;
 Sidebar.Menu = SidebarMenu;
 
