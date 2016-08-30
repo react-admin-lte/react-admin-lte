@@ -27,7 +27,6 @@ These are the components that have been completed (at least to a usable extent) 
  - MainHeader
    - MainHeaderLogo
  - Sidebar
-   - SidebarToggle
    - SidebarMenu
      - SidebarMenuHeader
      - SidebarMenuItem
