@@ -2,12 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import test from 'tape';
 
-import UserPanelInfo from '../src/UserPanelInfo';
+import SidebarUserPanelInfo from '../src/SidebarUserPanelInfo';
 
-test('<UserPanelInfo>', t => {
-  const wrapper = shallow(<UserPanelInfo>
+test('<SidebarUserPanelInfo>', t => {
+  const wrapper = shallow(<SidebarUserPanelInfo>
       <div>stuff</div>
-    </UserPanelInfo>);
+    </SidebarUserPanelInfo>);
 
   t.ok(wrapper.contains(<div>stuff</div>));
   t.end();

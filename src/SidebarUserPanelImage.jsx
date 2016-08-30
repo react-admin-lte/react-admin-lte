@@ -4,12 +4,12 @@ const propTypes = {
   image: React.PropTypes.node,
 };
 
-const UserPanelImage = ({ image }) => (
+const SidebarUserPanelImage = ({ image }) => (
   <div className="pull-left image">
     {image}
   </div>
 );
 
-UserPanelImage.propTypes = propTypes;
+SidebarUserPanelImage.propTypes = propTypes;
 
-export default UserPanelImage;
+export default SidebarUserPanelImage;

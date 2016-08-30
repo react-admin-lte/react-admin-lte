@@ -4,12 +4,12 @@ const propTypes = {
   children: React.PropTypes.node,
 };
 
-const UserPanelInfo = ({ children }) => (
+const SidebarUserPanelInfo = ({ children }) => (
   <div className="pull-left info">
     {children}
   </div>
 );
 
-UserPanelInfo.propTypes = propTypes;
+SidebarUserPanelInfo.propTypes = propTypes;
 
-export default UserPanelInfo;
+export default SidebarUserPanelInfo;
