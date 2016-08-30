@@ -1,20 +1,23 @@
 import React from 'react';
 
-import SidebarUserPanelImage from './SidebarUserPanelImage';
-import SidebarUserPanelInfo from './SidebarUserPanelInfo';
-
 const propTypes = {
-  children: React.PropTypes.node,
+  image: React.PropTypes.node,
+  info: React.PropTypes.node,
 };
 
-const SidebarUserPanel = ({ children }) => (
+const SidebarUserPanel = ({
+  image,
+  info,
+}) => (
   <div className="user-panel">
-    {children}
+    <div className="pull-left image">
+      {image}
+    </div>
+    <div className="pull-left info">
+      {info}
+    </div>
   </div>
 );
-
-SidebarUserPanel.Image = SidebarUserPanelImage;
-SidebarUserPanel.Info = SidebarUserPanelInfo;
 
 SidebarUserPanel.propTypes = propTypes;
 
