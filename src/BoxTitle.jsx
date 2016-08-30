@@ -6,7 +6,7 @@ const propTypes = {
   className: React.PropTypes.string,
 };
 
-const BoxTitle = ({ text }) => {
+const BoxTitle = ({ text, className }) => {
   const classes = {
     "box-title": true,
   }
