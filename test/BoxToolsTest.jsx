@@ -10,7 +10,6 @@ test('<BoxTools>', t => {
   </BoxTools>);
 
   t.ok(wrapper.hasClass('box-tools'), 'has .box-tools class');
-  t.ok(wrapper.hasClass('pull-right'), 'has .pull-right class');
   t.ok(wrapper.contains(<div>stuff</div>), 'renders children');
   t.end();
 });
