@@ -10,12 +10,12 @@ specific containers.
 
 ### Sub-components
  - [Box](#box)
-   - [Box.Body](#box-body)
-   - [Box.Footer](#box-footer)
-   - [Box.Header](#box-header)
-     - [Box.Header.Title](#box-title)
-     - [Box.Header.Tools](#box-tools)
-     - [Box.Header.UserBlock](#box-user-block)
+   - [Box.Body](#boxbody)
+   - [Box.Footer](#boxfooter)
+   - [Box.Header](#boxheader)
+     - [Box.Header.Title](#boxtitle)
+     - [Box.Header.Tools](#boxtools)
+     - [Box.Header.UserBlock](#boxuserblock)
 
 ---
 
@@ -34,7 +34,7 @@ specific containers.
 
   - __className__ (string) - Additional classes you would like to add.
 
-## Box Body
+## BoxBody
 `<Box.Body>` - Body of the container.
 
 ### Props
@@ -44,7 +44,7 @@ specific containers.
 
  - __className__ (string) - Additional classes you would like to add.
 
-## Box Footer
+## BoxFooter
 `<Box.Footer>` - Footer of the container.
 
 #### Props
@@ -52,7 +52,7 @@ specific containers.
 
  - __className__ (string) - Additional classes you would like to add.
 
-## Box Header
+## BoxHeader
 `<Box.Header>` - Header of the container.
 
 #### Props
@@ -62,7 +62,7 @@ specific containers.
 
  - __className__ (string) - Additional classes you would like to add.
 
-## Box Title
+## BoxTitle
 `<Box.Header.Title>` - Title of the box.
 
 #### Props
@@ -70,7 +70,7 @@ specific containers.
 
  - __className__ (string) - Additional classes you would like to add.
 
-## Box Tools
+## BoxTools
 `<Box.Header.Tools>` - Controls for the box, typically buttons and/or button groups, located in the 
 box header on the right-hand side by default.
 
@@ -79,7 +79,7 @@ box header on the right-hand side by default.
 
  - __className__ (string) - Additional classes you would like to add.
 
-## Box User Block
+## BoxUserBlock
 `<Box.Header.UserBlock>` - User picture, name, and info. Goes in the same place a title would, by
 default.
 
