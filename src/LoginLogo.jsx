@@ -6,17 +6,17 @@ const propTypes = {
   className: React.PropTypes.node,
 };
 
-const LoginLogo = ({ children }) => {
+const LoginLogo = ({ children, className }) => {
   const classes = {
     "login-logo": true,
   };
 
   return (
-    <div className={classNames(className, classes}>
+    <div className={classNames(className, classes)}>
       {children}
     </div>
   );
-);
+};
 
 LoginLogo.propTypes = propTypes;
 

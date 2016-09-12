@@ -6,7 +6,7 @@ const propTypes = {
   className: React.PropTypes.node,
 };
 
-const LoginBody = ({ children }) => {
+const LoginBody = ({ children, className }) => {
   const classes = {
     "login-box-body": true,
   };
