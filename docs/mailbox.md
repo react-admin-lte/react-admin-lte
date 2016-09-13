@@ -20,7 +20,7 @@ simply used to reference other Mailbox components (e.g. `<Mailbox.Messages>`).
 ## MailboxAttachments
 `<Mailbox.Attachments>` - This component wraps children in a styled `<ul>`.
 
-### Props
+#### Props
  - __children__ (node) - Mailbox attachments, see [`<Mailbox.Attachments.Item>`](#mailboxattachment).
 
 ## MailboxAttachment
@@ -29,7 +29,7 @@ simply used to reference other Mailbox components (e.g. `<Mailbox.Messages>`).
 `img` is passed in it will get used instead of the default icon, _and_ instead of `icon` if it is 
 passed in.  If only `icon` is passed in it will be used instead of the default. The default is used if neither `img` nor `icon` is passed in.
 
-### Props
+#### Props
  - __name__ (node) - The name of the attachment.
 
  - __size__ (string) - The size of the attachment.

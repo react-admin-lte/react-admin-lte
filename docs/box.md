@@ -20,9 +20,9 @@ specific containers.
 ---
 
 ## Box
-`<Box>` - Basic container.
+`<Box>` - Basic container component.
 
-### Props
+#### Props
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
   `warning`, or `danger`. Defaults to `default`.
 
@@ -37,7 +37,7 @@ specific containers.
 ## BoxBody
 `<Box.Body>` - Body of the container.
 
-### Props
+#### Props
  - __padding__ (bool) - Padding for the content of the body. Defaults to true.
 
  - __children__ (node) - What you want to render in the BoxBody.

@@ -13,7 +13,7 @@ Login
 ## LoginPage
 `<LoginPage>` - A login page. See the AdminLTE [login component example][login-example] for more.
 
-### Props
+#### Props
  - __children__ (node) - Children you want to render in the login box. Likely a `LoginLogo` above a
  `LoginBody`.
 
@@ -21,7 +21,7 @@ Login
 `<LoginPage.Body>` - A box in the center of the screen. This is where username/password input, login
 button, etc. would go.
 
-### Props
+#### Props
  - __children__ (node) - What you want to render in the login body. 
 
  - __className__ (string) - Additional classes you would like to add.
@@ -29,7 +29,7 @@ button, etc. would go.
 ## LoginLogo
 `<LoginPage.Logo>` - Wraps children inside a div with class `login-logo`.
 
-### Props
+#### Props
  - __children__ (node) - What you want to render as the logo.
 
  - __className__ (string) - Additional classes you would like to add.
