@@ -31,5 +31,3 @@ These are the components that have been completed (at least to a usable extent) 
      - SidebarMenuHeader
      - SidebarMenuItem
    - SidebarUserPanel
-     - UserPanelImage
-     - UserPanelInfo
