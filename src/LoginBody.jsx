@@ -1,14 +1,22 @@
 import React from 'react';
+import classNames from 'classnames';
 
 const propTypes = {
   children: React.PropTypes.node,
+  className: React.PropTypes.node,
 };
 
-const LoginBody = ({ children }) => (
-  <div className="login-box-body">
-    {children}
-  </div>
-);
+const LoginBody = ({ children, className }) => {
+  const classes = {
+    "login-box-body": true,
+  };
+
+  return (
+    <div className={classNames(className, classes)}>
+      {children}
+    </div>
+  );
+};
 
 LoginBody.propTypes = propTypes;
 
