@@ -27,7 +27,8 @@ simply used to reference other Mailbox components (e.g. `<Mailbox.Messages>`).
 `<Mailbox.Attachments.Item>` - An attachment preview box wrapped in a `<li>`. The attachment preview
  has the following heirarchy: `img` > `icon` > default icon (font awesome `file-o`). That is, if 
 `img` is passed in it will get used instead of the default icon, _and_ instead of `icon` if it is 
-passed in.  If only `icon` is passed in it will be used instead of the default. The default is used if neither `img` nor `icon` is passed in.
+passed in.  If only `icon` is passed in it will be used instead of the default. The default is used
+ if neither `img` nor `icon` is passed in.
 
 #### Props
  - __name__ (node) - The name of the attachment.
@@ -44,6 +45,34 @@ passed in.  If only `icon` is passed in it will be used instead of the default. 
 
  - __onDownloadClick__ (func) - Callback function that gets attached to the download button in the
    attachment box.
+
+## MailboxControls
+`<Mailbox.Controls>` - A bar to put controls for the mailbox on. Button groups, pagination, etc.
+
+#### Props
+ - __children__ (node) - What you want to render in the control bar.
+
+ - __className__ (string) - Any additional classnames you would like to add.
+
+## MailboxMessages
+`<Mailbox.Messages>` - A responsive table to list messages in. Functions as a wrapper for a table
+that is the inbox/messages list, as seen in the [mailbox example page][mailbox] (inspect source).
+
+#### Props
+ - __children__ (node) - What you want to render in the messages div.
+
+## MailboxReadInfo
+`<Mailbox.ReadInfo>` - Sort of like a header for the message view. This is a place to put the
+subject line, recipients, time stamp, etc.
+
+#### Props
+ - __children__ (node) - What you want to render in the info section.
+
+## MailboxReadMessage
+`<Mailbox.ReadMessage>` - The body of the message. This is where the message text goes.
+
+#### Props
+ - __children__ (node) - What you want to render as the message.
 
 
 [mailbox]: https://almsaeedstudio.com/themes/AdminLTE/pages/mailbox/mailbox.html
