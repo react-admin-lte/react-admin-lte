@@ -10,6 +10,8 @@ const propTypes = {
   style: React.PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
   type: React.PropTypes.oneOf(['widget', 'solid']),
   loading: React.PropTypes.bool,
+  className: React.PropTypes.string,
+  children: React.PropTypes.node,
 };
 
 const defaultProps = {

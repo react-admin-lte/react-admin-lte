@@ -3,6 +3,8 @@ import classNames from 'classnames';
 
 const propTypes = {
   padding: React.PropTypes.bool,
+  className: React.PropTypes.string,
+  children: React.PropTypes.node,
 };
 
 const defaultProps = {
@@ -12,7 +14,7 @@ const defaultProps = {
 const BoxBody = ({
   className,
   children,
-  padding,
+  padding
 }) => {
   const classes = {
     'box-body': true,

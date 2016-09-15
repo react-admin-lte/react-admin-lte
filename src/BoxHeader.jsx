@@ -7,6 +7,8 @@ import BoxUserBlock from './BoxUserBlock';
 
 const propTypes = {
   border: React.PropTypes.bool,
+  className: React.PropTypes.string,
+  children: React.PropTypes.node,
 };
 
 const defaultProps = {
@@ -16,7 +18,7 @@ const defaultProps = {
 const BoxHeader = ({
   className,
   children,
-  border,
+  border
 }) => {
   const classes = {
     'box-header': true,

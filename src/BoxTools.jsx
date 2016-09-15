@@ -3,12 +3,12 @@ import classNames from 'classnames';
 
 const propTypes = {
   children: React.PropTypes.node,
+  className: React.PropTypes.string,
 };
 
 const BoxTools = ({ className, children }) => {
   const classes = {
     'box-tools': true,
-    'pull-right': true,
   };
 
   return (
