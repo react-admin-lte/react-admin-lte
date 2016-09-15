@@ -15,7 +15,7 @@ test('<MainHeaderLogo>', t => {
     <span className="logo-mini">
       <img src="#" />
     </span>
-    <span className="logo-large">
+    <span className="logo-lg">
       <img src="#" />
     </span>
   </a>), 'renders correctly');
