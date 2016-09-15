@@ -4,7 +4,7 @@ Components
 These are the components that have been completed (at least to a usable extent) thus far:
 
  - [Box](box.md)
-   - BoxBody
+   - [BoxBody](box.md#boxbody)
    - BoxFooter
    - BoxHeader
      - BoxTitle
