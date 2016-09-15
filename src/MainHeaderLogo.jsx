@@ -11,7 +11,7 @@ const MainHeaderLogo = ({ large, mini, href }) => (
     <span className="logo-mini">
       {mini}
     </span>
-    <span className="logo-large">
+    <span className="logo-lg">
       {large}
     </span>
   </a>
