@@ -5,29 +5,30 @@ These are the components that have been completed (at least to a usable extent) 
 
  - [Box](box.md)
    - [BoxBody](box.md#boxbody)
-   - BoxFooter
-   - BoxHeader
-     - BoxTitle
-     - BoxTools
-     - BoxUserBlock
+   - [BoxFooter](box.md#boxfooter)
+   - [BoxHeader](box.md#boxheader)
+     - [BoxTitle](box.md#boxtitle)
+     - [BoxTools](box.md#boxtools)
+     - [BoxUserBlock](box.md#boxuserblock)
  - [Content](content.md)
-   - ContentBody
-   - ContentHeader
+   - [ContentBody](content.md#contentbody)
+   - [ContentHeader](content.md#contentheader)
  - [Layout](layout.md)
  - [LoginPage](login.md)
-   - LoginBody
-   - LoginLogo
+   - [LoginBody](login.md#loginbody)
+   - [LoginLogo](login.md#loginlogo)
  - [Mailbox](mailbox.md)
-   - MailboxAttachments
-     - MailboxAttachment
-   - MailboxControls
-   - MailboxMessages
-   - MailboxReadInfo
-   - MailboxReadMessage
+   - [MailboxAttachments](mailbox.md#mailboxattachments)
+     - [MailboxAttachment](mailbox.md#mailboxattachment)
+   - [MailboxControls](mailbox.md#mailboxcontrols)
+   - [MailboxMessages](mailbox.md#mailboxmessages)
+   - [MailboxReadInfo](mailbox.md#mailboxreadinfo)
+   - [MailboxReadMessage](mailbox.md#mailboxreadmessage)
  - [MainHeader](main-header.md)
-   - MainHeaderLogo
+   - [MainHeaderLogo](main-header.md#mainheaderlogo)
+   - [MainHeaderSidebarToggle](main-header.md#mainheadersidebartoggle)
  - [Sidebar](sidebar.md)
-   - SidebarMenu
-     - SidebarMenuHeader
-     - SidebarMenuItem
-   - SidebarUserPanel
+   - [SidebarMenu](sidebar.md#sidebarmenu)
+     - [SidebarMenuHeader](sidebar.md#sidebarmenuheader)
+     - [SidebarMenuItem](sidebar.md#sidebarmenuitem)
+   - [SidebarUserPanel](sidebar.md#sidebaruserpanel)
