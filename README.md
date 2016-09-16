@@ -7,7 +7,7 @@ __Tip__: We tried to stick to naming the components in this package after their 
 [AdminLTE page][adminlte]. If you want to know what something looks like or how it is put together,
 simply inspect that page (<kbd>F12</kbd> or right click > inspect). You can <kbd>Ctrl</kbd>+<kbd>F</kbd> in the source view to look for component names, but remember to replace spaces with dashes.
 
-For a more in-depth look at the individual components, see [the docs](docs/components.md).
+For a more in-depth look at the individual components, see [the docs](docs/README.md).
 
 ## Features
 
