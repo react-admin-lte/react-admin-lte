@@ -25,6 +25,8 @@ specific containers.
 #### Props
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
   `warning`, or `danger`.
+  
+  - __collapsed__ (bool) - If true, the body of the box will be collapsed.
 
   - __solid__ (bool) - If true, the box header will be a solid color.
 
@@ -94,5 +96,11 @@ default.
 
  - __className__ (string) - Additional classes you would like to add.
 
+## BoxCollapsedToggleButton
+`<Box.CollapsedToggleButton>` - Button to toggle the collapsed state of the parent box.
+
+#### Props
+
+ - __className__ (string) - Additional classes you would like to add.
 
 [box-component]: https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#component-box

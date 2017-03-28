@@ -64,6 +64,53 @@ exports[`Storyshots Box bordered header 1`] = `
 </div>
 `;
 
+exports[`Storyshots Box collapsable 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Collapsable
+      </h3>
+      <div
+        className="box-tools"
+      >
+        <button
+          className="btn btn-box-tool"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="fa fa-minus"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Box default 1`] = `
 <div
   style={
@@ -86,6 +133,53 @@ exports[`Storyshots Box default 1`] = `
       >
         Default Box Example
       </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box exandable 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box collapsed-box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Collapsable
+      </h3>
+      <div
+        className="box-tools"
+      >
+        <button
+          className="btn btn-box-tool"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="fa fa-plus"
+          />
+        </button>
+      </div>
     </div>
     <div
       className="box-body"

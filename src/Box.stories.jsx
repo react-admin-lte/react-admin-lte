@@ -75,4 +75,26 @@ storiesOf('Box', module)
         The body of the box
       </Box.Body>
     </Box>
+  ))
+  .add('exandable', () => (
+    <Box collapsed>
+      <Box.Header>
+        <Box.Title>Collapsable</Box.Title>
+        <Box.Tools>
+          <Box.CollapsedToggleButton />
+        </Box.Tools>
+      </Box.Header>
+      {body}
+    </Box>
+  ))
+  .add('collapsable', () => (
+    <Box>
+      <Box.Header>
+        <Box.Title>Collapsable</Box.Title>
+        <Box.Tools>
+          <Box.CollapsedToggleButton />
+        </Box.Tools>
+      </Box.Header>
+      {body}
+    </Box>
   ));
