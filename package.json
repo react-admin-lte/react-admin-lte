@@ -7,9 +7,9 @@
     "url": "jonmpqts/react-admin-lte"
   },
   "scripts": {
+    "prebuild": "yarn run lint",
     "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
     "lint": "eslint src test *.js",
-    "pretest": "npm run lint",
     "test": "node scripts/test.js --env=jsdom",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
