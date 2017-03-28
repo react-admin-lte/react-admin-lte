@@ -267,6 +267,53 @@ exports[`Storyshots Box loading 1`] = `
 </div>
 `;
 
+exports[`Storyshots Box removable 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Removable
+      </h3>
+      <div
+        className="box-tools"
+      >
+        <button
+          className="btn btn-box-tool"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden={true}
+            className="fa fa-times"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Box solid with default style 1`] = `
 <div
   style={

@@ -102,5 +102,12 @@ default.
 #### Props
 
  - __className__ (string) - Additional classes you would like to add.
+ 
+## BoxRemoveButton
+`<Box.RemoveButton>` - Button to remove a box from view.
+
+#### Props
+
+ - __className__ (string) - Additional classes you would like to add.
 
 [box-component]: https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#component-box

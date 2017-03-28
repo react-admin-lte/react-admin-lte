@@ -97,4 +97,15 @@ storiesOf('Box', module)
       </Box.Header>
       {body}
     </Box>
+  ))
+  .add('removable', () => (
+    <Box>
+      <Box.Header>
+        <Box.Title>Removable</Box.Title>
+        <Box.Tools>
+          <Box.RemoveButton />
+        </Box.Tools>
+      </Box.Header>
+      {body}
+    </Box>
   ));

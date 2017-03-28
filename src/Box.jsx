@@ -6,6 +6,7 @@ import BoxHeader from './BoxHeader';
 import BoxTitle from './BoxTitle';
 import BoxTools from './BoxTools';
 import BoxCollapsedToggleButton from './BoxCollapsedToggleButton';
+import BoxRemoveButton from './BoxRemoveButton';
 import BoxBody from './BoxBody';
 import BoxFooter from './BoxFooter';
 
@@ -29,6 +30,7 @@ const childContextTypes = {
   $adminlte_box: React.PropTypes.shape({
     collapsed: React.PropTypes.bool,
     onCollapseToggle: React.PropTypes.func,
+    onRemove: React.PropTypes.func,
   }),
 };
 
@@ -37,6 +39,7 @@ class Box extends React.Component {
     super(props);
     this.state = {
       collapsed: props.collapsed,
+      removed: false,
     };
   }
 
@@ -49,11 +52,20 @@ class Box extends React.Component {
             collapsed: !this.state.collapsed,
           });
         },
+        onRemove: () => {
+          this.setState({
+            removed: true,
+          });
+        },
       },
     };
   }
 
   render() {
+    if (this.state.removed) {
+      return null;
+    }
+
     const {
       className,
       children,
@@ -99,6 +111,7 @@ Box.Header = BoxHeader;
 Box.Title = BoxTitle;
 Box.Tools = BoxTools;
 Box.CollapsedToggleButton = BoxCollapsedToggleButton;
+Box.RemoveButton = BoxRemoveButton;
 Box.Body = BoxBody;
 Box.Footer = BoxFooter;
 
