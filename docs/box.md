@@ -38,7 +38,7 @@ specific containers.
 `<Box.Body>` - Body of the container.
 
 #### Props
- - __padding__ (bool) - Padding for the content of the body. Defaults to true.
+ - __noPadding__ (bool) - Removes padding from body body. Defaults to false.
 
  - __children__ (node) - What you want to render in the BoxBody.
 

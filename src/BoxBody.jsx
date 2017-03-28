@@ -2,23 +2,23 @@ import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  padding: React.PropTypes.bool,
+  noPadding: React.PropTypes.bool,
   className: React.PropTypes.string,
   children: React.PropTypes.node,
 };
 
 const defaultProps = {
-  padding: true,
+  noPadding: false,
 };
 
 const BoxBody = ({
   className,
   children,
-  padding
+  noPadding,
 }) => {
   const classes = {
     'box-body': true,
-    'no-padding': !padding,
+    'no-padding': noPadding,
   };
 
   return (
