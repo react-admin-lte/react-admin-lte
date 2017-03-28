@@ -9,7 +9,7 @@ import BoxFooter from './BoxFooter';
 
 const propTypes = {
   style: React.PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
-  type: React.PropTypes.oneOf(['widget', 'solid']),
+  solid: React.PropTypes.bool,
   loading: React.PropTypes.bool,
   className: React.PropTypes.string,
   children: React.PropTypes.node,
@@ -17,13 +17,14 @@ const propTypes = {
 
 const defaultProps = {
   loading: false,
+  solid: false,
 };
 
 const Box = ({
   className,
   children,
   style,
-  type,
+  solid,
   loading,
 }) => {
   const classes = {
@@ -34,8 +35,8 @@ const Box = ({
     classes[`box-${style}`] = true;
   }
 
-  if (type) {
-    classes[`box-${type}`] = true;
+  if (solid) {
+    classes['box-solid'] = true;
   }
 
   const spinner = loading

@@ -26,7 +26,7 @@ specific containers.
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
   `warning`, or `danger`.
 
-  - __type__ (string) - Changes the look of the box. One of `widget` or `solid`.
+  - __solid__ (bool) - If true, the box header will be a solid color.
 
   - __loading__ (bool) - If true, the box will show a spinner instead of its children. Defaults to false.
 
