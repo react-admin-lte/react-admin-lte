@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Box body without padding 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        No padding
+      </h3>
+    </div>
+    <div
+      className="box-body no-padding"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box bordered header 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header with-border"
+    >
+      <h3
+        className="box-title"
+      >
+        Bordered Box Example
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box default 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Default Box Example
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box footer 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Footer
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+    <div
+      className="box-footer"
+    >
+      The footer of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box loading 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Loading State
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+    <div
+      className="overlay"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-refresh fa-spin"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box solid with default style 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box box-default box-solid"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Solid Box Example
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Box with style 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <div
+    className="box box-primary"
+  >
+    <div
+      className="box-header"
+    >
+      <h3
+        className="box-title"
+      >
+        Primary Box Example
+      </h3>
+    </div>
+    <div
+      className="box-body"
+    >
+      The body of the box
+    </div>
+  </div>
+</div>
+`;

@@ -7,12 +7,13 @@
     "url": "jonmpqts/react-admin-lte"
   },
   "scripts": {
-    "build": "babel -d lib/ src/",
+    "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
     "lint": "eslint src test *.js",
-    "tdd": "karma start",
     "pretest": "npm run lint",
-    "test": "cross-env NODE_ENV=test karma start --single-run",
-    "prepublish": "npm run build"
+    "test": "node scripts/test.js --env=jsdom",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "main": "lib/index.js",
   "peerDependencies": {
@@ -22,14 +23,18 @@
     "react-fontawesome": ">=1.1.0"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "admin-lte": "^2.3.11",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
     "babel-eslint": "^6.1.2",
+    "babel-jest": "^19.0.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-1": "^6.13.0",
     "babel-register": "^6.11.6",
+    "bootstrap": "^3.3.7",
     "codecov": "^1.0.1",
     "cross-env": "^2.0.0",
     "enzyme": "^2.4.1",
@@ -40,7 +45,8 @@
     "eslint-plugin-jsx": "0.0.2",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
-    "font-awesome": "^4.6.3",
+    "font-awesome": "^4.7.0",
+    "jest": "^19.0.2",
     "json-loader": "^0.5.4",
     "karma": "^1.1.2",
     "karma-chrome-launcher": "^1.0.1",
@@ -56,11 +62,22 @@
     "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.0",
     "react-fontawesome": "^1.1.0",
+    "storyshots": "^3.2.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {
     "classnames": "^2.2.5"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/scripts/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/config/cssTransform.js"
+    }
   }
 }
