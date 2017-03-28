@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import BoxTools from './BoxTools';
 import BoxUserBlock from './BoxUserBlock';
 
 const propTypes = {
@@ -34,7 +33,6 @@ const BoxHeader = ({
 BoxHeader.propTypes = propTypes;
 BoxHeader.defaultProps = defaultProps;
 
-BoxHeader.Tools = BoxTools;
 BoxHeader.UserBlock = BoxUserBlock;
 
 export default BoxHeader;

@@ -4,6 +4,7 @@ import FontAwesome from 'react-fontawesome';
 
 import BoxHeader from './BoxHeader';
 import BoxTitle from './BoxTitle';
+import BoxTools from './BoxTools';
 import BoxBody from './BoxBody';
 import BoxFooter from './BoxFooter';
 
@@ -56,6 +57,7 @@ Box.defaultProps = defaultProps;
 
 Box.Header = BoxHeader;
 Box.Title = BoxTitle;
+Box.Tools = BoxTools;
 Box.Body = BoxBody;
 Box.Footer = BoxFooter;
 

@@ -71,7 +71,7 @@ specific containers.
  - __className__ (string) - Additional classes you would like to add.
 
 ## BoxTools
-`<Box.Header.Tools>` - Controls for the box, typically buttons and/or button groups, located in the 
+`<Box.Tools>` - Controls for the box, typically buttons and/or button groups, located in the 
 box header on the right-hand side by default.
 
 #### Props
