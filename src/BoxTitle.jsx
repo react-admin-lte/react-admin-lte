@@ -2,17 +2,17 @@ import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  text: React.PropTypes.string,
+  children: React.PropTypes.node,
   className: React.PropTypes.string,
 };
 
-const BoxTitle = ({ text, className }) => {
+const BoxTitle = ({ children, className }) => {
   const classes = {
     "box-title": true,
   }
 
   return (
-    <h3 className={classNames(className, classes)}>{text}</h3>
+    <h3 className={classNames(className, classes)}>{children}</h3>
   );
 };
 

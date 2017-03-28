@@ -66,7 +66,7 @@ specific containers.
 `<Box.Title>` - Title of the box.
 
 #### Props
- - __text__ (string) - The title text.
+ - __children__ (node) - What you want to render in BoxTitle.
 
  - __className__ (string) - Additional classes you would like to add.
 
