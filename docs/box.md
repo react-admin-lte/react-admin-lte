@@ -63,7 +63,7 @@ specific containers.
  - __className__ (string) - Additional classes you would like to add.
 
 ## BoxTitle
-`<Box.Header.Title>` - Title of the box.
+`<Box.Title>` - Title of the box.
 
 #### Props
  - __text__ (string) - The title text.

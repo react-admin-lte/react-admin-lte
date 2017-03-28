@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import FontAwesome from 'react-fontawesome';
 
 import BoxHeader from './BoxHeader';
+import BoxTitle from './BoxTitle';
 import BoxBody from './BoxBody';
 import BoxFooter from './BoxFooter';
 
@@ -24,7 +25,7 @@ const Box = ({
   children,
   style,
   type,
-  loading
+  loading,
 }) => {
   const classes = {
     box: true,
@@ -52,6 +53,7 @@ Box.propTypes = propTypes;
 Box.defaultProps = defaultProps;
 
 Box.Header = BoxHeader;
+Box.Title = BoxTitle;
 Box.Body = BoxBody;
 Box.Footer = BoxFooter;
 
