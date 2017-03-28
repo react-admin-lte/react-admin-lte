@@ -24,7 +24,7 @@ specific containers.
 
 #### Props
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
-  `warning`, or `danger`. Defaults to `default`.
+  `warning`, or `danger`.
 
   - __type__ (string) - Changes the look of the box. One of `widget` or `solid`.
 

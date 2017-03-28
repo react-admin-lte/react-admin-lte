@@ -16,7 +16,6 @@ const propTypes = {
 };
 
 const defaultProps = {
-  style: 'default',
   loading: false,
 };
 
@@ -31,7 +30,9 @@ const Box = ({
     box: true,
   };
 
-  classes[`box-${style}`] = true;
+  if (style) {
+    classes[`box-${style}`] = true;
+  }
 
   if (type) {
     classes[`box-${type}`] = true;
