@@ -416,6 +416,2265 @@ exports[`Storyshots Box with style 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataTable first page 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.5
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 2.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 3.0
+              </td>
+              <td>
+                Win 2k+ / OSX.3+
+              </td>
+              <td>
+                1.9
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.0
+              </td>
+              <td>
+                OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.5
+              </td>
+              <td>
+                OSX.3+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape 7.2
+              </td>
+              <td>
+                Win 95+ / MacOS 8.6-9.2
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          1
+           to 
+          10
+           of 
+          40
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable intermediary page 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.5
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 2.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 3.0
+              </td>
+              <td>
+                Win 2k+ / OSX.3+
+              </td>
+              <td>
+                1.9
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.0
+              </td>
+              <td>
+                OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.5
+              </td>
+              <td>
+                OSX.3+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape 7.2
+              </td>
+              <td>
+                Win 95+ / MacOS 8.6-9.2
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          11
+           to 
+          20
+           of 
+          40
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable no items 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody />
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          0
+           to 
+          0
+           of 
+          0
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable sorted ascending 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting_asc"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.5
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 2.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 3.0
+              </td>
+              <td>
+                Win 2k+ / OSX.3+
+              </td>
+              <td>
+                1.9
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.0
+              </td>
+              <td>
+                OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.5
+              </td>
+              <td>
+                OSX.3+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape 7.2
+              </td>
+              <td>
+                Win 95+ / MacOS 8.6-9.2
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          31
+           to 
+          40
+           of 
+          40
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable sorted descending 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting_desc"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.5
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 2.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 3.0
+              </td>
+              <td>
+                Win 2k+ / OSX.3+
+              </td>
+              <td>
+                1.9
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.0
+              </td>
+              <td>
+                OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.5
+              </td>
+              <td>
+                OSX.3+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape 7.2
+              </td>
+              <td>
+                Win 95+ / MacOS 8.6-9.2
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          31
+           to 
+          40
+           of 
+          40
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable total items equal to page count 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 1.5
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 2.0
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Firefox 3.0
+              </td>
+              <td>
+                Win 2k+ / OSX.3+
+              </td>
+              <td>
+                1.9
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.0
+              </td>
+              <td>
+                OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Camino 1.5
+              </td>
+              <td>
+                OSX.3+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape 7.2
+              </td>
+              <td>
+                Win 95+ / MacOS 8.6-9.2
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          31
+           to 
+          40
+           of 
+          40
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataTable total items less than page count 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <div
+    className="dataTables_wrapper dt-bootstrap"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12"
+      >
+        <table
+          className="dataTable table table-striped table-bordered"
+        >
+          <thead>
+            <tr>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Rendering engine
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Browser
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Platform(s)
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                Engine version
+              </th>
+              <th
+                className="sorting"
+                onClick={[Function]}
+              >
+                CSS grade
+              </th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>
+                Rendering engine
+              </th>
+              <th>
+                Browser
+              </th>
+              <th>
+                Platform(s)
+              </th>
+              <th>
+                Engine version
+              </th>
+              <th>
+                CSS grade
+              </th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Browser 8
+              </td>
+              <td>
+                Win 98SE+
+              </td>
+              <td>
+                1.7
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Netscape Navigator 9
+              </td>
+              <td>
+                Win 98+ / OSX.2+
+              </td>
+              <td>
+                1.8
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Gecko
+              </td>
+              <td>
+                Mozilla 1.0
+              </td>
+              <td>
+                Win 95+ / OSX.1+
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                A
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-5"
+      >
+        <div
+          className="dataTables_info"
+        >
+          Showing 
+          31
+           to 
+          33
+           of 
+          33
+           entries
+        </div>
+      </div>
+      <div
+        className="col-sm-7"
+      >
+        <div
+          className="dataTables_paginate paging_simple_numbers"
+        >
+          <ul
+            className="pagination"
+          >
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                <span
+                  aria-label="Previous"
+                >
+                  Previous
+                </span>
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                1
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                2
+              </a>
+            </li>
+            <li
+              className=""
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                3
+              </a>
+            </li>
+            <li
+              className="active"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+              >
+                4
+              </a>
+            </li>
+            <li
+              className="disabled"
+              style={undefined}
+            >
+              <a
+                href="#"
+                onClick={[Function]}
+                role="button"
+                style={
+                  Object {
+                    "pointerEvents": "none",
+                  }
+                }
+                tabIndex={-1}
+              >
+                <span
+                  aria-label="Next"
+                >
+                  Next
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DirectChat default 1`] = `
 <div
   style={
