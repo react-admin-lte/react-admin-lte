@@ -1,14 +1,25 @@
 import React from 'react';
+import classNames from 'classnames';
 
 const propTypes = {
-  title: React.PropTypes.string,
+  children: React.PropTypes.node,
+  className: React.PropTypes.string,
 };
 
-const SidebarMenuHeader = ({ title }) => (
-  <li className="header">
-    {title}
-  </li>
-);
+const SidebarMenuHeader = ({
+  children,
+  className,
+}) => {
+  const classes = {
+    header: true,
+  };
+
+  return (
+    <li className={classNames(className, classes)}>
+      {children}
+    </li>
+  );
+};
 
 SidebarMenuHeader.propTypes = propTypes;
 
