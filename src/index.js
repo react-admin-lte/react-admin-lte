@@ -5,3 +5,4 @@ export Sidebar from './Sidebar';
 export Mailbox from './Mailbox';
 export LoginPage from './LoginPage';
 export MainHeader from './MainHeader';
+export MainFooter from './MainFooter';
