@@ -33,7 +33,7 @@ And use them:
 
     <Box>
       <Box.Header>
-        <Box.Header.Title text="Hello, world!" />
+        <Box.Title>Hello, world!</Box.Title>
       </Box.Header>
       <Box.Body>
         Thanks for choosing reactjs-admin-lte.
