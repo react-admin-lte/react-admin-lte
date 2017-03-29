@@ -77,7 +77,8 @@
       "<rootDir>/scripts/"
     ],
     "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/config/cssTransform.js"
+      "\\.(css)$": "<rootDir>/config/cssTransform.js",
+      "\\.(jpg)$": "<rootDir>/config/fileTransform.js"
     }
   }
 }
