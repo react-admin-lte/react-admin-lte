@@ -1,22 +1,33 @@
 import React from 'react';
+import classNames from 'classnames';
+import MainHeaderMiniLogo from './MainHeaderMiniLogo';
+import MainHeaderLargeLogo from './MainHeaderLargeLogo';
 
 const propTypes = {
-  href: React.PropTypes.string,
-  mini: React.PropTypes.node,
-  large: React.PropTypes.node,
+  children: React.PropTypes.node,
+  className: React.PropTypes.string,
+  onClick: React.PropTypes.func,
 };
 
-const MainHeaderLogo = ({ large, mini, href }) => (
-  <a href={href} className="logo">
-    <span className="logo-mini">
-      {mini}
-    </span>
-    <span className="logo-lg">
-      {large}
-    </span>
-  </a>
-);
+const MainHeaderLogo = ({
+  children,
+  className,
+  onClick,
+}) => {
+  const classes = {
+    logo: true,
+  };
+
+  return (
+    <a className={classNames(className, classes)} onClick={onClick}>
+      {children}
+    </a>
+  );
+};
 
 MainHeaderLogo.propTypes = propTypes;
+
+MainHeaderLogo.Mini = MainHeaderMiniLogo;
+MainHeaderLogo.Large = MainHeaderLargeLogo;
 
 export default MainHeaderLogo;
