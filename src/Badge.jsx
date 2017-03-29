@@ -16,7 +16,10 @@ const Badge = ({
   const classes = {
     badge: true,
   };
-  classes[`bg-${background}`] = true;
+
+  if (background) {
+    classes[`bg-${background}`] = true;
+  }
 
   return (
     <BsBadge bsClass={classNames(className, classes)}>{children}</BsBadge>
