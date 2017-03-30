@@ -8,3 +8,4 @@ export MainHeader from './MainHeader';
 export MainFooter from './MainFooter';
 export Label from './Label';
 export Badge from './Badge';
+export DataTable from './DataTable';
