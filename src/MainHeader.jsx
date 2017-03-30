@@ -2,18 +2,15 @@ import React from 'react';
 
 import MainHeaderLogo from './MainHeaderLogo';
 import MainHeaderSidebarToggle from './MainHeaderSidebarToggle';
+import MainHeaderNavbar from './MainHeaderNavbar';
 
 const propTypes = {
   children: React.PropTypes.node,
-  logo: React.PropTypes.node,
 };
 
-const MainHeader = ({ logo, children }) => (
+const MainHeader = ({ children }) => (
   <header className="main-header">
-    {logo}
-    <nav className="navbar navbar-static-top">
-      {children}
-    </nav>
+    {children}
   </header>
 );
 
@@ -21,5 +18,6 @@ MainHeader.propTypes = propTypes;
 
 MainHeader.Logo = MainHeaderLogo;
 MainHeader.SidebarToggle = MainHeaderSidebarToggle;
+MainHeader.Navbar = MainHeaderNavbar;
 
 export default MainHeader;
