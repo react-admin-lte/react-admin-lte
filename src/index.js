@@ -7,3 +7,4 @@ export LoginPage from './LoginPage';
 export MainHeader from './MainHeader';
 export MainFooter from './MainFooter';
 export Label from './Label';
+export Badge from './Badge';
