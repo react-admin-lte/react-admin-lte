@@ -1,11 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import Layout from './Layout';
 import MainSidebar from './MainSidebar';
 
 test('Layout notified when collapsed value changes', () => {
   let receivedVal = null;
 
-  class Layout extends React.Component {
+  class LayoutFake extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -17,11 +18,7 @@ test('Layout notified when collapsed value changes', () => {
       children: React.PropTypes.node,
     }
 
-    static childContextTypes = {
-      $adminlte_layout: React.PropTypes.shape({
-        setMainSidebarCollapsed: React.PropTypes.func,
-      }),
-    }
+    static childContextTypes = Layout.childContextTypes;
 
     getChildContext() {
       return {
@@ -40,7 +37,7 @@ test('Layout notified when collapsed value changes', () => {
     }
   }
 
-  const wrapper = mount(<Layout />);
+  const wrapper = mount(<LayoutFake />);
 
   wrapper.setState({
     collapsed: false,
