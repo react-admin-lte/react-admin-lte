@@ -50,6 +50,9 @@ class Layout extends React.Component {
         toggleMainSidebar: () => {
           document.body.classList.toggle('sidebar-collapse');
         },
+        setMainSidebarCollapsed: (val) => {
+          document.body.classList.toggle('sidebar-collapse', val);
+        },
       },
     };
   }

@@ -1,0 +1,56 @@
+import React from 'react';
+import { mount } from 'enzyme';
+import MainSidebar from './MainSidebar';
+
+test('Layout notified when collapsed value changes', () => {
+  let receivedVal = null;
+
+  class Layout extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        collapsed: true,
+      };
+    }
+
+    static propTypes = {
+      children: React.PropTypes.node,
+    }
+
+    static childContextTypes = {
+      $adminlte_layout: React.PropTypes.shape({
+        setMainSidebarCollapsed: React.PropTypes.func,
+      }),
+    }
+
+    getChildContext() {
+      return {
+        $adminlte_layout: {
+          setMainSidebarCollapsed: (val) => receivedVal = val,
+        },
+      };
+    }
+
+    render() {
+      return (
+        <div>
+          <MainSidebar collapsed={this.state.collapsed} />
+        </div>
+      );
+    }
+  }
+
+  const wrapper = mount(<Layout />);
+
+  wrapper.setState({
+    collapsed: false,
+  });
+
+  expect(receivedVal).toEqual(false);
+
+  wrapper.setState({
+    collapsed: true,
+  });
+
+  expect(receivedVal).toEqual(true);
+});
