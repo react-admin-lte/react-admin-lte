@@ -65,6 +65,12 @@
       "<rootDir>/lib/",
       "<rootDir>/scripts/"
     ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}", "!**/node_modules/**", "!**/vendor/**", "!**/*.stories.jsx"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules", "<rootDir>/config", "<rootDir>/lib", "<rootDir>/coverage", "<rootDir>/scripts"
+    ],
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/config/cssTransform.js",
       "\\.(jpg)$": "<rootDir>/config/fileTransform.js"
