@@ -6,12 +6,14 @@ import MainHeaderLargeLogo from './MainHeaderLargeLogo';
 const propTypes = {
   children: React.PropTypes.node,
   className: React.PropTypes.string,
+  href: React.PropTypes.string,
   onClick: React.PropTypes.func,
 };
 
 const MainHeaderLogo = ({
   children,
   className,
+  href,
   onClick,
 }) => {
   const classes = {
@@ -19,7 +21,11 @@ const MainHeaderLogo = ({
   };
 
   return (
-    <a className={classNames(className, classes)} onClick={onClick}>
+    <a
+      className={classNames(className, classes)}
+      href={href}
+      onClick={onClick}
+    >
       {children}
     </a>
   );
