@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Box from './Box';
+import { Box } from '.';
 
 const body = <Box.Body>The body of the box</Box.Body>;
 

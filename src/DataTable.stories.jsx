@@ -1,7 +1,7 @@
 import React from 'react';
 import { action, storiesOf } from '@kadira/storybook';
 import 'admin-lte/plugins/datatables/dataTables.bootstrap.css';
-import DataTable from './DataTable';
+import { DataTable } from '.';
 
 const data = [[
   'Gecko', 'Firefox 1.0', 'Win 98+ / OSX.2+', '1.7', 'A',

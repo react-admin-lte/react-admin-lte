@@ -9,3 +9,4 @@ export MainFooter from './MainFooter';
 export Label from './Label';
 export Badge from './Badge';
 export DataTable from './DataTable';
+export DirectChat from './DirectChat';

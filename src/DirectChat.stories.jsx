@@ -2,7 +2,7 @@ import React from 'react';
 import { action, storiesOf } from '@kadira/storybook';
 import alexanderPierceImage from 'admin-lte/dist/img/user1-128x128.jpg';
 import sarahBullockImage from 'admin-lte/dist/img/user3-128x128.jpg';
-import DirectChat from './DirectChat';
+import { DirectChat } from '.';
 
 storiesOf('DirectChat', module)
   .addDecorator(story =>

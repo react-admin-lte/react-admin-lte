@@ -1,11 +1,13 @@
 import React from 'react';
 import { action, storiesOf } from '@kadira/storybook';
-import Layout from './Layout';
-import MainHeader from './MainHeader';
-import MainSidebar from './MainSidebar';
-import Content from './Content';
-import Box from './Box';
-import MainFooter from './MainFooter';
+import {
+  Layout,
+  MainHeader,
+  MainSidebar,
+  Content,
+  Box,
+  MainFooter,
+} from '.';
 
 const menuClickAction = action('menu click');
 
