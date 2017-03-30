@@ -3026,11 +3026,11 @@ exports[`Storyshots Layout boxed 1`] = `
       className="content-header"
     >
       <h1>
-        Boxed Layout
+        Fixed Layout 
+        <small>
+          Blank example to the fixed layout
+        </small>
       </h1>
-      <small>
-        Blank example to the boxed layout
-      </small>
     </div>
     <div
       className="content"
@@ -3173,11 +3173,11 @@ exports[`Storyshots Layout collapsed sidebar 1`] = `
       className="content-header"
     >
       <h1>
-        Boxed Layout
+        Fixed Layout 
+        <small>
+          Blank example to the fixed layout
+        </small>
       </h1>
-      <small>
-        Blank example to the boxed layout
-      </small>
     </div>
     <div
       className="content"
@@ -3320,11 +3320,11 @@ exports[`Storyshots Layout default (fixed) 1`] = `
       className="content-header"
     >
       <h1>
-        Fixed Layout
+        Fixed Layout 
+        <small>
+          Blank example to the fixed layout
+        </small>
       </h1>
-      <small>
-        Blank example to the fixed layout
-      </small>
     </div>
     <div
       className="content"

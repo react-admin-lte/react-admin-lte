@@ -41,10 +41,9 @@ storiesOf('Layout', module)
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>
-        <Content.Header
-          title="Fixed Layout"
-          description="Blank example to the fixed layout"
-        />
+        <Content.Header>
+          <h1>Fixed Layout <small>Blank example to the fixed layout</small></h1>
+        </Content.Header>
         <Content.Body>
           <Box>
             <Box.Header border>
@@ -90,10 +89,9 @@ storiesOf('Layout', module)
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>
-        <Content.Header
-          title="Boxed Layout"
-          description="Blank example to the boxed layout"
-        />
+        <Content.Header>
+          <h1>Fixed Layout <small>Blank example to the fixed layout</small></h1>
+        </Content.Header>
         <Content.Body>
           <Box>
             <Box.Header>
@@ -139,10 +137,9 @@ storiesOf('Layout', module)
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>
-        <Content.Header
-          title="Boxed Layout"
-          description="Blank example to the boxed layout"
-        />
+        <Content.Header>
+          <h1>Fixed Layout <small>Blank example to the fixed layout</small></h1>
+        </Content.Header>
         <Content.Body>
           <Box>
             <Box.Header>
