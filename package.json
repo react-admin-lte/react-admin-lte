@@ -11,7 +11,7 @@
     "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
     "lint": "eslint src test *.js",
     "test": "node scripts/test.js --env=jsdom",
-    "prepublish": "npm run build",
+    "prepublish": "yarn run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
