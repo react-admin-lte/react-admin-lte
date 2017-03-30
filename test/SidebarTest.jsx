@@ -2,12 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import test from 'tape';
 
-import Sidebar from '../src/Sidebar';
+import Sidebar from '../src/MainSidebar';
 
-test('<Sidebar>', t => {
-  const wrapper = shallow(<Sidebar>
+test('<MainSidebar>', t => {
+  const wrapper = shallow(<MainSidebar>
       <div>stuff</div>
-    </Sidebar>);
+    </MainSidebar>);
 
   t.ok(wrapper.contains(<div>stuff</div>), 'renders children');
   t.end();

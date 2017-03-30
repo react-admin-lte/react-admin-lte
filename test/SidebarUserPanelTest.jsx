@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import test from 'tape';
 
-import SidebarUserPanel from '../src/SidebarUserPanel';
+import SidebarUserPanel from '../src/MainSidebarUserPanel';
 
-test('<SidebarUserPanel>', t => {
-  const wrapper = shallow(<SidebarUserPanel
+test('<MainSidebarUserPanel>', t => {
+  const wrapper = shallow(<MainSidebarUserPanel
     image={<img src="#" />}
     info={<div>stuff</div>}
   />);

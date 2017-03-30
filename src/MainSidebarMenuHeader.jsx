@@ -6,7 +6,7 @@ const propTypes = {
   className: React.PropTypes.string,
 };
 
-const SidebarMenuHeader = ({
+const MainSidebarMenuHeader = ({
   children,
   className,
 }) => {
@@ -21,6 +21,6 @@ const SidebarMenuHeader = ({
   );
 };
 
-SidebarMenuHeader.propTypes = propTypes;
+MainSidebarMenuHeader.propTypes = propTypes;
 
-export default SidebarMenuHeader;
+export default MainSidebarMenuHeader;

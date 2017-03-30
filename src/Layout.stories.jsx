@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Layout from './Layout';
 import MainHeader from './MainHeader';
-import Sidebar from './Sidebar';
+import MainSidebar from './MainSidebar';
 import Content from './Content';
 import Box from './Box';
 import MainFooter from './MainFooter';
@@ -19,11 +19,11 @@ storiesOf('Layout', module)
           <MainHeader.SidebarToggle />
         </MainHeader.Navbar>
       </MainHeader>
-      <Sidebar>
-        <Sidebar.Menu>
-          <Sidebar.Menu.Header>MAIN NAVIGATION</Sidebar.Menu.Header>
-        </Sidebar.Menu>
-      </Sidebar>
+      <MainSidebar>
+        <MainSidebar.Menu>
+          <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+        </MainSidebar.Menu>
+      </MainSidebar>
       <Content>
         <Content.Header
           title="Fixed Layout"
@@ -56,11 +56,11 @@ storiesOf('Layout', module)
           <MainHeader.SidebarToggle />
         </MainHeader.Navbar>
       </MainHeader>
-      <Sidebar>
-        <Sidebar.Menu>
-          <Sidebar.Menu.Header>MAIN NAVIGATION</Sidebar.Menu.Header>
-        </Sidebar.Menu>
-      </Sidebar>
+      <MainSidebar>
+        <MainSidebar.Menu>
+          <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+        </MainSidebar.Menu>
+      </MainSidebar>
       <Content>
         <Content.Header
           title="Boxed Layout"

@@ -2893,3 +2893,245 @@ exports[`Storyshots DirectChat default 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Layout boxed 1`] = `
+<div
+  className="wrapper"
+>
+  <header
+    className="main-header"
+  >
+    <a
+      className="logo"
+      onClick={undefined}
+    >
+      <span
+        className="logo-lg"
+      >
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+      <span
+        className="logo-mini"
+      >
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </a>
+    <nav
+      className="navbar navbar-static-top"
+    >
+      <a
+        className="sidebar-toggle"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          className="sr-only"
+        >
+          Toggle navigation
+        </span>
+      </a>
+    </nav>
+  </header>
+  <aside
+    className="main-sidebar"
+  >
+    <section
+      className="sidebar"
+    >
+      <ul
+        className="sidebar-menu"
+      >
+        <li
+          className="header"
+        >
+          MAIN NAVIGATION
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <div
+    className="content-wrapper"
+  >
+    <div
+      className="content-header"
+    >
+      <h1>
+        Boxed Layout
+      </h1>
+      <small>
+        Blank example to the boxed layout
+      </small>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="box"
+      >
+        <div
+          className="box-header"
+        >
+          <h3
+            className="box-title"
+          >
+            Title
+          </h3>
+        </div>
+        <div
+          className="box-body"
+        >
+          Start creating your amazing application!
+        </div>
+        <div
+          className="box-footer"
+        >
+          Footer
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="main-footer"
+  >
+    <div
+      className="pull-right"
+    >
+      <b>
+        Version
+      </b>
+       2.3.11
+    </div>
+    <strong>
+      Copyright © 2017.
+    </strong>
+     All rights reserved.
+  </footer>
+</div>
+`;
+
+exports[`Storyshots Layout default (fixed) 1`] = `
+<div
+  className="wrapper"
+>
+  <header
+    className="main-header"
+  >
+    <a
+      className="logo"
+      onClick={undefined}
+    >
+      <span
+        className="logo-lg"
+      >
+        <b>
+          Admin
+        </b>
+        LTE
+      </span>
+      <span
+        className="logo-mini"
+      >
+        <b>
+          A
+        </b>
+        LT
+      </span>
+    </a>
+    <nav
+      className="navbar navbar-static-top"
+    >
+      <a
+        className="sidebar-toggle"
+        href="#"
+        onClick={[Function]}
+      >
+        <span
+          className="sr-only"
+        >
+          Toggle navigation
+        </span>
+      </a>
+    </nav>
+  </header>
+  <aside
+    className="main-sidebar"
+  >
+    <section
+      className="sidebar"
+    >
+      <ul
+        className="sidebar-menu"
+      >
+        <li
+          className="header"
+        >
+          MAIN NAVIGATION
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <div
+    className="content-wrapper"
+  >
+    <div
+      className="content-header"
+    >
+      <h1>
+        Fixed Layout
+      </h1>
+      <small>
+        Blank example to the fixed layout
+      </small>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="box"
+      >
+        <div
+          className="box-header with-border"
+        >
+          <h3
+            className="box-title"
+          >
+            Title
+          </h3>
+        </div>
+        <div
+          className="box-body"
+        >
+          Start creating your amazing application!
+        </div>
+        <div
+          className="box-footer"
+        >
+          Footer
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    className="main-footer"
+  >
+    <div
+      className="pull-right"
+    >
+      <b>
+        Version
+      </b>
+       2.3.11
+    </div>
+    <strong>
+      Copyright © 2017.
+    </strong>
+     All rights reserved.
+  </footer>
+</div>
+`;

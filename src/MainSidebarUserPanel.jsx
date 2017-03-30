@@ -5,7 +5,7 @@ const propTypes = {
   info: React.PropTypes.node,
 };
 
-const SidebarUserPanel = ({
+const MainSidebarUserPanel = ({
   image,
   info,
 }) => (
@@ -19,6 +19,6 @@ const SidebarUserPanel = ({
   </div>
 );
 
-SidebarUserPanel.propTypes = propTypes;
+MainSidebarUserPanel.propTypes = propTypes;
 
-export default SidebarUserPanel;
+export default MainSidebarUserPanel;

@@ -6,7 +6,7 @@ const propTypes = {
   active: React.PropTypes.bool,
 };
 
-const SidebarMenuItem = ({ children, active }) => {
+const MainSidebarMenuItem = ({ children, active }) => {
   const classes = {
     active
   }
@@ -18,6 +18,6 @@ const SidebarMenuItem = ({ children, active }) => {
   );
 };
 
-SidebarMenuItem.propTypes = propTypes;
+MainSidebarMenuItem.propTypes = propTypes;
 
-export default SidebarMenuItem;
+export default MainSidebarMenuItem;
