@@ -12,6 +12,9 @@ cache:
   directories:
   - node_modules
 
+script:
+  - yarn test -- --coverage
+
 before_install:
 - export CHROME_BIN=chromium-browser
 - export DISPLAY=:99.0
