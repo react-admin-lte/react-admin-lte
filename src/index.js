@@ -6,3 +6,4 @@ export Mailbox from './Mailbox';
 export LoginPage from './LoginPage';
 export MainHeader from './MainHeader';
 export MainFooter from './MainFooter';
+export Label from './Label';
