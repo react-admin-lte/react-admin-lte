@@ -1,11 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { action, storiesOf } from '@kadira/storybook';
 import Layout from './Layout';
 import MainHeader from './MainHeader';
 import MainSidebar from './MainSidebar';
 import Content from './Content';
 import Box from './Box';
 import MainFooter from './MainFooter';
+
+const menuClickAction = action('menu click');
 
 storiesOf('Layout', module)
   .add('default (fixed)', () => (
@@ -22,6 +24,18 @@ storiesOf('Layout', module)
       <MainSidebar>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+          <MainSidebar.Menu.Item
+            href="/widgets"
+            iconName="th"
+            onClick={e => { e.preventDefault(); menuClickAction(e); }}
+            title="Widgets"
+          >
+            <MainSidebar.Menu.Item.AddonList>
+              <MainSidebar.Menu.Item.Addon background="green">
+                new
+              </MainSidebar.Menu.Item.Addon>
+            </MainSidebar.Menu.Item.AddonList>
+          </MainSidebar.Menu.Item>
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>
@@ -59,6 +73,18 @@ storiesOf('Layout', module)
       <MainSidebar>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+          <MainSidebar.Menu.Item
+            href="/widgets"
+            iconName="th"
+            onClick={e => { e.preventDefault(); menuClickAction(e); }}
+            title="Widgets"
+          >
+            <MainSidebar.Menu.Item.AddonList>
+              <MainSidebar.Menu.Item.Addon background="green">
+                new
+              </MainSidebar.Menu.Item.Addon>
+            </MainSidebar.Menu.Item.AddonList>
+          </MainSidebar.Menu.Item>
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>
@@ -96,6 +122,18 @@ storiesOf('Layout', module)
       <MainSidebar collapsed>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+          <MainSidebar.Menu.Item
+            href="/widgets"
+            iconName="th"
+            onClick={e => { e.preventDefault(); menuClickAction(e); }}
+            title="Widgets"
+          >
+            <MainSidebar.Menu.Item.AddonList>
+              <MainSidebar.Menu.Item.Addon background="green">
+                new
+              </MainSidebar.Menu.Item.Addon>
+            </MainSidebar.Menu.Item.AddonList>
+          </MainSidebar.Menu.Item>
         </MainSidebar.Menu>
       </MainSidebar>
       <Content>

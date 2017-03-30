@@ -2894,6 +2894,44 @@ exports[`Storyshots DirectChat default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Label default 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <span
+    className="label label-default"
+  >
+    old
+  </span>
+</div>
+`;
+
+exports[`Storyshots Label with background color 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 20,
+      "width": 400,
+    }
+  }
+>
+  <span
+    className="label bg-green label bg-green-default"
+  >
+    new
+  </span>
+</div>
+`;
+
 exports[`Storyshots Layout boxed 1`] = `
 <div
   className="wrapper"
@@ -2952,6 +2990,31 @@ exports[`Storyshots Layout boxed 1`] = `
           className="header"
         >
           MAIN NAVIGATION
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/widgets"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-th"
+            />
+            <span>
+              Widgets
+            </span>
+            <span
+              className="pull-right-container"
+            >
+              <span
+                className="pull-right label bg-green pull-right label bg-green-default"
+              >
+                new
+              </span>
+            </span>
+          </a>
         </li>
       </ul>
     </section>
@@ -3075,6 +3138,31 @@ exports[`Storyshots Layout collapsed sidebar 1`] = `
         >
           MAIN NAVIGATION
         </li>
+        <li
+          className=""
+        >
+          <a
+            href="/widgets"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-th"
+            />
+            <span>
+              Widgets
+            </span>
+            <span
+              className="pull-right-container"
+            >
+              <span
+                className="pull-right label bg-green pull-right label bg-green-default"
+              >
+                new
+              </span>
+            </span>
+          </a>
+        </li>
       </ul>
     </section>
   </aside>
@@ -3196,6 +3284,31 @@ exports[`Storyshots Layout default (fixed) 1`] = `
           className="header"
         >
           MAIN NAVIGATION
+        </li>
+        <li
+          className=""
+        >
+          <a
+            href="/widgets"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-th"
+            />
+            <span>
+              Widgets
+            </span>
+            <span
+              className="pull-right-container"
+            >
+              <span
+                className="pull-right label bg-green pull-right label bg-green-default"
+              >
+                new
+              </span>
+            </span>
+          </a>
         </li>
       </ul>
     </section>
