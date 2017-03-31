@@ -27,19 +27,6 @@ test('Layout sets body classes on receiving props', () => {
 });
 
 test('Layout removes body classes on unmount', () => {
-  class MainSidebarFake extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-      context.$adminlte_layout.toggleMainSidebar();
-    }
-
-    static contextTypes = MainSidebar.contextTypes;
-
-    render() {
-      return null;
-    }
-  }
-
   const wrapper = mount(<Layout skin="blue" boxed />);
 
   document.body.classList.add('sidebar-collapse');
