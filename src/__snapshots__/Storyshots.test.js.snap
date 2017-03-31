@@ -2871,6 +2871,7 @@ exports[`Storyshots DirectChat default 1`] = `
           <input
             className="form-control"
             id={undefined}
+            name="message"
             onChange={[Function]}
             placeholder="Type Message..."
             type="text"

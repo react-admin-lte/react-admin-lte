@@ -118,6 +118,7 @@ class DirectChat extends React.Component {
           <Form onSubmit={this.handleSubmit}>
             <InputGroup>
               <FormControl
+                name="message"
                 onChange={this.handleChange}
                 placeholder="Type Message..."
                 type="text"
