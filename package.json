@@ -6,6 +6,7 @@
     "type": "git",
     "url": "jonmpqts/reactjs-admin-lte"
   },
+  "license": "MIT",
   "scripts": {
     "prebuild": "yarn run lint",
     "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
