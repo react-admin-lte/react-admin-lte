@@ -1,11 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import BoxRemoveButton from './BoxRemoveButton';
 
 test('Box notified when clicked', () => {
   let received = false;
 
-  const wrapper = mount(
+  const wrapper = shallow(
     <BoxRemoveButton />,
     {
       context: {
