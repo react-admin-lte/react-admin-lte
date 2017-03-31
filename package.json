@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "jonmpqts/react-admin-lte"
+    "url": "jonmpqts/reactjs-admin-lte"
   },
   "scripts": {
     "prebuild": "yarn run lint",
