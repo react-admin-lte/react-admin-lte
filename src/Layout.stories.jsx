@@ -1,5 +1,7 @@
 import React from 'react';
 import { action, storiesOf } from '@kadira/storybook';
+import FontAwesome from 'react-fontawesome';
+import alexanderPierce from 'admin-lte/dist/img/user2-160x160.jpg';
 import {
   Layout,
   MainHeader,
@@ -10,6 +12,7 @@ import {
 } from '.';
 
 const menuClickAction = action('menu click');
+const userClickAction = action('user panel click');
 
 storiesOf('Layout', module)
   .add('default (fixed)', () => (
@@ -24,6 +27,20 @@ storiesOf('Layout', module)
         </MainHeader.Navbar>
       </MainHeader>
       <MainSidebar>
+        <MainSidebar.UserPanel>
+          <MainSidebar.UserPanel.Image src={alexanderPierce} />
+          <MainSidebar.UserPanel.Info>
+            <p>Alexander Pierce</p>
+            <a href="#" onClick={e => { e.preventDefault(); userClickAction(e); }}>
+              <FontAwesome
+                className="text-success"
+                tag="i"
+                name="circle"
+              />
+              Online
+            </a>
+          </MainSidebar.UserPanel.Info>
+        </MainSidebar.UserPanel>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
           <MainSidebar.Menu.Item
@@ -72,6 +89,20 @@ storiesOf('Layout', module)
         </MainHeader.Navbar>
       </MainHeader>
       <MainSidebar>
+        <MainSidebar.UserPanel>
+          <MainSidebar.UserPanel.Image src={alexanderPierce} />
+          <MainSidebar.UserPanel.Info>
+            <p>Alexander Pierce</p>
+            <a href="#" onClick={e => { e.preventDefault(); userClickAction(e); }}>
+              <FontAwesome
+                className="text-success"
+                tag="i"
+                name="circle"
+              />
+              Online
+            </a>
+          </MainSidebar.UserPanel.Info>
+        </MainSidebar.UserPanel>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
           <MainSidebar.Menu.Item
@@ -120,6 +151,20 @@ storiesOf('Layout', module)
         </MainHeader.Navbar>
       </MainHeader>
       <MainSidebar collapsed>
+        <MainSidebar.UserPanel>
+          <MainSidebar.UserPanel.Image src={alexanderPierce} />
+          <MainSidebar.UserPanel.Info>
+            <p>Alexander Pierce</p>
+            <a href="#" onClick={e => { e.preventDefault(); userClickAction(e); }}>
+              <FontAwesome
+                className="text-success"
+                tag="i"
+                name="circle"
+              />
+              Online
+            </a>
+          </MainSidebar.UserPanel.Info>
+        </MainSidebar.UserPanel>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
           <MainSidebar.Menu.Item

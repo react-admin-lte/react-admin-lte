@@ -2984,6 +2984,36 @@ exports[`Storyshots Layout boxed 1`] = `
     <section
       className="sidebar"
     >
+      <div
+        className="user-panel"
+      >
+        <div
+          className="image pull-left"
+        >
+          <img
+            alt={undefined}
+            className="img-circle"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="info pull-left"
+        >
+          <p>
+            Alexander Pierce
+          </p>
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-circle text-success"
+            />
+            Online
+          </a>
+        </div>
+      </div>
       <ul
         className="sidebar-menu"
       >
@@ -3131,6 +3161,36 @@ exports[`Storyshots Layout collapsed sidebar 1`] = `
     <section
       className="sidebar"
     >
+      <div
+        className="user-panel"
+      >
+        <div
+          className="image pull-left"
+        >
+          <img
+            alt={undefined}
+            className="img-circle"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="info pull-left"
+        >
+          <p>
+            Alexander Pierce
+          </p>
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-circle text-success"
+            />
+            Online
+          </a>
+        </div>
+      </div>
       <ul
         className="sidebar-menu"
       >
@@ -3278,6 +3338,36 @@ exports[`Storyshots Layout default (fixed) 1`] = `
     <section
       className="sidebar"
     >
+      <div
+        className="user-panel"
+      >
+        <div
+          className="image pull-left"
+        >
+          <img
+            alt={undefined}
+            className="img-circle"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="info pull-left"
+        >
+          <p>
+            Alexander Pierce
+          </p>
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden={true}
+              className="fa fa-circle text-success"
+            />
+            Online
+          </a>
+        </div>
+      </div>
       <ul
         className="sidebar-menu"
       >

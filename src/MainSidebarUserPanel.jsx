@@ -1,24 +1,22 @@
 import React from 'react';
+import MainSidebarUserPanelImage from './MainSidebarUserPanelImage';
+import MainSidebarUserPanelInfo from './MainSidebarUserPanelInfo';
 
 const propTypes = {
-  image: React.PropTypes.node,
-  info: React.PropTypes.node,
+  children: React.PropTypes.node,
 };
 
 const MainSidebarUserPanel = ({
-  image,
-  info,
+  children,
 }) => (
   <div className="user-panel">
-    <div className="pull-left image">
-      {image}
-    </div>
-    <div className="pull-left info">
-      {info}
-    </div>
+    {children}
   </div>
 );
 
 MainSidebarUserPanel.propTypes = propTypes;
+
+MainSidebarUserPanel.Image = MainSidebarUserPanelImage;
+MainSidebarUserPanel.Info = MainSidebarUserPanelInfo;
 
 export default MainSidebarUserPanel;
