@@ -7,18 +7,22 @@ import MainSidebarMenuItemAddon from './MainSidebarMenuItemAddon';
 const propTypes = {
   active: React.PropTypes.bool,
   children: React.PropTypes.node,
+  className: React.PropTypes.string,
   href: React.PropTypes.string,
   iconName: React.PropTypes.string,
   onClick: React.PropTypes.func,
+  role: React.PropTypes.role,
   title: React.PropTypes.string,
 };
 
 const MainSidebarMenuItem = ({
   active,
   children,
+  className,
   href,
   iconName,
   onClick,
+  role,
   title,
 }) => {
   const classes = {
@@ -29,13 +33,25 @@ const MainSidebarMenuItem = ({
     ? <FontAwesome name={iconName} tag="i" />
     : null;
 
+  let addons = [];
+  let other = [];
+
+  React.Children.forEach(children, child => {
+    if (child.type === MainSidebarMenuItemAddonList) {
+      addons.push(child);
+    } else {
+      other.push(child);
+    }
+  });
+
   return (
-    <li className={classNames(classes)}>
-      <a href={href} onClick={onClick}>
+    <li className={classNames(className, classes)}>
+      <a href={href} onClick={onClick} role={role}>
         {icon}
         <span>{title}</span>
-        {children}
+        {addons}
       </a>
+      {other}
     </li>
   );
 };

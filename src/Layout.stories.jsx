@@ -43,6 +43,50 @@ storiesOf('Layout', module)
         </MainSidebar.UserPanel>
         <MainSidebar.Menu>
           <MainSidebar.Menu.Header>MAIN NAVIGATION</MainSidebar.Menu.Header>
+          <MainSidebar.Menu.Tree
+            active
+            iconName="dashboard"
+            title="Dashboard"
+            treeId="dashboard"
+          >
+            <MainSidebar.Menu.Item
+              href="index.html"
+              title="Dashboard v1"
+              iconName="circle-o"
+            />
+            <MainSidebar.Menu.Item
+              active
+              href="index.html"
+              title="Dashboard v2"
+              iconName="circle-o"
+            />
+          </MainSidebar.Menu.Tree>
+          <MainSidebar.Menu.Tree
+            iconName="files-o"
+            title="Layout Options"
+            treeId="layout"
+          >
+            <MainSidebar.Menu.Item
+              href=""
+              title="Top Navigation"
+              iconName="circle-o"
+            />
+            <MainSidebar.Menu.Item
+              href=""
+              title="Boxed"
+              iconName="circle-o"
+            />
+            <MainSidebar.Menu.Item
+              href=""
+              title="Fixed"
+              iconName="circle-o"
+            />
+            <MainSidebar.Menu.Item
+              href=""
+              title="Collapsed Sidebar"
+              iconName="circle-o"
+            />
+          </MainSidebar.Menu.Tree>
           <MainSidebar.Menu.Item
             href="/widgets"
             iconName="th"
