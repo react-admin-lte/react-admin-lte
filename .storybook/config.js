@@ -4,7 +4,7 @@ import 'font-awesome/css/font-awesome.css';
 import 'admin-lte/dist/css/AdminLTE.css';
 import 'admin-lte/dist/css/skins/skin-blue.css';
 
-const req = require.context('../packages/reactjs-admin-lte/src', true, /.stories.jsx$/);
+const req = require.context('../packages/react-admin-lte/src', true, /.stories.jsx$/);
 
 function loadStories() {
   req.keys().forEach((filename) => req(filename));
