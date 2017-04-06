@@ -50,11 +50,11 @@ If you want to add something to the project, create a pull request [here][gh-pr]
 [react]: http://facebook.github.io/react/
 [npm]: https://www.npmjs.com/
 [es6]: http://es6-features.org/
-[gh-issues]: https://github.com/jonmpqts/reactjs-admin-lte/issues
-[gh-pr]: https://github.com/jonmpqts/reactjs-admin-lte/pulls
+[gh-issues]: https://github.com/react-admin-lte/react-admin-lte/issues
+[gh-pr]: https://github.com/react-admin-lte/react-admin-lte/pulls
 
-[build-badge]: https://travis-ci.org/jonmpqts/reactjs-admin-lte.svg?branch=master
-[build]: https://travis-ci.org/jonmpqts/reactjs-admin-lte
+[build-badge]: https://travis-ci.org/react-admin-lte/react-admin-lte.svg?branch=master
+[build]: https://travis-ci.org/react-admin-lte/react-admin-lte
 
-[codecov-badge]: https://codecov.io/gh/jonmpqts/reactjs-admin-lte/branch/master/graph/badge.svg
-[codecov]: https://codecov.io/gh/jonmpqts/reactjs-admin-lte
+[codecov-badge]: https://codecov.io/gh/react-admin-lte/react-admin-lte/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/react-admin-lte/react-admin-lte

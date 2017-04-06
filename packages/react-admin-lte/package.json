@@ -1,0 +1,24 @@
+{
+  "name": "reactjs-admin-lte",
+  "version": "0.4.0",
+  "description": "Admin LTE components build with React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-admin-lte/reactjs-admin-lte.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
+    "prepublish": "yarn run build"
+  },
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-bootstrap": ">=0.30.0",
+    "react-dom": ">=0.14.0",
+    "react-fontawesome": ">=1.1.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
+}

@@ -1,80 +1,54 @@
 {
-  "name": "reactjs-admin-lte",
-  "version": "0.4.0",
-  "description": "Admin LTE components build with React",
-  "repository": {
-    "type": "git",
-    "url": "jonmpqts/reactjs-admin-lte"
-  },
-  "license": "MIT",
-  "scripts": {
-    "prebuild": "yarn run lint",
-    "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
-    "lint": "eslint src test *.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "prepublish": "yarn run build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "main": "lib/index.js",
-  "peerDependencies": {
-    "react": ">=0.14.0",
-    "react-bootstrap": ">=0.30.0",
-    "react-dom": ">=0.14.0",
-    "react-fontawesome": ">=1.1.0"
-  },
+  "private": true,
   "devDependencies": {
-    "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook": "^2.35.3",
     "admin-lte": "^2.3.11",
-    "babel-cli": "^6.11.4",
-    "babel-core": "^6.13.2",
-    "babel-eslint": "^6.1.2",
+    "babel-cli": "^6.24.0",
     "babel-jest": "^19.0.0",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-1": "^6.13.0",
-    "babel-register": "^6.11.6",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-1": "^6.22.0",
     "bootstrap": "^3.3.7",
-    "codecov": "^1.0.1",
-    "cross-env": "^2.0.0",
-    "enzyme": "^2.4.1",
-    "eslint": "^3.2.2",
-    "eslint-config-airbnb": "^10.0.0",
-    "eslint-plugin-babel": "^3.3.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx": "0.0.2",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^6.0.0",
+    "enzyme": "^2.8.0",
     "font-awesome": "^4.7.0",
     "jest": "^19.0.2",
-    "json-loader": "^0.5.4",
-    "react": "^15.3.0",
-    "react-addons-test-utils": "^15.3.0",
-    "react-bootstrap": "^0.30.3",
-    "react-dom": "^15.3.0",
-    "react-fontawesome": "^1.1.0",
-    "storyshots": "^3.2.2",
-    "webpack": "^1.13.1"
+    "lerna": "^2.0.0-beta.38",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.4.2",
+    "react-fontawesome": "^1.5.0",
+    "storyshots": "^3.2.2"
   },
-  "dependencies": {
-    "classnames": "^2.2.5"
+  "scripts": {
+    "build": "lerna run build",
+    "postinstall": "lerna bootstrap --concurrency=1",
+    "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/lib/",
-      "<rootDir>/scripts/"
-    ],
     "collectCoverageFrom": [
-      "**/*.{js,jsx}", "!**/node_modules/**", "!**/vendor/**", "!**/*.stories.jsx"
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/*.stories.jsx"
     ],
     "coveragePathIgnorePatterns": [
-      "<rootDir>/node_modules", "<rootDir>/config", "<rootDir>/lib", "<rootDir>/coverage", "<rootDir>/scripts"
+      "<rootDir>/node_modules",
+      "<rootDir>/config",
+      "<rootDir>/coverage",
+      "<rootDir>/packages/.*/lib",
+      "<rootDir>/packages/.*/node_modules",
+      "<rootDir>/scripts"
     ],
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/config/cssTransform.js",
       "\\.(jpg)$": "<rootDir>/config/fileTransform.js"
-    }
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/config/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/packages/.*/lib/",
+      "<rootDir>/scripts"
+    ]
   }
 }
