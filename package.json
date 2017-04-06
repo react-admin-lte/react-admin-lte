@@ -9,6 +9,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.22.0",
     "bootstrap": "^3.3.7",
+    "codecov": "^2.1.0",
     "enzyme": "^2.8.0",
     "font-awesome": "^4.7.0",
     "jest": "^19.0.2",
