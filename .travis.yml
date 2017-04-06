@@ -9,6 +9,7 @@ env:
 - BROWSER=Firefox
 
 cache:
+  yarn: true
   directories:
   - node_modules
 
