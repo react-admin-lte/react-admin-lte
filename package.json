@@ -2,6 +2,9 @@
   "private": true,
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "@webpack-blocks/babel6": "^0.4.1",
+    "@webpack-blocks/postcss": "^0.4.3",
+    "@webpack-blocks/webpack2": "^0.4.0",
     "admin-lte": "^2.3.11",
     "babel-cli": "^6.24.0",
     "babel-jest": "^19.0.0",
@@ -19,6 +22,7 @@
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-fontawesome": "^1.5.0",
+    "react-styleguidist": "^5.0.6",
     "storyshots": "^3.2.2"
   },
   "scripts": {

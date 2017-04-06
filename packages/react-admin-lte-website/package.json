@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "react-admin-lte-website",
+  "versoin": "0.1.0",
+  "scripts": {
+    "build": "styleguidist build"
+  }
+}
