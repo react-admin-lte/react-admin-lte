@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  components: '../**/*.jsx',
+  components: '../!(react-admin-lte-website)/**/*.jsx',
   ignore: [
     '**/*.test.jsx',
     '**/*.stories.jsx',
