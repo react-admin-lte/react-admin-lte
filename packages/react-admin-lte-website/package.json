@@ -4,5 +4,8 @@
   "versoin": "0.1.0",
   "scripts": {
     "build": "styleguidist build"
+  },
+  "dependencies": {
+    "reactjs-admin-lte": "0.4.0"
   }
 }
