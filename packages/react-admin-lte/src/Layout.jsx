@@ -43,8 +43,11 @@ class Layout extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.state.document.body.classList.toggle(`skin-${nextProps.skin}`, true);
-    this.state.document.body.classList.toggle(`skin-${this.props.skin}`, false);
+    if (this.props.skin !== nextProps.skin) {
+      this.state.document.body.classList.toggle(`skin-${nextProps.skin}`, true);
+      this.state.document.body.classList.toggle(`skin-${this.props.skin}`, false);
+    }
+
     this.state.document.body.classList.toggle('layout-boxed', nextProps.boxed);
   }
 

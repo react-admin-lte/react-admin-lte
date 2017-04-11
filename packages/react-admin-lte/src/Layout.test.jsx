@@ -26,6 +26,14 @@ test('Layout sets body classes on receiving props', () => {
   expect(document.body.classList.contains('layout-boxed')).toEqual(false);
 });
 
+test('Layout keeps same skin on receiving props', () => {
+  const wrapper = mount(<Layout skin="blue" />);
+
+  wrapper.setProps({ skin: 'blue' });
+
+  expect(document.body.classList.contains('skin-blue')).toEqual(true);
+});
+
 test('Layout removes body classes on unmount', () => {
   const wrapper = mount(<Layout skin="blue" boxed />);
 
