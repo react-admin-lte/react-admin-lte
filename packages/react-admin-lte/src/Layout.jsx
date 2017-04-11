@@ -21,37 +21,48 @@ const childContextTypes = {
   }),
 };
 
+const contextTypes = {
+  document: React.PropTypes.object,
+};
+
 class Layout extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      document: context.document ? context.document : document,
+    };
+  }
+
   componentDidMount() {
-    document.body.classList.toggle('sidebar-mini', true);
-    document.body.classList.toggle(`skin-${this.props.skin}`, true);
+    this.state.document.body.classList.toggle('sidebar-mini', true);
+    this.state.document.body.classList.toggle(`skin-${this.props.skin}`, true);
 
     if (this.props.boxed) {
-      document.body.classList.toggle('layout-boxed', true);
+      this.state.document.body.classList.toggle('layout-boxed', true);
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    document.body.classList.toggle(`skin-${nextProps.skin}`, true);
-    document.body.classList.toggle(`skin-${this.props.skin}`, false);
-    document.body.classList.toggle('layout-boxed', nextProps.boxed);
+    this.state.document.body.classList.toggle(`skin-${nextProps.skin}`, true);
+    this.state.document.body.classList.toggle(`skin-${this.props.skin}`, false);
+    this.state.document.body.classList.toggle('layout-boxed', nextProps.boxed);
   }
 
   componentWillUnmount() {
-    document.body.classList.toggle('sidebar-mini', false);
-    document.body.classList.toggle(`skin-${this.props.skin}`, false);
-    document.body.classList.toggle('layout-boxed', false);
-    document.body.classList.toggle('sidebar-collapse', false);
+    this.state.document.body.classList.toggle('sidebar-mini', false);
+    this.state.document.body.classList.toggle(`skin-${this.props.skin}`, false);
+    this.state.document.body.classList.toggle('layout-boxed', false);
+    this.state.document.body.classList.toggle('sidebar-collapse', false);
   }
 
   getChildContext() {
     return {
       $adminlte_layout: {
         toggleMainSidebar: () => {
-          document.body.classList.toggle('sidebar-collapse');
+          this.state.document.body.classList.toggle('sidebar-collapse');
         },
         setMainSidebarCollapsed: (val) => {
-          document.body.classList.toggle('sidebar-collapse', val);
+          this.state.document.body.classList.toggle('sidebar-collapse', val);
         },
       },
     };
@@ -73,5 +84,6 @@ class Layout extends React.Component {
 Layout.propTypes = propTypes;
 Layout.defaultProps = defaultProps;
 Layout.childContextTypes = childContextTypes;
+Layout.contextTypes = contextTypes;
 
 export default Layout;
