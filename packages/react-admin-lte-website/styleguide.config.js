@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   components: '../!(react-admin-lte-website)/**/*.jsx',
@@ -22,21 +23,28 @@ module.exports = {
           path.join(__dirname, 'src/TableOfContentsRenderer'),
         'rsg-components/ComponentsList':
           path.join(__dirname, 'src/ComponentsListRenderer'),
+        'rsg-components/Wrapper':
+          path.join(__dirname, 'src/Wrapper'),
       },
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
       }, {
         test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader',
+        })
       }, {
         test: /\.woff2?$|\.ttf$|\.eot$|\.svg$|\.jpg$|\.png$/,
-        loader: 'file-loader',
+        use: 'file-loader',
       }],
-    }
+    },
+    plugins: [
+      new ExtractTextPlugin('styles.css'),
+    ],
   },
 };
-

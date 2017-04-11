@@ -6,6 +6,7 @@
     "build": "styleguidist build"
   },
   "dependencies": {
+    "react-frame-component": "^1.0.3",
     "reactjs-admin-lte": "0.4.0"
   }
 }
