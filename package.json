@@ -43,8 +43,7 @@
     "collectCoverageFrom": [
       "**/*.{ts,tsx}",
       "!**/node_modules/**",
-      "!**/vendor/**",
-      "!**/*.stories.jsx"
+      "!**/vendor/**"
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/node_modules",
