@@ -3,6 +3,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   components: '../!(react-admin-lte-website)/**/*.jsx',
+  getComponentPathLine(componentPath) {
+    const name = path.basename(componentPath, '.jsx');
+    return `import { ${name} } from 'reactjs-admin-lte';`;
+  },
   ignore: [
     '**/*.test.jsx',
     '**/*.stories.jsx',
