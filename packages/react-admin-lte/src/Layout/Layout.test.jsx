@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import Layout from './Layout';
-import MainSidebar from './MainSidebar';
+import MainSidebar from '../MainSidebar';
 
 test('Layout sets body classes on mount', () => {
   mount(<Layout skin="blue" />);

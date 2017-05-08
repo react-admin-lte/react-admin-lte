@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
-import Label from './Label';
+import Label from '../Label';
 
 const propTypes = {
   background: Label.propTypes.background,

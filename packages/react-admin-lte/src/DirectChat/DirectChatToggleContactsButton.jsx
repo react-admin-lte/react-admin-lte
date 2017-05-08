@@ -5,7 +5,7 @@ import {
   OverlayTrigger,
   Tooltip,
 } from 'react-bootstrap';
-import BoxToolButton from './BoxToolButton';
+import BoxToolButton from '../Box/BoxToolButton';
 
 const contextTypes = {
   $adminlte_directchat: PropTypes.shape({

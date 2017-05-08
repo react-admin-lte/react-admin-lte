@@ -9,8 +9,8 @@ import {
   OverlayTrigger,
   Tooltip,
 } from 'react-bootstrap';
-import Badge from './Badge';
-import Box from './Box';
+import Badge from '../Badge';
+import Box from '../Box';
 import DirectChatToggleContactsButton from './DirectChatToggleContactsButton';
 import DirectChatMessageList from './DirectChatMessageList';
 import DirectChatMessage from './DirectChatMessage';

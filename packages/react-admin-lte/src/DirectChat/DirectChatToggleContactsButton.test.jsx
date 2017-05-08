@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BoxToolButton from './BoxToolButton';
+import BoxToolButton from '../Box/BoxToolButton';
 import DirectChatToggleContactsButton from './DirectChatToggleContactsButton';
 
 test('DirectChatToggleContactsButton notifies DirectChat when clicked', () => {
