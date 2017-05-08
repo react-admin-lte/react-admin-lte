@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { mount } from 'enzyme';
 import Layout from './Layout';
@@ -15,7 +16,7 @@ test('Layout notified when collapsed value changes', () => {
     }
 
     static propTypes = {
-      children: React.PropTypes.node,
+      children: PropTypes.node,
     }
 
     static childContextTypes = Layout.childContextTypes;

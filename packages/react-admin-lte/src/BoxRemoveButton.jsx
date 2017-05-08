@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import BoxToolButton from './BoxToolButton';
 
 const contextTypes = {
-  $adminlte_box: React.PropTypes.shape({
-    onRemove: React.PropTypes.func,
+  $adminlte_box: PropTypes.shape({
+    onRemove: PropTypes.func,
   }),
 };
 

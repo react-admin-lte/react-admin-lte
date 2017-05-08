@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import {
     Col,
@@ -8,11 +9,11 @@ import {
 import DataTableHeaderCell from './DataTableHeaderCell';
 
 const propTypes = {
-  currentPage: React.PropTypes.number,
-  pageSize: React.PropTypes.number.isRequired,
-  totalItems: React.PropTypes.number.isRequired,
-  onPageClick: React.PropTypes.func.isRequired,
-  children: React.PropTypes.node,
+  currentPage: PropTypes.number,
+  pageSize: PropTypes.number.isRequired,
+  totalItems: PropTypes.number.isRequired,
+  onPageClick: PropTypes.func.isRequired,
+  children: PropTypes.node,
 };
 
 const defaultProps = {

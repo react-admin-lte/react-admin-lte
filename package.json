@@ -60,5 +60,8 @@
       "<rootDir>/packages/.*/lib/",
       "<rootDir>/scripts"
     ]
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8"
   }
 }

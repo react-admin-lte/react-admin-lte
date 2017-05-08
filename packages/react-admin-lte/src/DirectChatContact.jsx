@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  onClick: React.PropTypes.func,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 const DirectChatContact = ({

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import MainHeaderLogo from './MainHeaderLogo';
@@ -5,7 +6,7 @@ import MainHeaderSidebarToggle from './MainHeaderSidebarToggle';
 import MainHeaderNavbar from './MainHeaderNavbar';
 
 const propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 const MainHeader = ({ children }) => (

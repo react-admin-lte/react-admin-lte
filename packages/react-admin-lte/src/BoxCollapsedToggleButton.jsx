@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import BoxToolButton from './BoxToolButton';
 
 const contextTypes = {
-  $adminlte_box: React.PropTypes.shape({
-    collapsed: React.PropTypes.bool,
-    onCollapseToggle: React.PropTypes.func,
+  $adminlte_box: PropTypes.shape({
+    collapsed: PropTypes.bool,
+    onCollapseToggle: PropTypes.func,
   }),
 };
 

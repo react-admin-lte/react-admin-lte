@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import Layout from './Layout';
@@ -54,12 +55,12 @@ class SetCollapse extends React.Component {
   }
 
   static propTypes = {
-    collapsed: React.PropTypes.bool.isRequired,
+    collapsed: PropTypes.bool.isRequired,
   }
 
   static contextTypes = {
-    $adminlte_layout: React.PropTypes.shape({
-      setMainSidebarCollapsed: React.PropTypes.func,
+    $adminlte_layout: PropTypes.shape({
+      setMainSidebarCollapsed: PropTypes.func,
     }),
   };
 
@@ -86,8 +87,8 @@ class ToggleCollapse extends React.Component {
   }
 
   static contextTypes = {
-    $adminlte_layout: React.PropTypes.shape({
-      toggleMainSidebar: React.PropTypes.func,
+    $adminlte_layout: PropTypes.shape({
+      toggleMainSidebar: PropTypes.func,
     }),
   }
 

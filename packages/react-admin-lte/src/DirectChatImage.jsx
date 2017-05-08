@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  className: React.PropTypes.string,
-  src: React.PropTypes.string,
-  alt: React.PropTypes.string,
+  className: PropTypes.string,
+  src: PropTypes.string,
+  alt: PropTypes.string,
 };
 
 const DirectChatImage = ({

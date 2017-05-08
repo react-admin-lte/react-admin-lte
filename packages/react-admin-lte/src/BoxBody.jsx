@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  noPadding: React.PropTypes.bool,
-  className: React.PropTypes.string,
-  children: React.PropTypes.node,
+  noPadding: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 const defaultProps = {

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
@@ -5,9 +6,9 @@ import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 addStyle(Button, 'box-tool');
 
 const propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  onClick: React.PropTypes.func,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 const BoxToolButton = ({

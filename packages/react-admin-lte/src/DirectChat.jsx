@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 import {
@@ -21,17 +22,17 @@ import DirectChatContactImage from './DirectChatContactImage';
 import DirectChatContactInfo from './DirectChatContactInfo';
 
 const propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  messageNumber: React.PropTypes.number,
-  style: React.PropTypes.oneOf(['primary', 'success', 'warning', 'danger']).isRequired,
-  onSubmitMessage: React.PropTypes.func,
-  title: React.PropTypes.node,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  messageNumber: PropTypes.number,
+  style: PropTypes.oneOf(['primary', 'success', 'warning', 'danger']).isRequired,
+  onSubmitMessage: PropTypes.func,
+  title: PropTypes.node,
 };
 
 const childContextTypes = {
-  $adminlte_directchat: React.PropTypes.shape({
-    toggleContacts: React.PropTypes.func,
+  $adminlte_directchat: PropTypes.shape({
+    toggleContacts: PropTypes.func,
   }),
 };
 

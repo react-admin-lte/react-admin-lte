@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  className: React.PropTypes.string,
-  children: React.PropTypes.node,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 const ContentHeader = ({

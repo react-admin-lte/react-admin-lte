@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import MainSidebarMenuHeader from './MainSidebarMenuHeader';
 import MainSidebarMenuItem from './MainSidebarMenuItem';
 
 const propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 const MainSidebarMenu = ({ children }) => (

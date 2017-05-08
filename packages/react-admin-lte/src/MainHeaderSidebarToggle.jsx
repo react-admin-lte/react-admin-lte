@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const contextTypes = {
-  $adminlte_layout: React.PropTypes.shape({
-    toggleMainSidebar: React.PropTypes.func,
+  $adminlte_layout: PropTypes.shape({
+    toggleMainSidebar: PropTypes.func,
   }),
 };
 

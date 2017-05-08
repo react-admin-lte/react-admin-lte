@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { mount } from 'enzyme';
 import Box from './Box';
@@ -15,8 +16,8 @@ class ToggleCollapse extends React.Component {
   }
 
   static contextTypes = {
-    $adminlte_box: React.PropTypes.shape({
-      onCollapseToggle: React.PropTypes.func,
+    $adminlte_box: PropTypes.shape({
+      onCollapseToggle: PropTypes.func,
     }),
   }
 
@@ -48,8 +49,8 @@ class Remove extends React.Component {
   }
 
   static contextTypes = {
-    $adminlte_box: React.PropTypes.shape({
-      onRemove: React.PropTypes.func,
+    $adminlte_box: PropTypes.shape({
+      onRemove: PropTypes.func,
     }),
   }
 

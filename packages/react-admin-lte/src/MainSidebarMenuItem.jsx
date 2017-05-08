@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import classNames from 'classnames';
@@ -5,12 +6,12 @@ import MainSidebarMenuItemAddonList from './MainSidebarMenuItemAddonList';
 import MainSidebarMenuItemAddon from './MainSidebarMenuItemAddon';
 
 const propTypes = {
-  active: React.PropTypes.bool,
-  children: React.PropTypes.node,
-  href: React.PropTypes.string,
-  iconName: React.PropTypes.string,
-  onClick: React.PropTypes.func,
-  title: React.PropTypes.string,
+  active: PropTypes.bool,
+  children: PropTypes.node,
+  href: PropTypes.string,
+  iconName: PropTypes.string,
+  onClick: PropTypes.func,
+  title: PropTypes.string,
 };
 
 const MainSidebarMenuItem = ({

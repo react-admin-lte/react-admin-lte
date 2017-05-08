@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  sorted: React.PropTypes.oneOf(['asc', 'desc']),
-  children: React.PropTypes.node,
-  onClick: React.PropTypes.func.isRequired,
+  sorted: PropTypes.oneOf(['asc', 'desc']),
+  children: PropTypes.node,
+  onClick: PropTypes.func.isRequired,
 };
 
 const defaultProps = {

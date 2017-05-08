@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  image: React.PropTypes.node,
-  username: React.PropTypes.string,
-  href: React.PropTypes.string,
-  description: React.PropTypes.string,
-  className: React.PropTypes.string,
+  image: PropTypes.node,
+  username: PropTypes.string,
+  href: PropTypes.string,
+  description: PropTypes.string,
+  className: PropTypes.string,
 };
 
 const BoxUserBlock = ({

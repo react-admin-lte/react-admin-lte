@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import {
@@ -7,8 +8,8 @@ import {
 import BoxToolButton from './BoxToolButton';
 
 const contextTypes = {
-  $adminlte_directchat: React.PropTypes.shape({
-    toggleContacts: React.PropTypes.func,
+  $adminlte_directchat: PropTypes.shape({
+    toggleContacts: PropTypes.func,
   }),
 };
 

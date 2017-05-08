@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import MainSidebarUserPanelImage from './MainSidebarUserPanelImage';
 import MainSidebarUserPanelInfo from './MainSidebarUserPanelInfo';
 
 const propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 const MainSidebarUserPanel = ({

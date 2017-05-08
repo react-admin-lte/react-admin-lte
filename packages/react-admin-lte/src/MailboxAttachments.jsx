@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import MailboxAttachment from './MailboxAttachment';
 
 const propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 const MailboxAttachments = ({ children }) => (

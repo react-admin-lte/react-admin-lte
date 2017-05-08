@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 import FontAwesome from 'react-fontawesome';
@@ -11,13 +12,13 @@ import BoxBody from './BoxBody';
 import BoxFooter from './BoxFooter';
 
 const propTypes = {
-  collapsed: React.PropTypes.bool,
-  style: React.PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
-  solid: React.PropTypes.bool,
-  loading: React.PropTypes.bool,
-  className: React.PropTypes.string,
-  children: React.PropTypes.node,
-  onCollapseToggle: React.PropTypes.func,
+  collapsed: PropTypes.bool,
+  style: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
+  solid: PropTypes.bool,
+  loading: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
+  onCollapseToggle: PropTypes.func,
 };
 
 const defaultProps = {
@@ -27,10 +28,10 @@ const defaultProps = {
 };
 
 const childContextTypes = {
-  $adminlte_box: React.PropTypes.shape({
-    collapsed: React.PropTypes.bool,
-    onCollapseToggle: React.PropTypes.func,
-    onRemove: React.PropTypes.func,
+  $adminlte_box: PropTypes.shape({
+    collapsed: PropTypes.bool,
+    onCollapseToggle: PropTypes.func,
+    onRemove: PropTypes.func,
   }),
 };
 

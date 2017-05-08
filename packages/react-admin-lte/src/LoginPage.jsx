@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import LoginLogo from './LoginLogo';
 import LoginBody from './LoginBody';
 
 const propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 const LoginPage = ({ children }) => (

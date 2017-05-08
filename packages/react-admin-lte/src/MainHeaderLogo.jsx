@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 import MainHeaderMiniLogo from './MainHeaderMiniLogo';
 import MainHeaderLargeLogo from './MainHeaderLargeLogo';
 
 const propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  href: React.PropTypes.string,
-  onClick: React.PropTypes.func,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  href: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 const MainHeaderLogo = ({

@@ -1,14 +1,15 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import { Button } from 'react-bootstrap';
 
 const propTypes = {
-  name: React.PropTypes.node,
-  size: React.PropTypes.string,
-  img: React.PropTypes.node,
-  icon: React.PropTypes.string, // font awesome icon name
-  onNameClick: React.PropTypes.func,
-  onDownloadClick: React.PropTypes.func,
+  name: PropTypes.node,
+  size: PropTypes.string,
+  img: PropTypes.node,
+  icon: PropTypes.string, // font awesome icon name
+  onNameClick: PropTypes.func,
+  onDownloadClick: PropTypes.func,
 };
 
 const MailboxAttachment = ({

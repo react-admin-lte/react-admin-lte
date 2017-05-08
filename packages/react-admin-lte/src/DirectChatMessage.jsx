@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  name: React.PropTypes.string,
-  right: React.PropTypes.bool,
-  timestamp: React.PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  name: PropTypes.string,
+  right: PropTypes.bool,
+  timestamp: PropTypes.string,
 };
 
 const defaultProps = {

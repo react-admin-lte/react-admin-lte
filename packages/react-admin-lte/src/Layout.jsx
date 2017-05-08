@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-  boxed: React.PropTypes.bool,
-  children: React.PropTypes.node,
-  className: React.PropTypes.string,
-  skin: React.PropTypes.oneOf([
+  boxed: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  skin: PropTypes.oneOf([
     'blue', 'black', 'purple', 'green', 'red', 'yellow', 'blue-light', 'black-light',
     'purple-light', 'green-light', 'red-light', 'yellow-light',
   ]).isRequired,
@@ -16,13 +17,13 @@ const defaultProps = {
 };
 
 const childContextTypes = {
-  $adminlte_layout: React.PropTypes.shape({
-    toggleMainSidebar: React.PropTypes.func,
+  $adminlte_layout: PropTypes.shape({
+    toggleMainSidebar: PropTypes.func,
   }),
 };
 
 const contextTypes = {
-  document: React.PropTypes.object,
+  document: PropTypes.object,
 };
 
 class Layout extends React.Component {

@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import MainSidebarUserPanel from './MainSidebarUserPanel';
 import MainSidebarMenu from './MainSidebarMenu';
 
 const propTypes = {
-  children: React.PropTypes.node,
-  collapsed: React.PropTypes.bool,
+  children: PropTypes.node,
+  collapsed: PropTypes.bool,
 };
 
 const defaultProps = {
@@ -13,8 +14,8 @@ const defaultProps = {
 };
 
 const contextTypes = {
-  $adminlte_layout: React.PropTypes.shape({
-    setMainSidebarCollapsed: React.PropTypes.func,
+  $adminlte_layout: PropTypes.shape({
+    setMainSidebarCollapsed: PropTypes.func,
   }),
 };
 

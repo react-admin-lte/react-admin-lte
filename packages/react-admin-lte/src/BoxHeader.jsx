@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
 import BoxUserBlock from './BoxUserBlock';
 
 const propTypes = {
-  border: React.PropTypes.bool,
-  className: React.PropTypes.string,
-  children: React.PropTypes.node,
+  border: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 const defaultProps = {
