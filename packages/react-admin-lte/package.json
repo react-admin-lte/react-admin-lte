@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "babel --ignore *.test.js -d lib/ src/",
+    "build": "tsc",
     "prepublish": "yarn run build"
   },
   "main": "lib/index.js",
@@ -19,6 +19,13 @@
     "react-fontawesome": ">=1.1.0"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "@types/classnames": "^0.0.32",
+    "@types/prop-types": "^15.5.1",
+    "@types/react": "^15.0.24",
+    "@types/react-bootstrap": "^0.0.49",
+    "@types/react-fontawesome": "^1.5.0",
+    "@types/react-test-renderer": "^15.5.0",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8"
   }
 }

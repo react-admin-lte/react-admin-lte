@@ -2,13 +2,15 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  components: '../!(react-admin-lte-website)/**/*.jsx',
+  components: '../!(react-admin-lte-website)/**/Box.tsx',
+//  resolver: require('react-docgen').resolver.findAllComponentDefinitions,
+  propsParser: require('react-docgen-typescript').parse,
   getComponentPathLine(componentPath) {
-    const name = path.basename(componentPath, '.jsx');
+    const name = path.basename(componentPath, '.tsx');
     return `import { ${name} } from 'reactjs-admin-lte';`;
   },
   ignore: [
-    '**/*.test.jsx',
+    '**/*.test.tsx',
   ],
   require: [
     'babel-polyfill',
@@ -29,12 +31,22 @@ module.exports = {
         'rsg-components/Wrapper':
           path.join(__dirname, 'src/Wrapper'),
       },
+      extensions: ['.ts', '.tsx']
     },
     module: {
       rules: [{
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: [{
+          loader: 'awesome-typescript-loader',
+          options: {
+            configFileName: '../react-admin-lte/tsconfig.json'
+          }
+        }]
+      }, {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: 'babel-loader',
+        use: 'babel-loader'
       }, {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({

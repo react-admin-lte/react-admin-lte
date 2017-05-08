@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders background color 1`] = `
+<span
+  className="bg-red badge"
+>
+  18
+</span>
+`;
+
+exports[`Renders default 1`] = `
+<span
+  className="badge"
+>
+  14
+</span>
+`;
