@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders collapsed 1`] = `
+<div
+  className="box collapsed-box"
+/>
+`;
+
+exports[`Renders default 1`] = `
+<div
+  className="box"
+/>
+`;
+
+exports[`Renders loading 1`] = `
+<div
+  className="box"
+>
+  <div
+    className="overlay"
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-refresh fa-spin"
+    />
+  </div>
+</div>
+`;
+
+exports[`Renders solid 1`] = `
+<div
+  className="box box-solid"
+/>
+`;
+
+exports[`Renders with style 1`] = `
+<div
+  className="box box-primary"
+/>
+`;

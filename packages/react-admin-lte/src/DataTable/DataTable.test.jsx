@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Pagination } from 'react-bootstrap';
+import renderer from 'react-test-renderer';
 import DataTable from './DataTable';
 
 test('calls onPageClick', () => {
@@ -12,4 +13,74 @@ test('calls onPageClick', () => {
   />);
   wrapper.find(Pagination).simulate('select');
   expect(called).toEqual(true);
+});
+
+test('Renders no items', () => {
+  const component = renderer.create(
+    <DataTable
+      totalItems={0}
+      currentPage={1}
+      pageSize={10}
+    >
+      <tbody><tr><td>The goods</td></tr></tbody>
+    </DataTable>
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders first page', () => {
+  const component = renderer.create(
+    <DataTable
+      totalItems={40}
+      currentPage={1}
+      pageSize={10}
+    >
+      <tbody><tr><td>The goods</td></tr></tbody>
+    </DataTable>
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders intermediary page', () => {
+  const component = renderer.create(
+    <DataTable
+      totalItems={40}
+      currentPage={2}
+      pageSize={10}
+    >
+      <tbody><tr><td>The goods</td></tr></tbody>
+    </DataTable>
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders total items less than page count', () => {
+  const component = renderer.create(
+    <DataTable
+      totalItems={33}
+      currentPage={4}
+      pageSize={10}
+    >
+      <tbody><tr><td>The goods</td></tr></tbody>
+    </DataTable>
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders total items equal to page count', () => {
+  const component = renderer.create(
+    <DataTable
+      totalItems={40}
+      currentPage={4}
+      pageSize={10}
+    >
+      <tbody><tr><td>The goods</td></tr></tbody>
+    </DataTable>
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
 });

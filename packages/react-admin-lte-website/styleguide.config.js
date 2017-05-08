@@ -9,7 +9,6 @@ module.exports = {
   },
   ignore: [
     '**/*.test.jsx',
-    '**/*.stories.jsx',
   ],
   require: [
     'babel-polyfill',

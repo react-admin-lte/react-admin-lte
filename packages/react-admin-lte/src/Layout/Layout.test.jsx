@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { mount, shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import Layout from './Layout';
 import MainSidebar from '../MainSidebar';
 
@@ -106,4 +107,20 @@ test('Expands sidebar on toggle', () => {
   document.body.classList.add('sidebar-collapse');
   mount(<Layout skin="blue"><ToggleCollapse /></Layout>);
   expect(document.body.classList.contains('sidebar-collapse')).toEqual(false);
+});
+
+test('Renders fixed', () => {
+  const component = renderer.create(
+    <Layout skin="blue" />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders boxed', () => {
+  const component = renderer.create(
+    <Layout boxed skin="blue" />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
 });

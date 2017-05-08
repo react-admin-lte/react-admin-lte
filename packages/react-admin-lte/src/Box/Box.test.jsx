@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 import Box from './Box';
 
 class ToggleCollapse extends React.Component {
@@ -62,4 +63,44 @@ class Remove extends React.Component {
 test('Render null when removed', () => {
   const wrapper = mount(<Box><Remove /></Box>);
   expect(wrapper.html()).toEqual(null);
+});
+
+test('Renders default', () => {
+  const component = renderer.create(
+    <Box />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders with style', () => {
+  const component = renderer.create(
+    <Box style="primary" />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders solid', () => {
+  const component = renderer.create(
+    <Box solid />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders loading', () => {
+  const component = renderer.create(
+    <Box loading />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders collapsed', () => {
+  const component = renderer.create(
+    <Box collapsed />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
 });

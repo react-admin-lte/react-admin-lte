@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders default 1`] = `
+<span
+  className="label label-default"
+>
+  old
+</span>
+`;
+
+exports[`Renders with background color 1`] = `
+<span
+  className="label bg-green label bg-green-default"
+>
+  old
+</span>
+`;

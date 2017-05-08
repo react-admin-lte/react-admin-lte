@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders ascending 1`] = `
+<th
+  className="sorting_asc"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Renders default 1`] = `
+<th
+  className="sorting"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Renders descending 1`] = `
+<th
+  className="sorting_desc"
+  onClick={[Function]}
+/>
+`;

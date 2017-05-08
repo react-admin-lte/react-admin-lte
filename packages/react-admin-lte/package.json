@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "babel --ignore *.stories.js,*.test.js -d lib/ src/",
+    "build": "babel --ignore *.test.js -d lib/ src/",
     "prepublish": "yarn run build"
   },
   "main": "lib/index.js",

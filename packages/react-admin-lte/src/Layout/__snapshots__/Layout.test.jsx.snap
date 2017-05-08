@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders boxed 1`] = `
+<div
+  className="wrapper"
+/>
+`;
+
+exports[`Renders fixed 1`] = `
+<div
+  className="wrapper"
+/>
+`;
