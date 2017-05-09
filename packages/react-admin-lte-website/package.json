@@ -1,13 +1,13 @@
 {
   "private": true,
   "name": "react-admin-lte-website",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "build": "styleguidist build"
   },
   "dependencies": {
     "react-frame-component": "^1.0.3",
-    "reactjs-admin-lte": "^0.5.0"
+    "reactjs-admin-lte": "^0.5.1"
   },
   "devDependencies": {
     "admin-lte": "^2.3.11",
