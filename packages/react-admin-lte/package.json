@@ -53,6 +53,9 @@
       "tsx",
       "js",
       "json"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/lib/"
     ]
   }
 }
