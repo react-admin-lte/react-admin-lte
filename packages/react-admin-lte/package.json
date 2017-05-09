@@ -13,6 +13,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "peerDependencies": {
     "react": ">=0.14.0",
     "react-bootstrap": ">=0.30.0",
