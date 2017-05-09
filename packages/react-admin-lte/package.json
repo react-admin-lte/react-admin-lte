@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "prepublish": "yarn run build"
+    "prepublish": "yarn run build",
+    "test": "node scripts/test.js --env=jsdom"
   },
   "main": "lib/index.js",
   "peerDependencies": {
@@ -27,5 +28,31 @@
     "@types/react-test-renderer": "^15.5.0",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.0",
+    "@types/jest": "^19.2.3",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.0",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-fontawesome": "^1.6.1",
+    "react-test-renderer": "^15.5.4",
+    "ts-jest": "^20.0.2",
+    "typescript": "^2.3.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }
