@@ -1,7 +1,7 @@
 Sidebar
 =======
 
-`import { Sidebar } from 'reactjs-admin-lte';`
+`import { MainSidebar } from 'reactjs-admin-lte';`
 
 Here is an example of the [sidebar component][sidebar-component].
 
@@ -16,7 +16,7 @@ Here is an example of the [sidebar component][sidebar-component].
 ---
 
 ## MainSidebar
-`<MaineSidebar>` - The [main sidebar component][sidebar-component]. Goes on the left-hand side of the screen.
+`<MainSidebar>` - The [main sidebar component][sidebar-component]. Goes on the left-hand side of the screen.
 
 #### Props
  - __children__ (node) - What you want to put in the sidebar.
