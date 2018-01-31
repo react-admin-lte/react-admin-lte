@@ -6,6 +6,12 @@ exports[`Renders boxed 1`] = `
 />
 `;
 
+exports[`Renders default 1`] = `
+<div
+  className="wrapper"
+/>
+`;
+
 exports[`Renders fixed 1`] = `
 <div
   className="wrapper"

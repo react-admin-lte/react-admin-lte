@@ -17,14 +17,21 @@ test('Layout sets boxed class on body', () => {
   expect(document.body.classList.contains('layout-boxed')).toEqual(true);
 });
 
+test('Layout sets fixed class on body', () => {
+  mount(<Layout skin="blue" fixed />);
+
+  expect(document.body.classList.contains('fixed')).toEqual(true);
+});
+
 test('Layout sets body classes on receiving props', () => {
   const wrapper = mount(<Layout skin="blue" boxed />);
 
-  wrapper.setProps({ skin: 'red', boxed: false });
+  wrapper.setProps({ skin: 'red', boxed: false, fixed: false });
 
   expect(document.body.classList.contains('skin-blue')).toEqual(false);
   expect(document.body.classList.contains('skin-red')).toEqual(true);
   expect(document.body.classList.contains('layout-boxed')).toEqual(false);
+  expect(document.body.classList.contains('fixed')).toEqual(false);
 });
 
 test('Layout keeps same skin on receiving props', () => {
@@ -36,7 +43,7 @@ test('Layout keeps same skin on receiving props', () => {
 });
 
 test('Layout removes body classes on unmount', () => {
-  const wrapper = mount(<Layout skin="blue" boxed />);
+  const wrapper = mount(<Layout skin="blue" boxed fixed />);
 
   document.body.classList.add('sidebar-collapse');
 
@@ -46,6 +53,7 @@ test('Layout removes body classes on unmount', () => {
   expect(document.body.classList.contains('sidebar-collapse')).toEqual(false);
   expect(document.body.classList.contains('skin-blue')).toEqual(false);
   expect(document.body.classList.contains('layout-boxed')).toEqual(false);
+  expect(document.body.classList.contains('fixed')).toEqual(false);
 });
 
 interface SetCollapseProps {
@@ -112,7 +120,7 @@ test('Expands sidebar on toggle', () => {
   expect(document.body.classList.contains('sidebar-collapse')).toEqual(false);
 });
 
-test('Renders fixed', () => {
+test('Renders default', () => {
   const component = renderer.create(
     <Layout skin="blue" />
   );
@@ -123,6 +131,14 @@ test('Renders fixed', () => {
 test('Renders boxed', () => {
   const component = renderer.create(
     <Layout boxed skin="blue" />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('Renders fixed', () => {
+  const component = renderer.create(
+    <Layout fixed skin="blue" />
   );
 
   expect(component.toJSON()).toMatchSnapshot();
