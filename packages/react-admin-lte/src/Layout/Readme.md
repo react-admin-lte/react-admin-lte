@@ -1,4 +1,4 @@
-Fixed layout:
+Normal layout:
 
     <Layout skin="blue">
       <MainHeader>
@@ -18,6 +18,23 @@ Fixed layout:
 Boxed layout:
 
     <Layout skin="blue" boxed>
+      <MainHeader>
+        <MainHeader.Logo>
+          <MainHeader.Logo.Large><b>Admin</b>LTE</MainHeader.Logo.Large>
+        </MainHeader.Logo>
+        <MainHeader.Navbar>
+          <MainHeader.SidebarToggle />
+        </MainHeader.Navbar>
+      </MainHeader>
+      <MainSidebar />
+      <Content>
+        <Content.Body>Here i am</Content.Body>
+      </Content>
+    </Layout>
+
+Fixed layout:
+
+    <Layout skin="blue" fixed>
       <MainHeader>
         <MainHeader.Logo>
           <MainHeader.Logo.Large><b>Admin</b>LTE</MainHeader.Logo.Large>

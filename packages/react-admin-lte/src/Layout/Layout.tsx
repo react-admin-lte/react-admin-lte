@@ -4,6 +4,7 @@ import * as classNames from 'classnames';
 
 export interface Props {
   boxed?: boolean;
+  fixed?: boolean;
   className?: string;
   skin: 'blue' | 'black' | 'purple' | 'green' | 'red' | 'yellow' | 'blue-light'
     | 'black-light' | 'purple-light' | 'green-light' | 'red-light' | 'yellow-light';
@@ -15,6 +16,7 @@ export interface State {
 
 const propTypes = {
   boxed: PropTypes.bool,
+  fixed: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   skin: PropTypes.oneOf([
@@ -25,6 +27,7 @@ const propTypes = {
 
 const defaultProps = {
   boxed: false,
+  fixed: false,
 };
 
 const childContextTypes = {
@@ -57,6 +60,9 @@ class Layout extends React.Component<Props, State> {
     if (this.props.boxed) {
       this.state.document.body.classList.toggle('layout-boxed', true);
     }
+    if (this.props.fixed) {
+      this.state.document.body.classList.toggle('fixed', true);
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -66,12 +72,14 @@ class Layout extends React.Component<Props, State> {
     }
 
     this.state.document.body.classList.toggle('layout-boxed', nextProps.boxed);
+    this.state.document.body.classList.toggle('fixed', nextProps.fixed);
   }
 
   componentWillUnmount() {
     this.state.document.body.classList.toggle('sidebar-mini', false);
     this.state.document.body.classList.toggle(`skin-${this.props.skin}`, false);
     this.state.document.body.classList.toggle('layout-boxed', false);
+    this.state.document.body.classList.toggle('fixed', false);
     this.state.document.body.classList.toggle('sidebar-collapse', false);
   }
 
