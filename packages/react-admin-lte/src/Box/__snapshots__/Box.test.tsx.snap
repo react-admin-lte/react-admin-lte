@@ -27,6 +27,21 @@ exports[`Renders loading 1`] = `
 </div>
 `;
 
+exports[`Renders loading with "spinner" icon 1`] = `
+<div
+  className="box"
+>
+  <div
+    className="overlay"
+  >
+    <span
+      aria-hidden={true}
+      className="fa fa-spinner fa-spin"
+    />
+  </div>
+</div>
+`;
+
 exports[`Renders solid 1`] = `
 <div
   className="box box-solid"

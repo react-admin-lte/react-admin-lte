@@ -14,9 +14,10 @@ import BoxFooter from './BoxFooter';
 
 export interface Props {
   collapsed?: boolean;
-  style?: 'default' | 'primary' | 'success' | 'warning' | 'danger';
+  style?: 'default' | 'primary' | 'success' | 'warning' | 'danger' | 'widget';
   solid?: boolean;
   loading?: boolean;
+  spinner?: 'circle-o-notch' | 'cog' | 'gear' | 'refresh' | 'spinner';
   className?: string;
 };
 
@@ -27,9 +28,10 @@ export interface State {
 
 const propTypes = {
   collapsed: PropTypes.bool,
-  style: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger']),
+  style: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger', 'widget']),
   solid: PropTypes.bool,
   loading: PropTypes.bool,
+  spinner: PropTypes.oneOf(['circle-o-notch', 'cog', 'gear', 'refresh', 'spinner']),
   className: PropTypes.string,
   children: PropTypes.node,
   onCollapseToggle: PropTypes.func,
@@ -38,6 +40,7 @@ const propTypes = {
 const defaultProps = {
   collapsed: false,
   loading: false,
+  spinner: 'refresh',
   solid: false,
 };
 
@@ -99,6 +102,7 @@ class Box extends Component<Props, State> {
       style,
       solid,
       loading,
+      spinner,
     } = this.props;
 
     const classes = {
@@ -117,14 +121,14 @@ class Box extends Component<Props, State> {
       classes['box-solid'] = true;
     }
 
-    const spinner = loading
-      ? <div className="overlay"><FontAwesome name="refresh" spin /></div>
+    const overlay = loading
+      ? <div className="overlay"><FontAwesome name={`${spinner}`} spin /></div>
       : null;
 
     return (
       <div className={classNames(className, classes)}>
         {children}
-        {spinner}
+        {overlay}
       </div>
     );
   }

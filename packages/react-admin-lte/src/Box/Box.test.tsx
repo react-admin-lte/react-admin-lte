@@ -105,6 +105,14 @@ test('Renders loading', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('Renders loading with "spinner" icon', () => {
+  const component = renderer.create(
+    <Box loading spinner="spinner" />
+  );
+
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('Renders collapsed', () => {
   const component = renderer.create(
     <Box collapsed />
