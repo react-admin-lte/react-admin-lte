@@ -2,11 +2,11 @@ import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import {
     Col,
-    Pagination,
     Row,
     Table,
     SelectCallback,
 } from 'react-bootstrap';
+import { Pagination } from '@react-bootstrap/pagination';
 import DataTableHeaderCell from './DataTableHeaderCell';
 
 export interface Props {

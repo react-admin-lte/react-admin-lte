@@ -23,7 +23,7 @@ const contextTypes = {
   }),
 };
 
-class MainSidebar extends React.Component<Props, void> {
+class MainSidebar extends React.Component<Props, {}> {
   constructor(props, context) {
     super(props, context);
     context.$adminlte_layout.setMainSidebarCollapsed(this.props.collapsed);

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { Pagination } from 'react-bootstrap';
+import { Pagination } from '@react-bootstrap/pagination';
 import * as renderer from 'react-test-renderer';
 import DataTable from './DataTable';
 

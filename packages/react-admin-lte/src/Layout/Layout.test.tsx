@@ -60,7 +60,7 @@ interface SetCollapseProps {
   collapsed: boolean;
 };
 
-class SetCollapse extends React.Component<SetCollapseProps, void> {
+class SetCollapse extends React.Component<SetCollapseProps, {}> {
   constructor(props, context) {
     super(props);
     context.$adminlte_layout.setMainSidebarCollapsed(props.collapsed);
@@ -92,7 +92,7 @@ test('Expands sidebar on set', () => {
   expect(document.body.classList.contains('sidebar-collapse')).toEqual(false);
 });
 
-class ToggleCollapse extends React.Component<{}, void> {
+class ToggleCollapse extends React.Component<{}, {}> {
   constructor(props, context) {
     super(props);
     context.$adminlte_layout.toggleMainSidebar();
