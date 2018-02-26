@@ -78,8 +78,10 @@ class Box extends Component<Props, State> {
       $adminlte_box: {
         collapsed: this.state.collapsed,
         onCollapseToggle: () => {
-          this.setState({
-            collapsed: !this.state.collapsed,
+          this.setState((state) => {
+            return {
+              collapsed: !state.collapsed,
+            };
           });
         },
         onRemove: () => {

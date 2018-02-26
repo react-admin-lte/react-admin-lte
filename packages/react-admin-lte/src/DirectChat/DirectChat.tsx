@@ -77,8 +77,10 @@ class DirectChat extends React.Component<Props, State> {
     return {
       $adminlte_directchat: {
         toggleContacts: () => {
-          this.setState({
-            contactsOpen: !this.state.contactsOpen,
+          this.setState((state) => {
+            return {
+              contactsOpen: !state.contactsOpen,
+            };
           });
         },
       },
