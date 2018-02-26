@@ -34,6 +34,15 @@ Loading:
       <Box.Body>The body of the box</Box.Body>
     </Box>
 
+Loading with spinner icon of choice:
+
+    <Box loading spinner="spinner">
+      <Box.Header>
+        <Box.Title>Loading State</Box.Title>
+      </Box.Header>
+      <Box.Body>The body of the box</Box.Body>
+    </Box>
+
 Bordered header:
 
     <Box>

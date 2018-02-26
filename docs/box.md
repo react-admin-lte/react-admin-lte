@@ -24,13 +24,16 @@ specific containers.
 
 #### Props
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
-  `warning`, or `danger`.
+  `warning`, `danger`, or `widget`.
   
   - __collapsed__ (bool) - If true, the body of the box will be collapsed.
 
   - __solid__ (bool) - If true, the box header will be a solid color.
 
   - __loading__ (bool) - If true, the box will show a spinner instead of its children. Defaults to false.
+
+  - __spinner__ (string) - Changes the loading spinner. One of `circle-o-notch`, `cog`, `gear`, 
+  `refresh`, or `spinner`. Defaults to `refresh`.
 
   - __children__ (node) - What you want to put in the Box.
 
