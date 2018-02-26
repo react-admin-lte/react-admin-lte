@@ -71,7 +71,7 @@ test('Shown on toggle', () => {
 test('Hidden on toggle', () => {
   const wrapper = mount(<DirectChat style="primary"><ToggleContacts /></DirectChat>);
   wrapper.find(ToggleContacts).find('a').simulate('click');
-  expect(wrapper.hasClass('direct-chat-contacts-open')).toEqual(false);
+  expect(wrapper.render().hasClass('direct-chat-contacts-open')).toEqual(false);
 });
 
 test('Renders default', () => {

@@ -33,12 +33,12 @@ class ToggleCollapse extends React.Component<{}, ToggleState> {
 
 test('Collapses on toggle', () => {
   const wrapper = mount(<Box><ToggleCollapse /></Box>);
-  expect(wrapper.hasClass('collapsed-box')).toEqual(true);
+  expect(wrapper.render().hasClass('collapsed-box')).toEqual(true);
 });
 
 test('Expands on toggle', () => {
   const wrapper = mount(<Box collapsed><ToggleCollapse /></Box>);
-  expect(wrapper.hasClass('collapsed-box')).toEqual(false);
+  expect(wrapper.render().hasClass('collapsed-box')).toEqual(false);
 });
 
 interface RemoveState {
