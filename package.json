@@ -19,6 +19,7 @@
     "test": "yarn typescript && yarn test:unit",
     "test:unit": "cross-env NODE_ENV=test jest",
     "test:watch": "yarn test:unit --watch",
+    "test:coverage": "yarn test:unit --coverage",
     "typescript": "tsc -p tsconfig.json"
   },
   "main": "lib/index.js",

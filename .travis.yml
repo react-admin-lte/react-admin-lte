@@ -10,7 +10,7 @@ cache:
   - node_modules
 
 script:
-  - yarn test -- --coverage
+  - yarn test:coverage
 
 after_success:
 - node_modules/.bin/codecov
