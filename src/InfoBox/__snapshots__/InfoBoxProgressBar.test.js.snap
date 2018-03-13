@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with props passed to bar 1`] = `
+<div>
+  <ProgressBar
+    active={false}
+    bsClass="progress-bar"
+    isChild={false}
+    key="bar"
+    max={100}
+    min={0}
+    now={67}
+    srOnly={false}
+    striped={false}
+  />
+  ,
+  <span
+    className="progress-description"
+    key="description"
+  >
+    i made progress
+  </span>
+</div>
+`;

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`passes other props to root 1`] = `
+<div
+  className="info-box bg-red"
+  other="thing"
+>
+  <span
+    className="info-box-icon"
+  >
+    <div />
+  </span>
+  <div
+    className="info-box-content"
+  >
+    <span
+      className="info-box-text"
+    >
+      LIKES
+    </span>
+    <span
+      className="info-box-number"
+    >
+      67
+    </span>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`renders box background 1`] = `
+<div
+  className="info-box bg-red"
+>
+  <span
+    className="info-box-icon"
+  >
+    <div />
+  </span>
+  <div
+    className="info-box-content"
+  >
+    <span
+      className="info-box-text"
+    >
+      LIKES
+    </span>
+    <span
+      className="info-box-number"
+    >
+      67
+    </span>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`renders icon background 1`] = `
+<div
+  className="info-box"
+>
+  <span
+    className="info-box-icon bg-red"
+  >
+    <div />
+  </span>
+  <div
+    className="info-box-content"
+  >
+    <span
+      className="info-box-text"
+    >
+      LIKES
+    </span>
+    <span
+      className="info-box-number"
+    >
+      67
+    </span>
+    <div />
+  </div>
+</div>
+`;
