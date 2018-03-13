@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders boxed 1`] = `
+<div
+  className="layout-boxed best-layout"
+>
+  <div />
+</div>
+`;
+
+exports[`renders collapsed sidebar 1`] = `
+<div
+  className="sidebar-mini best-layout"
+>
+  <div />
+</div>
+`;
+
+exports[`renders empty 1`] = `
+<div
+  className="best-layout"
+>
+  <div />
+</div>
+`;
+
+exports[`renders fixed 1`] = `
+<div
+  className="fixed best-layout"
+>
+  <div />
+</div>
+`;
+
+exports[`renders mini sidebar 1`] = `
+<div
+  className="sidebar-mini best-layout"
+>
+  <div />
+</div>
+`;
+
+exports[`renders top navigation 1`] = `
+<div
+  className="layout-top-nav best-layout"
+>
+  <div />
+</div>
+`;

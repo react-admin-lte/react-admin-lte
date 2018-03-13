@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "yarn run build",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "typescript": "tsc -p tsconfig.json"
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -22,8 +23,10 @@
     "react-fontawesome": ">=1.1.0"
   },
   "dependencies": {
+    "airbnb-prop-types": "^2.8.1",
     "classnames": "^2.2.5",
-    "prop-types": "^15.6.0"
+    "prop-types": "^15.6.0",
+    "warning": "^3.0.0"
   },
   "devDependencies": {
     "@react-bootstrap/pagination": "^1.0.0",
@@ -35,11 +38,15 @@
     "@types/react-bootstrap": "^0.32.4",
     "@types/react-fontawesome": "^1.6.2",
     "@types/react-test-renderer": "^16.0.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "jest": "^22.4.2",
     "react": "^16.2.0",
-    "react-addons-test-utils": "^15.6.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
@@ -48,19 +55,14 @@
     "typescript": "^2.7.2"
   },
   "jest": {
-    "transform": {
-      "^.+\\.tsx?": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ],
+    "testRegex": "(/__tests__/.*|\\.(test))\\.(js)$",
     "testPathIgnorePatterns": [
-      "<rootDir>/lib/"
+      "<rootDir>/lib/",
+      "<rootDir>/scripts"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
