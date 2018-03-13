@@ -1,10 +1,10 @@
 *.swo
 *.swp
 node_modules/
-lib/
 npm-debug.log*
 .DS_Store
 coverage/
 .idea
 lerna-debug.log
 yarn-error.log
+build/

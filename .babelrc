@@ -1,3 +1,28 @@
 {
-  "presets": ["es2015", "react"]
+  "presets": ["./scripts/reactjs-admin-lte-babel-preset", "stage-1", "react"],
+  "env": {
+    "development": {
+      "sourceMaps": "both"
+    },
+    "es": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-dev-warning",
+        "transform-runtime",
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap"
+        }]
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-dev-warning",
+        "transform-runtime",
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap"
+        }]
+      ]
+    }
+  }
 }
