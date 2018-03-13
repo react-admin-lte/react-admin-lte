@@ -79,7 +79,7 @@
       "<rootDir>/lib/",
       "<rootDir>/scripts"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
