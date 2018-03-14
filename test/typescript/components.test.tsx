@@ -6,6 +6,9 @@ import {
   BoxHeader,
   BoxTitle,
   BoxTools,
+  Content,
+  ContentHeader,
+  ContentWrapper,
   InfoBox,
   InfoBoxProgressBar,
   Layout,
@@ -49,6 +52,30 @@ const BoxTitleTest = () => (
 
 const BoxToolsTest = () => (
   <BoxTools><div /></BoxTools>
+);
+
+const ContentTest = () => (
+  <Content
+    component="div"
+  >
+    <div />
+  </Content>
+);
+
+const ContentHeaderTest = () => (
+  <ContentHeader
+    component="div"
+    subtitle="small fries"
+    title="king size"
+  >
+    <div />
+  </ContentHeader>
+);
+
+const ContentWrapperTest = () => (
+  <ContentWrapper>
+    <div />
+  </ContentWrapper>
 );
 
 const InfoBoxTest = () => (

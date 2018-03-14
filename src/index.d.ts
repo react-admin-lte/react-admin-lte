@@ -12,3 +12,8 @@ export {
 } from './Box';
 export { default as Logo } from './Logo';
 export { default as MainFooter } from './MainFooter';
+export {
+  default as Content,
+  ContentHeader,
+  ContentWrapper
+} from './Content';
