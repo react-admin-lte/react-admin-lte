@@ -54,6 +54,7 @@ const BoxTitleTest = () => (
 const BoxToolButtonTest = () => (
   <BoxToolButton
     component="button"
+    href="/asdf"
     type="submit"
   >
     <div />

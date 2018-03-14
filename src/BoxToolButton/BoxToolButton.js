@@ -53,6 +53,11 @@ BoxToolButton.propTypes = {
    */
   component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   /**
+   * The URL to link to when the button is clicked.
+   * If defined, an `a` element will be used as the root node.
+   */
+  href: PropTypes.string,
+  /**
    * @ignore
    */
   type: PropTypes.string
