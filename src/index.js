@@ -1,7 +1,8 @@
 export { default as Layout } from './Layout';
 export { default as Skin } from './Skin';
 export { default as Wrapper } from './Wrapper';
-export { default as InfoBox, InfoBoxProgressBar } from './InfoBox';
+export { default as InfoBox } from './InfoBox';
+export { default as InfoBoxProgressBar } from './InfoBoxProgressBar';
 export { default as Box } from './Box';
 export { default as BoxBody } from './BoxBody';
 export { default as BoxFooter } from './BoxFooter';
