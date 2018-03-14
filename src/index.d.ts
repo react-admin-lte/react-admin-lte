@@ -34,3 +34,8 @@ export { default as LoginBox } from './LoginBox';
 export { default as LoginBoxBody } from './LoginBoxBody';
 export { default as LoginMessage } from './LoginMessage';
 export { default as LoginLogo } from './LoginLogo';
+export { default as RegistrationPage } from './RegistrationPage';
+export { default as RegistrationBox } from './RegistrationBox';
+export { default as RegistrationBoxBody } from './RegistrationBoxBody';
+export { default as RegistrationMessage } from './RegistrationMessage';
+export { default as RegistrationLogo } from './RegistrationLogo';

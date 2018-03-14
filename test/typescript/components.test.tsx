@@ -23,6 +23,11 @@ import {
   Logo,
   MainFooter,
   MainHeader,
+  RegistrationBox,
+  RegistrationBoxBody,
+  RegistrationLogo,
+  RegistrationMessage,
+  RegistrationPage,
   SidebarToggle,
   Skin,
   Wrapper
@@ -173,6 +178,26 @@ const MainHeaderTest = () => (
   <MainHeader component="div">
     <div />
   </MainHeader>
+);
+
+const RegistrationBoxTest = () => (
+  <RegistrationBox><div /></RegistrationBox>
+);
+
+const RegistrationBoxBodyTest = () => (
+  <RegistrationBoxBody><div /></RegistrationBoxBody>
+);
+
+const RegistrationLogoTest = () => (
+  <RegistrationLogo><div /></RegistrationLogo>
+);
+
+const RegistrationMessageTest = () => (
+  <RegistrationMessage component="div">Sign in</RegistrationMessage>
+);
+
+const RegistrationPageTest = () => (
+  <RegistrationPage><div /></RegistrationPage>
 );
 
 const SidebarToggleTest = () => (
