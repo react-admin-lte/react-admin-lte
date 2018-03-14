@@ -5,6 +5,7 @@ import {
   BoxFooter,
   BoxHeader,
   BoxTitle,
+  BoxToolButton,
   BoxTools,
   Content,
   ContentHeader,
@@ -48,6 +49,15 @@ const BoxHeaderTest = () => (
 
 const BoxTitleTest = () => (
   <BoxTitle component="h1"><div /></BoxTitle>
+);
+
+const BoxToolButtonTest = () => (
+  <BoxToolButton
+    component="button"
+    type="submit"
+  >
+    <div />
+  </BoxToolButton>
 );
 
 const BoxToolsTest = () => (

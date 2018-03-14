@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a when href present 1`] = `
+<a
+  className="box btn-box-tool"
+  href="/thegoods"
+>
+  <div />
+</a>
+`;
+
+exports[`renders button type 1`] = `
+<button
+  className="box btn-box-tool"
+  type="submit"
+>
+  <div />
+</button>
+`;
+
+exports[`renders custom component 1`] = `
+<Link
+  className="box btn-box-tool"
+  to="/thegoods"
+>
+  <div />
+</Link>
+`;
+
+exports[`renders default 1`] = `
+<button
+  className="box btn-box-tool"
+  type="button"
+>
+  <div />
+</button>
+`;

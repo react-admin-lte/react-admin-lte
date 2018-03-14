@@ -8,5 +8,7 @@ export { default as BoxHeader } from './BoxHeader';
 export * from './BoxHeader';
 export { default as BoxTitle } from './BoxTitle';
 export * from './BoxTitle';
+export { default as BoxToolButton } from './BoxToolButton';
+export * from './BoxToolButton';
 export { default as BoxTools } from './BoxTools';
 export * from './BoxTools';

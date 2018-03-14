@@ -8,6 +8,7 @@ export {
   BoxFooter,
   BoxHeader,
   BoxTitle,
+  BoxToolButton,
   BoxTools
 } from './Box';
 export { default as Logo } from './Logo';
