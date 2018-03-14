@@ -1,3 +1,13 @@
+export namespace PropTypes {
+  type BackgroundColor = 'red' | 'yellow' | 'aqua' | 'blue' | 'light-blue' |
+    'green' | 'navy' | 'teal' | 'olive' | 'lime' | 'orange' | 'fuchsia' |
+    'purple' | 'maroon' | 'black' | 'red-active' | 'yellow-active' |
+    'aqua-active' | 'blue-active' | 'light-blue-active' | 'green-active' |
+    'navy-active' | 'teal-active' | 'olive-active' | 'lime-active' |
+    'orange-active' | 'fuchsia-active' | 'purple-active' | 'maroon-active' |
+    'black-active';
+}
+
 export { default as Layout } from './Layout';
 export { default as Skin } from './Skin';
 export { default as Wrapper } from './Wrapper';

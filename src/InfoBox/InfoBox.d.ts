@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { PropTypes } from '..';
 
 export interface InfoBoxProps {
-  backgroundColor: 'aqua' | 'green' | 'yellow' | 'red';
+  backgroundColor: PropTypes.BackgroundColor;
   backgroundPlacement: InfoBoxBackgroundPlacement;
   icon: React.ReactNode;
   number: React.ReactNode;

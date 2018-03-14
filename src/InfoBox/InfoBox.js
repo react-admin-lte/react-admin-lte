@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import colorProp from '../utils/colorProp';
 
 const InfoBox = ({
   backgroundColor,
@@ -40,7 +41,7 @@ InfoBox.propTypes = {
   /**
    * Color of background.
    */
-  backgroundColor: PropTypes.oneOf(['aqua', 'green', 'yellow',  'red']).isRequired,
+  backgroundColor: colorProp.isRequired,
   /**
    * Whether the `backgroundColor` should be applied to only the `icon` or the whole `box`.
    */
