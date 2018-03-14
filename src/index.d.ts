@@ -29,3 +29,8 @@ export { default as Content } from './Content';
 export { default as ContentHeader } from './ContentHeader';
 export { default as ContentWrapper } from './ContentWrapper';
 export { default as SidebarToggle } from './SidebarToggle';
+export { default as LoginPage } from './LoginPage';
+export { default as LoginBox } from './LoginBox';
+export { default as LoginBoxBody } from './LoginBoxBody';
+export { default as LoginMessage } from './LoginMessage';
+export { default as LoginLogo } from './LoginLogo';

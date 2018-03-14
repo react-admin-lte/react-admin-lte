@@ -15,6 +15,11 @@ import {
   InfoBoxProgressBar,
   Label,
   Layout,
+  LoginBox,
+  LoginBoxBody,
+  LoginLogo,
+  LoginMessage,
+  LoginPage,
   Logo,
   MainFooter,
   MainHeader,
@@ -116,6 +121,26 @@ const InfoBoxProgressBarTest = () => (
 
 const LabelTest = () => (
   <Label backgroundColor="red">67</Label>
+);
+
+const LoginBoxTest = () => (
+  <LoginBox><div /></LoginBox>
+);
+
+const LoginBoxBodyTest = () => (
+  <LoginBoxBody><div /></LoginBoxBody>
+);
+
+const LoginLogoTest = () => (
+  <LoginLogo><div /></LoginLogo>
+);
+
+const LoginMessageTest = () => (
+  <LoginMessage component="div">Sign in</LoginMessage>
+);
+
+const LoginPageTest = () => (
+  <LoginPage><div /></LoginPage>
 );
 
 const LogoTest = () => (

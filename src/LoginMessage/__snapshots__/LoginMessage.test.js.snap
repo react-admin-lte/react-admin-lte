@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders custom component 1`] = `
+<div
+  className="login-box-msg"
+>
+  Sign in
+</div>
+`;
+
+exports[`renders default 1`] = `
+<p
+  className="login-box-msg"
+>
+  Sign in
+</p>
+`;

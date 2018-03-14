@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="login-box"
+  style={
+    Object {
+      "marginBottom": "0",
+      "marginTop": "0",
+      "paddingBottom": "26.5vh",
+      "paddingTop": "26.5vh",
+    }
+  }
+>
+  <div />
+</div>
+`;
