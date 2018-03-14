@@ -2,19 +2,15 @@ export { default as Layout } from './Layout';
 export { default as Skin } from './Skin';
 export { default as Wrapper } from './Wrapper';
 export { default as InfoBox, InfoBoxProgressBar } from './InfoBox';
-export {
-  default as Box,
-  BoxBody,
-  BoxFooter,
-  BoxHeader,
-  BoxTitle,
-  BoxToolButton,
-  BoxTools
-} from './Box';
+export { default as Box } from './Box';
+export { default as BoxBody } from './BoxBody';
+export { default as BoxFooter } from './BoxFooter';
+export { default as BoxHeader } from './BoxHeader';
+export { default as BoxTitle } from './BoxTitle';
+export { default as BoxToolButton } from './BoxToolButton';
+export { default as BoxTools } from './BoxTools';
 export { default as Logo } from './Logo';
 export { default as MainFooter } from './MainFooter';
-export {
-  default as Content,
-  ContentHeader,
-  ContentWrapper
-} from './Content';
+export { default as Content } from './Content';
+export { default as ContentHeader } from './ContentHeader';
+export { default as ContentWrapper } from './ContentWrapper';
