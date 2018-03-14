@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders default 1`] = `
+<div
+  className="box-body"
+>
+  <div />
+</div>
+`;
+
+exports[`renders default 2`] = `
+<div
+  className="box-body no-padding"
+>
+  <div />
+</div>
+`;

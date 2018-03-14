@@ -1,11 +1,53 @@
 import * as React from 'react';
 import {
+  Box,
+  BoxBody,
+  BoxFooter,
+  BoxHeader,
+  BoxTitle,
+  BoxTools,
   InfoBox,
   InfoBoxProgressBar,
   Layout,
   Skin,
   Wrapper
 } from '../../src';
+
+const BoxTest = () => (
+  <Box
+    collapsed={true}
+    loading={true}
+    loadingIndicator={<div />}
+    solid={true}
+    style="default"
+  >
+    <div />
+  </Box>
+);
+
+const BoxBodyTest = () => (
+  <BoxBody
+    noPadding={true}
+  >
+    <div />
+  </BoxBody>
+);
+
+const BoxFooterTest = () => (
+  <BoxFooter><div /></BoxFooter>
+);
+
+const BoxHeaderTest = () => (
+  <BoxHeader border={true}><div /></BoxHeader>
+);
+
+const BoxTitleTest = () => (
+  <BoxTitle component="h1"><div /></BoxTitle>
+);
+
+const BoxToolsTest = () => (
+  <BoxTools><div /></BoxTools>
+);
 
 const InfoBoxTest = () => (
   <InfoBox

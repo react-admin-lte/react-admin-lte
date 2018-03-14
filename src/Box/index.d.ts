@@ -1,0 +1,12 @@
+export { default } from './Box';
+export * from './Box';
+export { default as BoxBody } from './BoxBody';
+export * from './BoxBody';
+export { default as BoxFooter } from './BoxFooter';
+export * from './BoxFooter';
+export { default as BoxHeader } from './BoxHeader';
+export * from './BoxHeader';
+export { default as BoxTitle } from './BoxTitle';
+export * from './BoxTitle';
+export { default as BoxTools } from './BoxTools';
+export * from './BoxTools';

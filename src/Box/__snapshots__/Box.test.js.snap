@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders collapsed 1`] = `
+<div
+  className="box collapsed-box"
+>
+  <div />
+</div>
+`;
+
+exports[`renders default 1`] = `
+<div
+  className="box"
+>
+  <div />
+</div>
+`;
+
+exports[`renders loading 1`] = `
+<div
+  className="box"
+>
+  <div />
+  <div
+    className="overlay"
+  />
+</div>
+`;
+
+exports[`renders loading indicator 1`] = `
+<div
+  className="box"
+>
+  <div />
+  <div
+    className="overlay"
+  >
+    <div>
+      spin
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders solid 1`] = `
+<div
+  className="box box-solid"
+>
+  <div />
+</div>
+`;
+
+exports[`renders with style 1`] = `
+<div
+  className="box box-default"
+>
+  <div />
+</div>
+`;
