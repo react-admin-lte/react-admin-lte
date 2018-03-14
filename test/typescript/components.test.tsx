@@ -17,6 +17,7 @@ import {
   Layout,
   Logo,
   MainFooter,
+  MainHeader,
   SidebarToggle,
   Skin,
   Wrapper
@@ -141,6 +142,12 @@ const MainFooterTest = () => (
   <MainFooter component="div">
     <div />
   </MainFooter>
+);
+
+const MainHeaderTest = () => (
+  <MainHeader component="div">
+    <div />
+  </MainHeader>
 );
 
 const SidebarToggleTest = () => (
