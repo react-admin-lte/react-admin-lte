@@ -8,9 +8,27 @@ exports[`renders boxed 1`] = `
 </div>
 `;
 
+exports[`renders changed collapsed sidebar on toggle 1`] = `
+<Layout>
+  <div
+    className="sidebar-collapse"
+  >
+    <SidebarToggler />
+  </div>
+</Layout>
+`;
+
+exports[`renders changed collapsed sidebar prop 1`] = `
+<div
+  className="sidebar-collapse"
+>
+  <div />
+</div>
+`;
+
 exports[`renders collapsed sidebar 1`] = `
 <div
-  className="sidebar-mini best-layout"
+  className="sidebar-collapse best-layout"
 >
   <div />
 </div>

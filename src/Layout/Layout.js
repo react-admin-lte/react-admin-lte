@@ -1,37 +1,73 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { mutuallyExclusiveTrueProps } from 'airbnb-prop-types';
 import warning from 'warning';
 
-const Layout = ({
-  boxed,
-  children,
-  className: classNameProp,
-  fixed,
-  miniSidebar,
-  sidebarColapsed,
-  topNav,
-  ...other
-}) => {
-  warning(
-    !(boxed === true && fixed === true),
-    'The boxed and fixed properties should not be supplied at the same time.'
-  );
+class Layout extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      sidebarCollapsed: props.sidebarCollapsed
+    };
+  }
   
-  const className = classNames({
-    fixed: fixed,
-    'layout-boxed': boxed,
-    'layout-top-nav': topNav,
-    'sidebar-collapse': sidebarColapsed,
-    'sidebar-mini': miniSidebar
-  }, classNameProp);
-  
-  return (
-    <div className={className} {...other}>
-      {children}
-    </div>
-  );
+  getChildContext() {
+    return {
+      $adminlte_layout: {
+        toggleMainSidebar: () => {
+          this.setState((state) => {
+            return {
+              sidebarCollapsed: !state.sidebarCollapsed
+            };
+          });
+        }
+      }
+    };
+  }
+
+  componentWillReceiveProps(nextProps, props) {
+    if (props.sidebarCollapsed !== nextProps.sidebarCollapsed) {
+      this.setState({
+        sidebarCollapsed: nextProps.sidebarCollapsed
+      });
+    }
+  }
+
+  render() {
+    const {
+      boxed,
+      children,
+      className: classNameProp,
+      fixed,
+      miniSidebar,
+      sidebarCollapsed: _,
+      topNav,
+      ...other
+    } = this.props;
+    
+    const { sidebarCollapsed } = this.state;
+
+    warning(
+      !(boxed === true && fixed === true),
+      'The boxed and fixed properties should not be supplied at the same time.'
+    );
+
+    const className = classNames({
+      fixed: fixed,
+      'layout-boxed': boxed,
+      'layout-top-nav': topNav,
+      'sidebar-collapse': sidebarCollapsed,
+      'sidebar-mini': miniSidebar
+    }, classNameProp);
+
+    return (
+      <div className={className} {...other}>
+        {children}
+      </div>
+    );
+  }
 };
 
 Layout.propTypes = {
@@ -63,6 +99,12 @@ Layout.propTypes = {
    * Removes sidebar and puts navbar at top.
    */
   topNav: PropTypes.bool
+};
+
+Layout.childContextTypes = {
+  $adminlte_layout: PropTypes.shape({
+    toggleMainSidebar: PropTypes.func
+  })
 };
 
 export default Layout;

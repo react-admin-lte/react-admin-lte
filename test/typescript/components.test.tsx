@@ -17,6 +17,7 @@ import {
   Layout,
   Logo,
   MainFooter,
+  SidebarToggle,
   Skin,
   Wrapper
 } from '../../src';
@@ -140,6 +141,15 @@ const MainFooterTest = () => (
   <MainFooter component="div">
     <div />
   </MainFooter>
+);
+
+const SidebarToggleTest = () => (
+  <SidebarToggle
+    component="button"
+    onClick={() => {}}
+  >
+    <span className="sr-only">Toggle navigation</span>
+  </SidebarToggle>
 );
 
 const SkinTest = () => (
