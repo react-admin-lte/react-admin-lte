@@ -26,8 +26,18 @@ Logo.propTypes = {
    * @ignore
    */
   className: PropTypes.string,
+  /**
+   * The component used for the root node.
+   * Either a string to use a DOM element or a component.
+   */
   component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  /**
+   * The logo to display when mini sidebar is collapsed.
+   */
   mini: PropTypes.node,
+  /**
+   * The logo to display when sidebar is expanded.
+   */
   large: PropTypes.node
 };
 
