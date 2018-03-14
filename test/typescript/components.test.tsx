@@ -9,6 +9,7 @@ import {
   InfoBox,
   InfoBoxProgressBar,
   Layout,
+  Logo,
   Skin,
   Wrapper
 } from '../../src';
@@ -63,6 +64,14 @@ const InfoBoxProgressBarTest = () => (
   <InfoBoxProgressBar
     now={67}
     description="lot of progress"
+  />
+);
+
+const LogoTest = () => (
+  <Logo
+    component="Link"
+    large={<div>large</div>}
+    mini={<div>mini</div>}
   />
 );
 

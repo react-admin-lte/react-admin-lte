@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders custom component 1`] = `
+<Link
+  className="logo"
+>
+  <span
+    className="logo-mini"
+  />
+  <span
+    className="logo-lg"
+  />
+</Link>
+`;
+
+exports[`renders default 1`] = `
+<a
+  className="logo"
+>
+  <span
+    className="logo-mini"
+  />
+  <span
+    className="logo-lg"
+  />
+</a>
+`;
+
+exports[`renders large logo 1`] = `
+<a
+  className="logo"
+>
+  <span
+    className="logo-mini"
+  />
+  <span
+    className="logo-lg"
+  >
+    <div>
+      large
+    </div>
+  </span>
+</a>
+`;
+
+exports[`renders mini logo 1`] = `
+<a
+  className="logo"
+>
+  <span
+    className="logo-mini"
+  >
+    <div>
+      mini
+    </div>
+  </span>
+  <span
+    className="logo-lg"
+  />
+</a>
+`;

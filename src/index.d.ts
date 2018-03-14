@@ -10,3 +10,4 @@ export {
   BoxTitle,
   BoxTools
 } from './Box';
+export { default as Logo } from './Logo';
