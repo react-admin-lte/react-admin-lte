@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {
+  Badge,
   Box,
   BoxBody,
   BoxFooter,
@@ -12,12 +13,17 @@ import {
   ContentWrapper,
   InfoBox,
   InfoBoxProgressBar,
+  Label,
   Layout,
   Logo,
   MainFooter,
   Skin,
   Wrapper
 } from '../../src';
+
+const BadgeTest = () => (
+  <Badge backgroundColor="red">67</Badge>
+);
 
 const BoxTest = () => (
   <Box
@@ -104,6 +110,10 @@ const InfoBoxProgressBarTest = () => (
     now={67}
     description="lot of progress"
   />
+);
+
+const LabelTest = () => (
+  <Label backgroundColor="red">67</Label>
 );
 
 const LogoTest = () => (
