@@ -8,7 +8,7 @@ const RegistrationPage = ({
   ...other
 }) => {
   const className = classNames({
-    'registration-page': true
+    'register-page': true
   }, classNameProp);
 
   return (

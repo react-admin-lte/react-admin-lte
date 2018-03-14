@@ -8,7 +8,7 @@ const RegistrationLogo = ({
   ...other
 }) => {
   const className = classNames({
-    'registration-logo': true
+    'register-logo': true
   }, classNameProp);
 
   return (

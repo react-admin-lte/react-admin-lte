@@ -9,7 +9,7 @@ const RegistrationMessage = ({
   ...other
 }) => {
   const className = classNames({
-    'registration-box-msg': true
+    'register-box-msg': true
   }, classNameProp);
 
   return (

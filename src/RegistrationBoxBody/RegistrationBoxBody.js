@@ -8,7 +8,7 @@ const RegistrationBoxBody = ({
   ...other
 }) => {
   const className = classNames({
-    'registration-box-body': true
+    'register-box-body': true
   }, classNameProp);
 
   return (

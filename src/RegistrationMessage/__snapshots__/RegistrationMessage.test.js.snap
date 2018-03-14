@@ -2,7 +2,7 @@
 
 exports[`renders custom component 1`] = `
 <div
-  className="registration-box-msg"
+  className="register-box-msg"
 >
   Sign in
 </div>
@@ -10,7 +10,7 @@ exports[`renders custom component 1`] = `
 
 exports[`renders default 1`] = `
 <p
-  className="registration-box-msg"
+  className="register-box-msg"
 >
   Sign in
 </p>

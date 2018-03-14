@@ -2,7 +2,7 @@
 
 exports[`renders default 1`] = `
 <div
-  className="registration-logo"
+  className="register-logo"
 >
   Mine!
 </div>

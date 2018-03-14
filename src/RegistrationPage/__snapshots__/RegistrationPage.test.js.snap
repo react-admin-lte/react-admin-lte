@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="registration-page"
+  className="register-page"
   style={
     Object {
       "minHeight": "100vh",

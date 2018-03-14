@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="registration-box"
+  className="register-box"
   style={
     Object {
       "marginBottom": "0",

@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="registration-box-body"
+  className="register-box-body"
 >
   <div />
 </div>
