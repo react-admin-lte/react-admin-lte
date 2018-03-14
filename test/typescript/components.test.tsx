@@ -10,6 +10,7 @@ import {
   InfoBoxProgressBar,
   Layout,
   Logo,
+  MainFooter,
   Skin,
   Wrapper
 } from '../../src';
@@ -85,6 +86,12 @@ const LayoutTest = () => (
   >
     <div />
   </Layout>
+);
+
+const MainFooterTest = () => (
+  <MainFooter component="div">
+    <div />
+  </MainFooter>
 );
 
 const SkinTest = () => (

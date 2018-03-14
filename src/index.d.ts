@@ -11,3 +11,4 @@ export {
   BoxTools
 } from './Box';
 export { default as Logo } from './Logo';
+export { default as MainFooter } from './MainFooter';

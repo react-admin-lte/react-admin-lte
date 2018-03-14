@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders custom component 1`] = `
+<div
+  className="main-footer"
+>
+  <div />
+</div>
+`;
+
+exports[`renders default 1`] = `
+<footer
+  className="main-footer"
+>
+  <div />
+</footer>
+`;
