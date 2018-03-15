@@ -27,17 +27,20 @@ __Note__: This example is using [ES6][es6] syntax.
 
 Import the components you need:
 
-    import { Box } from 'reactjs-admin-lte';
+    import Box from 'reactjs-admin-lte/Box';
+    import BoxBody from 'reactjs-admin-lte/BoxBody';
+    import BoxHeader from 'reactjs-admin-lte/BoxHeader';
+    import BoxTitle from 'reactjs-admin-lte/BoxTitle';
 
 And use them:
 
     <Box>
-      <Box.Header>
-        <Box.Title>Hello, world!</Box.Title>
-      </Box.Header>
-      <Box.Body>
+      <BoxHeader>
+        <BoxTitle>Hello, world!</BoxTitle>
+      </BoxHeader>
+      <BoxBody>
         Thanks for choosing reactjs-admin-lte.
-      </Box.Body>
+      </BoxBody>
     </Box>
 
 ## Contributing
