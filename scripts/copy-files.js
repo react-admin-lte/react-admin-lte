@@ -51,6 +51,7 @@ async function addLicense(packageData) {
     [
       '../build/index.js',
       '../build/index.es.js',
+      '../build/index.d.ts',
       '../build/umd/reactjs-admin-lte.development.js',
       '../build/umd/reactjs-admin-lte.production.min.js'
     ].map(file => prepend(path.resolve(__dirname, file), license))
@@ -59,8 +60,6 @@ async function addLicense(packageData) {
 
 async function run() {
   await ['README.md', 'LICENSE'].map(file => copyFile(file));
-  const packageData = await createPackageFile();
-  await addLicense(packageData);
 
   // Typescript
   const from = path.resolve(__dirname, '../src');
@@ -68,6 +67,9 @@ async function run() {
     typescriptCopy(from, path.resolve(__dirname, '../build')),
     typescriptCopy(from, path.resolve(__dirname, '../build/es'))
   ]);
+
+  const packageData = await createPackageFile();
+  await addLicense(packageData);
 }
 
 run();
