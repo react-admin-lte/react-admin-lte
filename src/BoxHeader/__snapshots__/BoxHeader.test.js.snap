@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders box tools 1`] = `
+exports[`renders children 1`] = `
 <div
   className="box-header"
 >
-  <div
-    className="box-tools pull-right"
-  >
-    <div>
-      I'm a tool!
-    </div>
+  <div>
+    I'm a child!
   </div>
 </div>
 `;
@@ -20,26 +16,40 @@ exports[`renders default 1`] = `
 />
 `;
 
-exports[`renders title function 1`] = `
+exports[`renders tools function 1`] = `
 <div
   className="box-header"
 >
-  <h2
-    className="box-title  my-class"
+  <div
+    className="box-tools pull-right my-class"
   >
-    I'm a box!
-  </h2>
+    <div>
+      I'm a small tool!
+    </div>
+    <div>
+      I'm a medium tool!
+    </div>
+  </div>
 </div>
 `;
 
-exports[`renders title node 1`] = `
+exports[`renders tools node 1`] = `
 <div
   className="box-header"
 >
-  <h3
-    className="box-title"
+  <div
+    className="box-tools pull-right"
   >
-    I'm a box!
-  </h3>
+    <div
+      key="1"
+    >
+      I'm a tool!
+    </div>
+    <div
+      key="2"
+    >
+      I'm a bigger tool!
+    </div>
+  </div>
 </div>
 `;

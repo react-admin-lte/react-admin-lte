@@ -6,7 +6,7 @@ const BoxHeader = ({
   border,
   children,
   className: classNameProp,
-  title: titleProp,
+  tools: toolsProp,
   ...other
 }) => {
   const className = classNames({
@@ -14,19 +14,15 @@ const BoxHeader = ({
     'with-border': border
   }, classNameProp);
 
-  const title = titleProp
-    ? typeof titleProp === 'function'
-      ? titleProp({ className: 'box-title '})
-      : <h3 className="box-title">{titleProp}</h3>
-    : null;
-
-  const tools = React.Children.count(children) > 0
-    ? <div className="box-tools pull-right">{children}</div>
+  const tools = toolsProp
+    ? typeof toolsProp === 'function'
+      ? toolsProp({ className: 'box-tools pull-right' })
+      : <div className="box-tools pull-right">{toolsProp}</div>
     : null;
 
   return (
     <div className={className} {...other}>
-      {title}
+      {children}
       {tools}
     </div>
   );
@@ -38,7 +34,7 @@ BoxHeader.propTypes = {
    */
   border: PropTypes.bool,
   /**
-   * Box tools to be placed on right side of header.
+   * The contents of the component.
    */
   children: PropTypes.node,
   /**
@@ -46,11 +42,10 @@ BoxHeader.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * The title of the header. If a node it will be rendered inside a `h3`
-   * element. To customize pass a function that will be used to render the
-   * title.
+   * Box tools to be placed on right side of header. To customize pass a
+   * function that will be used to render the tools container.
    */
-  title: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
+  tools: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 };
 
 BoxHeader.defaultProps = {

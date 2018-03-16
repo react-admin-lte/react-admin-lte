@@ -8,25 +8,36 @@ it('renders default', () => {
     .toMatchSnapshot();
 });
 
-it('renders title node', () => {
-  expect(shallow(<BoxHeader title="I'm a box!" />))
+it('renders children', () => {
+  expect(shallow(<BoxHeader><div>I'm a child!</div></BoxHeader>))
     .toMatchSnapshot();
 });
 
-it('renders title function', () => {
+it('renders tools node', () => {
   expect(shallow((
     <BoxHeader
-      title={({ className: classNameProp }) => {
-        const className = classNames(classNameProp, {
-          'my-class': true
-        });
-        return <h2 className={className}>I'm a box!</h2>
-      }}
+      tools={[
+        <div key="1">I'm a tool!</div>,
+        <div key="2">I'm a bigger tool!</div>
+      ]}
     />
   ))).toMatchSnapshot();
 });
 
-it('renders box tools', () => {
-  expect(shallow(<BoxHeader><div>I'm a tool!</div></BoxHeader>))
-    .toMatchSnapshot();
+it('renders tools function', () => {
+  expect(shallow((
+    <BoxHeader
+      tools={({ className: classNameProp }) => {
+        const className = classNames(classNameProp, {
+          'my-class': true
+        });
+        return (
+          <div className={className}>
+            <div>I'm a small tool!</div>
+            <div>I'm a medium tool!</div>
+          </div>
+        );
+      }}
+    />
+  ))).toMatchSnapshot();
 });
