@@ -1,17 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders custom component 1`] = `
+exports[`renders box tools 1`] = `
 <div
-  className="box-header with-border"
+  className="box-header"
 >
-  <div />
+  <div
+    className="box-tools pull-right"
+  >
+    <div>
+      I'm a tool!
+    </div>
+  </div>
 </div>
 `;
 
 exports[`renders default 1`] = `
 <div
   className="box-header"
+/>
+`;
+
+exports[`renders title function 1`] = `
+<div
+  className="box-header"
 >
-  <div />
+  <h2
+    className="box-title  my-class"
+  >
+    I'm a box!
+  </h2>
+</div>
+`;
+
+exports[`renders title node 1`] = `
+<div
+  className="box-header"
+>
+  <h3
+    className="box-title"
+  >
+    I'm a box!
+  </h3>
 </div>
 `;

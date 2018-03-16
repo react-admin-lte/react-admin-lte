@@ -6,6 +6,7 @@ const BoxHeader = ({
   border,
   children,
   className: classNameProp,
+  title: titleProp,
   ...other
 }) => {
   const className = classNames({
@@ -13,9 +14,20 @@ const BoxHeader = ({
     'with-border': border
   }, classNameProp);
 
+  const title = titleProp
+    ? typeof titleProp === 'function'
+      ? titleProp({ className: 'box-title '})
+      : <h3 className="box-title">{titleProp}</h3>
+    : null;
+
+  const tools = React.Children.count(children) > 0
+    ? <div className="box-tools pull-right">{children}</div>
+    : null;
+
   return (
     <div className={className} {...other}>
-      {children}
+      {title}
+      {tools}
     </div>
   );
 };
@@ -26,13 +38,19 @@ BoxHeader.propTypes = {
    */
   border: PropTypes.bool,
   /**
-   * The contents of the box header.
+   * Box tools to be placed on right side of header.
    */
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   /**
    * @ignore
    */
-  className: PropTypes.string
+  className: PropTypes.string,
+  /**
+   * The title of the header. If a node it will be rendered inside a `h3`
+   * element. To customize pass a function that will be used to render the
+   * title.
+   */
+  title: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 };
 
 BoxHeader.defaultProps = {

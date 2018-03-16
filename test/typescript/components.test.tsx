@@ -5,9 +5,7 @@ import {
   BoxBody,
   BoxFooter,
   BoxHeader,
-  BoxTitle,
   BoxToolButton,
-  BoxTools,
   Content,
   ContentHeader,
   ContentWrapper,
@@ -61,13 +59,14 @@ const BoxFooterTest = () => (
   <BoxFooter><div /></BoxFooter>
 );
 
-const BoxHeaderTest = () => (
+const BoxHeaderTest = () => [
+  <BoxHeader />,
+  <BoxHeader title={({ className }) => {
+    return <h2 className={className}>I'm a box!</h2>
+  }} />,
+  <BoxHeader title={<div />} />,
   <BoxHeader border={true}><div /></BoxHeader>
-);
-
-const BoxTitleTest = () => (
-  <BoxTitle component="h1"><div /></BoxTitle>
-);
+];
 
 const BoxToolButtonTest = () => (
   <BoxToolButton
@@ -77,10 +76,6 @@ const BoxToolButtonTest = () => (
   >
     <div />
   </BoxToolButton>
-);
-
-const BoxToolsTest = () => (
-  <BoxTools><div /></BoxTools>
 );
 
 const ContentTest = () => (
