@@ -2,7 +2,7 @@
 
 exports[`renders a when href present 1`] = `
 <a
-  className="box btn-box-tool"
+  className="btn btn-box-tool"
   href="/thegoods"
 >
   <div />
@@ -11,7 +11,7 @@ exports[`renders a when href present 1`] = `
 
 exports[`renders button type 1`] = `
 <button
-  className="box btn-box-tool"
+  className="btn btn-box-tool"
   type="submit"
 >
   <div />
@@ -20,7 +20,7 @@ exports[`renders button type 1`] = `
 
 exports[`renders custom component 1`] = `
 <Link
-  className="box btn-box-tool"
+  className="btn btn-box-tool"
   to="/thegoods"
 >
   <div />
@@ -29,7 +29,7 @@ exports[`renders custom component 1`] = `
 
 exports[`renders default 1`] = `
 <button
-  className="box btn-box-tool"
+  className="btn btn-box-tool"
   type="button"
 >
   <div />

@@ -10,7 +10,7 @@ const BoxToolButton = ({
   ...other
 }) => {
   const className = classNames({
-    'box': true,
+    'btn': true,
     'btn-box-tool': true
   }, classNameProp);
 
