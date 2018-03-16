@@ -4,7 +4,9 @@ exports[`renders collapsed 1`] = `
 <div
   className="box collapsed-box"
 >
-  <div />
+  <div
+    key=".0"
+  />
 </div>
 `;
 
@@ -12,33 +14,24 @@ exports[`renders default 1`] = `
 <div
   className="box"
 >
-  <div />
-</div>
-`;
-
-exports[`renders loading 1`] = `
-<div
-  className="box"
->
-  <div />
   <div
-    className="overlay"
+    key=".0"
   />
 </div>
 `;
 
-exports[`renders loading indicator 1`] = `
+exports[`renders overlay without wrapper 1`] = `
 <div
   className="box"
 >
-  <div />
-  <div
-    className="overlay"
+  <Overlay
+    dark={false}
+    disableWrapper={true}
+    isOverlay={true}
+    key=".0"
   >
-    <div>
-      spin
-    </div>
-  </div>
+    <div />
+  </Overlay>
 </div>
 `;
 
@@ -46,7 +39,9 @@ exports[`renders solid 1`] = `
 <div
   className="box box-solid"
 >
-  <div />
+  <div
+    key=".0"
+  />
 </div>
 `;
 
@@ -54,6 +49,8 @@ exports[`renders with style 1`] = `
 <div
   className="box box-default"
 >
-  <div />
+  <div
+    key=".0"
+  />
 </div>
 `;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders dark 1`] = `
+<div
+  className="overlay-wrapper"
+>
+  <div
+    className="overlay dark"
+  >
+    <div>
+      spinner
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders dark with disabled wrapper 1`] = `
+<div
+  className="overlay dark"
+>
+  <div>
+    spinner
+  </div>
+</div>
+`;
+
+exports[`renders default 1`] = `
+<div
+  className="overlay-wrapper"
+>
+  <div
+    className="overlay"
+  >
+    <div>
+      spinner
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders disabled wrapper 1`] = `
+<div
+  className="overlay"
+>
+  <div>
+    spinner
+  </div>
+</div>
+`;

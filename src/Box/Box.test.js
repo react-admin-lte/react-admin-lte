@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Box from './Box';
+import Overlay from '../Overlay';
 
 it('renders default', () => {
   expect(shallow(<Box><div /></Box>))
@@ -17,17 +18,12 @@ it('renders solid', () => {
     .toMatchSnapshot();
 });
 
-it('renders loading', () => {
-  expect(shallow(<Box loading><div /></Box>))
-    .toMatchSnapshot();
-});
-
-it('renders loading indicator', () => {
-  expect(shallow(<Box loading loadingIndicator={<div>spin</div>}><div /></Box>))
-    .toMatchSnapshot();
-});
-
 it('renders collapsed', () => {
   expect(shallow(<Box collapsed><div /></Box>))
+    .toMatchSnapshot();
+});
+
+it('renders overlay without wrapper', () => {
+  expect(shallow(<Box><Overlay><div /></Overlay></Box>))
     .toMatchSnapshot();
 });

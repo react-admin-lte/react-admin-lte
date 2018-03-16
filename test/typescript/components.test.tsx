@@ -22,6 +22,7 @@ import {
   Logo,
   MainFooter,
   MainHeader,
+  Overlay,
   RegistrationBox,
   RegistrationBoxBody,
   RegistrationLogo,
@@ -39,8 +40,6 @@ const BadgeTest = () => (
 const BoxTest = () => (
   <Box
     collapsed={true}
-    loading={true}
-    loadingIndicator={<div />}
     solid={true}
     style="default"
   >
@@ -178,6 +177,10 @@ const MainHeaderTest = () => (
   <MainHeader component="div">
     <div />
   </MainHeader>
+);
+
+const OverlayTest = () => (
+  <Overlay dark={true}><div>spinner</div></Overlay>
 );
 
 const RegistrationBoxTest = () => (

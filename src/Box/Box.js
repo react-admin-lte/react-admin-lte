@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Box = ({
-  children,
+  children: childrenProp,
   className: classNameProp,
   collapsed,
-  loading,
-  loadingIndicator,
   solid,
   style,
   ...other
@@ -19,14 +17,19 @@ const Box = ({
     'box-solid': solid
   }, classNameProp);
 
-  const overlay = loading
-    ? <div className="overlay">{loadingIndicator}</div>
-    : null;
+  const children = React.Children.map(childrenProp, child => {
+    if (!React.isValidElement(child)) {
+      return null;
+    }
+
+    return child.props.isOverlay
+      ? React.cloneElement(child, { disableWrapper: true })
+      : child;
+  });
 
   return (
     <div className={className} {...other}>
       {children}
-      {overlay}
     </div>
   );
 };
@@ -45,14 +48,6 @@ Box.propTypes = {
    */
   collapsed: PropTypes.bool,
   /**
-   * If `true', `loadingIndicator` is overlaid on top of box.
-   */
-  loading: PropTypes.bool,
-  /**
-   * To be shown when `loading` is `true`.
-   */
-  loadingIndicator: PropTypes.node,
-  /**
    * Displays box with solid colored header.
    */
   solid: PropTypes.bool,
@@ -64,7 +59,6 @@ Box.propTypes = {
 
 Box.defaultProps = {
   collapsed: false,
-  loading: false,
   solid: false
 };
 

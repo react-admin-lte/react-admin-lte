@@ -2,8 +2,6 @@ import * as React from 'react';
 
 export interface BoxProps {
   collapsed?: boolean;
-  loading?: boolean;
-  loadingIndicator?: React.ReactNode;
   solid?: boolean;
   style?: BoxStyle;
 }
