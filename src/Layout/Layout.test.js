@@ -45,28 +45,41 @@ it('renders mini sidebar', () => {
 
 it('renders collapsed sidebar', () => {
   expect(shallow((
-    <Layout className="best-layout" sidebarCollapsed={true}>
+    <Layout
+      className="best-layout"
+      sidebarCollapsed={true}
+      onToggle={() => { return; }}
+    >
       <div />
     </Layout>
   ))).toMatchSnapshot();
 });
 
-it('renders changed collapsed sidebar prop', () => {
-  const wrapper = shallow(<Layout><div /></Layout>);
-  wrapper.setProps({ sidebarCollapsed: true });
-  expect(wrapper).toMatchSnapshot();
+it('renders default collapsed sidebar', () => {
+  expect(shallow((
+    <Layout
+      className="best-layout"
+      defaultSidebarCollapsed={true}
+    >
+      <div />
+    </Layout>
+  ))).toMatchSnapshot();
 });
 
 it('renders changed collapsed sidebar on toggle', () => {
+  const sentEvent = {};
+  let receivedCollapsed = false;
+  let receivedEvent;
+
   class SidebarToggler extends Component {
     static contextTypes = {
       $adminlte_layout: PropTypes.shape({
-        toggleMainSidebar: PropTypes.func
+        onToggle: PropTypes.func
       })
     };
 
     componentDidMount() {
-      this.context.$adminlte_layout.toggleMainSidebar();
+      this.context.$adminlte_layout.onToggle(sentEvent);
     }
 
     render() {
@@ -74,9 +87,16 @@ it('renders changed collapsed sidebar on toggle', () => {
     }
   }
 
-  expect(mount((
-    <Layout>
+  mount(
+    <Layout onToggle={(collapsed, e) => {
+      receivedCollapsed = collapsed;
+      receivedEvent = e;
+    }}>
       <SidebarToggler />
     </Layout>
-  ))).toMatchSnapshot();
+  );
+
+  expect(receivedCollapsed).toEqual(true);
+  expect(receivedEvent).toEqual(sentEvent);
 });
+

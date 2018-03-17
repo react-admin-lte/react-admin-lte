@@ -1,67 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders boxed 1`] = `
-<div
-  className="layout-boxed best-layout"
+<Layout
+  boxed={true}
+  className="best-layout"
+  onToggle={[Function]}
 >
   <div />
-</div>
-`;
-
-exports[`renders changed collapsed sidebar on toggle 1`] = `
-<Layout>
-  <div
-    className="sidebar-collapse"
-  >
-    <SidebarToggler />
-  </div>
 </Layout>
 `;
 
-exports[`renders changed collapsed sidebar prop 1`] = `
-<div
-  className="sidebar-collapse"
+exports[`renders collapsed sidebar 1`] = `
+<Layout
+  className="best-layout"
+  onToggle={[Function]}
+  sidebarCollapsed={true}
 >
   <div />
-</div>
+</Layout>
 `;
 
-exports[`renders collapsed sidebar 1`] = `
-<div
-  className="sidebar-collapse best-layout"
+exports[`renders default collapsed sidebar 1`] = `
+<Layout
+  className="best-layout"
+  onToggle={[Function]}
+  sidebarCollapsed={true}
 >
   <div />
-</div>
+</Layout>
 `;
 
 exports[`renders empty 1`] = `
-<div
+<Layout
   className="best-layout"
+  onToggle={[Function]}
 >
   <div />
-</div>
+</Layout>
 `;
 
 exports[`renders fixed 1`] = `
-<div
-  className="fixed best-layout"
+<Layout
+  className="best-layout"
+  fixed={true}
+  onToggle={[Function]}
 >
   <div />
-</div>
+</Layout>
 `;
 
 exports[`renders mini sidebar 1`] = `
-<div
-  className="sidebar-mini best-layout"
+<Layout
+  className="best-layout"
+  miniSidebar={true}
+  onToggle={[Function]}
 >
   <div />
-</div>
+</Layout>
 `;
 
 exports[`renders top navigation 1`] = `
-<div
-  className="layout-top-nav best-layout"
+<Layout
+  className="best-layout"
+  onToggle={[Function]}
+  topNav={true}
 >
   <div />
-</div>
+</Layout>
 `;

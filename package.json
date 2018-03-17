@@ -35,6 +35,7 @@
     "airbnb-prop-types": "^2.8.1",
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
+    "uncontrollable": "^5.0.0",
     "warning": "^3.0.0"
   },
   "devDependencies": {

@@ -4,7 +4,12 @@ import Layout from '../../src/Layout';
 import SidebarToggle from '../../src/SidebarToggle';
 
 it('sidebar toggled on click', () => {
-  const wrapper = mount(<Layout className="layout-div"><SidebarToggle /></Layout>);
+  let received = false;
+  const wrapper = mount(
+    <Layout className="layout-div" onToggle={() => { received = true; }}>
+      <SidebarToggle />
+    </Layout>
+  );
   wrapper.find(SidebarToggle).simulate('click');
-  expect(wrapper.state('sidebarCollapsed')).toEqual(true);
+  expect(received).toEqual(true);
 });

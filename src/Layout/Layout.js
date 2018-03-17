@@ -3,37 +3,25 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { mutuallyExclusiveTrueProps } from 'airbnb-prop-types';
 import warning from 'warning';
+import uncontrollable from 'uncontrollable';
 
 class Layout extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      sidebarCollapsed: props.sidebarCollapsed
-    };
+    this.handleToggle = this.handleToggle.bind(this);
   }
-  
+
   getChildContext() {
     return {
       $adminlte_layout: {
-        toggleMainSidebar: () => {
-          this.setState((state) => {
-            return {
-              sidebarCollapsed: !state.sidebarCollapsed
-            };
-          });
-        }
+        onToggle: this.handleToggle
       }
     };
   }
 
-  componentWillReceiveProps(nextProps, props) {
-    if (props.sidebarCollapsed !== nextProps.sidebarCollapsed) {
-      this.setState({
-        sidebarCollapsed: nextProps.sidebarCollapsed
-      });
-    }
-  }
+  handleToggle(e) {
+    this.props.onToggle(!this.props.sidebarCollapsed, e);
+  };
 
   render() {
     const {
@@ -42,12 +30,11 @@ class Layout extends Component {
       className: classNameProp,
       fixed,
       miniSidebar,
-      sidebarCollapsed: _,
+      onSidebarCollapsedToggle: _,
+      sidebarCollapsed,
       topNav,
       ...other
     } = this.props;
-    
-    const { sidebarCollapsed } = this.state;
 
     warning(
       !(boxed === true && fixed === true),
@@ -68,7 +55,7 @@ class Layout extends Component {
       </div>
     );
   }
-};
+}
 
 Layout.propTypes = {
   /**
@@ -84,6 +71,10 @@ Layout.propTypes = {
    */
   className: PropTypes.string,
   /**
+   * It `true`, collapsed the sidebar by default.
+   */
+  defaultSidebarCollapsed: PropTypes.bool,
+  /**
    * Displays fixed header and sidebar.
    */
   fixed: mutuallyExclusiveTrueProps('boxed', 'fixed'),
@@ -92,7 +83,15 @@ Layout.propTypes = {
    */
   miniSidebar: PropTypes.bool,
   /**
-   * Displays sidebar as collapsed.
+   * Callback fired when the sidebar is toggled.
+   *
+   * @param {object} event The event source of the callback
+   * @param {boolean} collapsed The 'collapsed` state of the sidebar
+   */
+  onToggle: PropTypes.func,
+  /**
+   * If `true`, collapses the sidebar. Setting this prop enables control of
+   * the Layout.
    */
   sidebarCollapsed: PropTypes.bool,
   /**
@@ -103,8 +102,11 @@ Layout.propTypes = {
 
 Layout.childContextTypes = {
   $adminlte_layout: PropTypes.shape({
-    toggleMainSidebar: PropTypes.func
+    onToggle: PropTypes.func
   })
 };
 
-export default Layout;
+export default uncontrollable(Layout, {
+  sidebarCollapsed: 'onToggle'
+});
+

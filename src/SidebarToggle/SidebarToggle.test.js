@@ -18,7 +18,7 @@ it('toggles through context', () => {
     {
       context: {
         $adminlte_layout: {
-          toggleMainSidebar: () => {
+          onToggle: () => {
             received = true;
           }
         }

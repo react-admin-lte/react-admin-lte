@@ -19,8 +19,8 @@ const SidebarToggle = ({
     handleClick = onClick;
   } else if (context &&
       context.$adminlte_layout &&
-      context.$adminlte_layout.toggleMainSidebar) {
-    handleClick = context.$adminlte_layout.toggleMainSidebar;
+      context.$adminlte_layout.onToggle ) {
+    handleClick = (e) => { context.$adminlte_layout.onToggle(e) };
   }
 
   return (
