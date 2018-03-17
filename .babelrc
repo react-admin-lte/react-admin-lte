@@ -23,6 +23,44 @@
           "mode": "wrap"
         }]
       ]
+    },
+    "site-development": {
+      "presets": [
+        "next/babel"
+      ],
+      "plugins": [
+        "preval",
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "reactjs-admin-lte": "./src"
+            }
+          }
+        ]
+      ]
+    },
+    "site-production": {
+      "presets": [
+        "next/babel"
+      ],
+      "plugins": [
+        "preval",
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "reactjs-admin-lte": "./src"
+            }
+          }
+        ],
+        "transform-react-constant-elements",
+        "transform-dev-warning",
+        "transform-runtime",
+        ["transform-react-remove-prop-types", {
+          "mode": "wrap"
+        }]
+      ]
     }
   }
 }

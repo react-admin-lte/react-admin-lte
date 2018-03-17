@@ -8,3 +8,4 @@ coverage/
 lerna-debug.log
 yarn-error.log
 build/
+.next/
