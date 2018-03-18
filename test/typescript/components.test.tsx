@@ -18,7 +18,6 @@ import {
   LoginLogo,
   LoginMessage,
   LoginPage,
-  Logo,
   MainFooter,
   MainHeader,
   Overlay,
@@ -27,7 +26,6 @@ import {
   RegistrationLogo,
   RegistrationMessage,
   RegistrationPage,
-  SidebarToggle,
   Theme
 } from '../../src';
 
@@ -145,14 +143,6 @@ const LoginPageTest = () => (
   <LoginPage><div /></LoginPage>
 );
 
-const LogoTest = () => (
-  <Logo
-    component="Link"
-    large={<div>large</div>}
-    mini={<div>mini</div>}
-  />
-);
-
 const MainFooterTest = () => (
   <MainFooter component="div">
     <div />
@@ -160,7 +150,14 @@ const MainFooterTest = () => (
 );
 
 const MainHeaderTest = () => (
-  <MainHeader component="div">
+  <MainHeader
+    component="div"
+    largeLogo="big boy"
+    logoComponent="Link"
+    logoHref="/"
+    miniLogo="wittle boy"
+    onSidebarCollapseClick={() => {}}
+  >
     <div />
   </MainHeader>
 );
@@ -187,15 +184,6 @@ const RegistrationMessageTest = () => (
 
 const RegistrationPageTest = () => (
   <RegistrationPage><div /></RegistrationPage>
-);
-
-const SidebarToggleTest = () => (
-  <SidebarToggle
-    component="button"
-    onClick={() => {}}
-  >
-    <span className="sr-only">Toggle navigation</span>
-  </SidebarToggle>
 );
 
 const ThemeTest = () => (

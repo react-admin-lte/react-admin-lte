@@ -1,17 +1,221 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders children 1`] = `
+<header
+  className="main-header"
+>
+  <a
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    >
+      <div />
+    </div>
+  </div>
+</header>
+`;
+
 exports[`renders custom component 1`] = `
 <div
   className="main-header"
 >
-  <div />
+  <a
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
 </div>
+`;
+
+exports[`renders custom logo 1`] = `
+<header
+  className="main-header"
+>
+  <div
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </div>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
+</header>
 `;
 
 exports[`renders default 1`] = `
 <header
   className="main-header"
 >
-  <div />
+  <a
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
+</header>
+`;
+
+exports[`renders large logo 1`] = `
+<header
+  className="main-header"
+>
+  <a
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    >
+      <React.Fragment>
+        <b>
+          Admin
+        </b>
+        LTE
+      </React.Fragment>
+    </span>
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
+</header>
+`;
+
+exports[`renders logo href 1`] = `
+<header
+  className="main-header"
+>
+  <a
+    className="logo"
+    href="/"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    />
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
+</header>
+`;
+
+exports[`renders mini logo 1`] = `
+<header
+  className="main-header"
+>
+  <a
+    className="logo"
+  >
+    <span
+      className="logo-mini"
+      key="mini"
+    >
+      <React.Fragment>
+        <b>
+          A
+        </b>
+        LT
+      </React.Fragment>
+    </span>
+    <span
+      className="logo-lg"
+      key="large"
+    />
+  </a>
+  <div
+    className="navbar navbar-static-top"
+  >
+    <a
+      className="sidebar-toggle"
+    />
+    <div
+      className="navbar-custom-menu"
+    />
+  </div>
 </header>
 `;
