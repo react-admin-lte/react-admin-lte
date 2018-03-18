@@ -9,7 +9,7 @@ const InfoBoxProgressBar = ({
   ...other
 }) => (
   <div>
-    <ProgressBar key="bar" {...other} />,
+    <ProgressBar key="bar" {...other} />
     <span key="description" className="progress-description">{description}</span>
   </div>
 );

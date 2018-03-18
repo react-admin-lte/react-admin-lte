@@ -13,7 +13,6 @@ exports[`renders with props passed to bar 1`] = `
     srOnly={false}
     striped={false}
   />
-  ,
   <span
     className="progress-description"
     key="description"
