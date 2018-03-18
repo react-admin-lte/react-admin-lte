@@ -17,8 +17,8 @@ it('toggles through context', () => {
     <SidebarToggle />,
     {
       context: {
-        $adminlte_layout: {
-          onToggle: () => {
+        $adminlte_theme: {
+          onChange: () => {
             received = true;
           }
         }
@@ -40,8 +40,8 @@ it('wires up onClick instead of context', () => {
     />,
     {
       context: {
-        $adminlte_layout: {
-          toggleMainSidebar: () => {
+        $adminlte_theme: {
+          onChange: () => {
             receivedContext = true;
           }
         }

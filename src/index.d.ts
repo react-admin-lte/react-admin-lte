@@ -8,9 +8,6 @@ export namespace PropTypes {
     'black-active';
 }
 
-export { default as Layout } from './Layout';
-export { default as Skin } from './Skin';
-export { default as Wrapper } from './Wrapper';
 export { default as InfoBox } from './InfoBox';
 export { default as InfoBoxProgressBar } from './InfoBoxProgressBar';
 export { default as Badge } from './Badge';
@@ -39,3 +36,4 @@ export { default as RegistrationBox } from './RegistrationBox';
 export { default as RegistrationBoxBody } from './RegistrationBoxBody';
 export { default as RegistrationMessage } from './RegistrationMessage';
 export { default as RegistrationLogo } from './RegistrationLogo';
+export { default as Theme } from './Theme';

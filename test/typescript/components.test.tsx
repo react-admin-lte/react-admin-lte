@@ -13,7 +13,6 @@ import {
   InfoBox,
   InfoBoxProgressBar,
   Label,
-  Layout,
   LoginBox,
   LoginBoxBody,
   LoginLogo,
@@ -29,8 +28,7 @@ import {
   RegistrationMessage,
   RegistrationPage,
   SidebarToggle,
-  Skin,
-  Wrapper
+  Theme
 } from '../../src';
 
 const BadgeTest = () => (
@@ -155,18 +153,6 @@ const LogoTest = () => (
   />
 );
 
-const LayoutTest = () => (
-  <Layout
-    boxed={true}
-    fixed={true}
-    miniSidebar={true}
-    sidebarCollapsed={true}
-    topNav={true}
-  >
-    <div />
-  </Layout>
-);
-
 const MainFooterTest = () => (
   <MainFooter component="div">
     <div />
@@ -212,10 +198,15 @@ const SidebarToggleTest = () => (
   </SidebarToggle>
 );
 
-const SkinTest = () => (
-  <Skin color="blue" />
-);
-
-const WrapperTest = () => (
-  <Wrapper />
+const ThemeTest = () => (
+  <Theme
+    boxed={true}
+    fixed={true}
+    miniSidebar={true}
+    sidebarCollapsed={true}
+    skinColor="blue"
+    topNav={true}
+  >
+    <div />
+  </Theme>
 );

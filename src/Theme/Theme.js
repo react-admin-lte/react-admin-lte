@@ -5,23 +5,23 @@ import { mutuallyExclusiveTrueProps } from 'airbnb-prop-types';
 import warning from 'warning';
 import uncontrollable from 'uncontrollable';
 
-class Layout extends Component {
+export class Theme extends Component {
   constructor(props) {
     super(props);
-    this.handleToggle = this.handleToggle.bind(this);
+    this.handleChange= this.handleChange.bind(this);
   }
 
   getChildContext() {
     return {
-      $adminlte_layout: {
-        onToggle: this.handleToggle
+      $adminlte_theme: {
+        onChange: this.handleChange
       }
-    };
+    }
   }
 
-  handleToggle(e) {
-    this.props.onToggle(!this.props.sidebarCollapsed, e);
-  };
+  handleChange(e) {
+    this.props.onChange(!this.props.sidebarCollapsed, e);
+  }
 
   render() {
     const {
@@ -30,34 +30,38 @@ class Layout extends Component {
       className: classNameProp,
       fixed,
       miniSidebar,
-      onSidebarCollapsedToggle: _,
+      onChange: _,
       sidebarCollapsed,
+      skinColor,
       topNav,
       ...other
     } = this.props;
 
     warning(
-      !(boxed === true && fixed === true),
+      !(boxed === true && fixed == true),
       'The boxed and fixed properties should not be supplied at the same time.'
     );
 
     const className = classNames({
-      fixed: fixed,
+      fixed,
       'layout-boxed': boxed,
       'layout-top-nav': topNav,
       'sidebar-collapse': sidebarCollapsed,
-      'sidebar-mini': miniSidebar
+      'sidebar-mini': miniSidebar,
+      [`skin-${skinColor}`]: skinColor
     }, classNameProp);
 
     return (
       <div className={className} {...other}>
-        {children}
+        <div className="wrapper">
+          {children}
+        </div>
       </div>
     );
   }
 }
 
-Layout.propTypes = {
+Theme.propTypes = {
   /**
    * Layout will only be stretched to 1250px.
    */
@@ -88,25 +92,31 @@ Layout.propTypes = {
    * @param {object} event The event source of the callback
    * @param {boolean} collapsed The 'collapsed` state of the sidebar
    */
-  onToggle: PropTypes.func,
+  onChange: PropTypes.func,
   /**
    * If `true`, collapses the sidebar. Setting this prop enables control of
    * the Layout.
    */
   sidebarCollapsed: PropTypes.bool,
   /**
+   * The color of the skin.
+   */
+  skinColor: PropTypes.oneOf([
+    'blue', 'black', 'purple', 'green', 'red', 'yellow', 'blue-light', 'black-light',
+    'purple-light', 'green-light', 'red-light', 'yellow-light'
+  ]),
+  /**
    * Removes sidebar and puts navbar at top.
    */
   topNav: PropTypes.bool
 };
 
-Layout.childContextTypes = {
-  $adminlte_layout: PropTypes.shape({
-    onToggle: PropTypes.func
+Theme.childContextTypes = {
+  $adminlte_theme: PropTypes.shape({
+    onChange: PropTypes.func
   })
 };
 
-export default uncontrollable(Layout, {
-  sidebarCollapsed: 'onToggle'
+export default uncontrollable(Theme, {
+  sidebarCollapsed: 'onChange'
 });
-

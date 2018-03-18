@@ -1,68 +1,64 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { mount, shallow } from 'enzyme';
-import Layout from './Layout';
+import { Theme } from './Theme';
 
 it('renders empty', () => {
   expect(shallow((
-    <Layout className="best-layout">
+    <Theme>
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
 it('renders fixed', () => {
   expect(shallow((
-    <Layout className="best-layout" fixed={true}>
+    <Theme fixed={true}>
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
 it('renders boxed', () => {
   expect(shallow((
-    <Layout className="best-layout" boxed={true}>
+    <Theme boxed={true}>
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
 it('renders top navigation', () => {
   expect(shallow((
-    <Layout className="best-layout" topNav={true}>
+    <Theme topNav={true}>
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
 it('renders mini sidebar', () => {
   expect(shallow((
-    <Layout className="best-layout" miniSidebar={true}>
+    <Theme miniSidebar={true}>
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
 it('renders collapsed sidebar', () => {
   expect(shallow((
-    <Layout
-      className="best-layout"
+    <Theme
       sidebarCollapsed={true}
-      onToggle={() => { return; }}
+      onChange={() => { return; }}
     >
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
-it('renders default collapsed sidebar', () => {
+it('renders skin', () => {
   expect(shallow((
-    <Layout
-      className="best-layout"
-      defaultSidebarCollapsed={true}
-    >
+    <Theme skinColor="blue">
       <div />
-    </Layout>
+    </Theme>
   ))).toMatchSnapshot();
 });
 
@@ -73,13 +69,13 @@ it('renders changed collapsed sidebar on toggle', () => {
 
   class SidebarToggler extends Component {
     static contextTypes = {
-      $adminlte_layout: PropTypes.shape({
-        onToggle: PropTypes.func
+      $adminlte_theme: PropTypes.shape({
+        onChange: PropTypes.func
       })
     };
 
     componentDidMount() {
-      this.context.$adminlte_layout.onToggle(sentEvent);
+      this.context.$adminlte_theme.onChange(sentEvent);
     }
 
     render() {
@@ -88,15 +84,14 @@ it('renders changed collapsed sidebar on toggle', () => {
   }
 
   mount(
-    <Layout onToggle={(collapsed, e) => {
+    <Theme onChange={(collapsed, e) => {
       receivedCollapsed = collapsed;
       receivedEvent = e;
     }}>
       <SidebarToggler />
-    </Layout>
+    </Theme>
   );
 
   expect(receivedCollapsed).toEqual(true);
   expect(receivedEvent).toEqual(sentEvent);
 });
-

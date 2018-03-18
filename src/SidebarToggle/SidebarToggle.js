@@ -18,9 +18,9 @@ const SidebarToggle = ({
   if (onClick) {
     handleClick = onClick;
   } else if (context &&
-      context.$adminlte_layout &&
-      context.$adminlte_layout.onToggle ) {
-    handleClick = (e) => { context.$adminlte_layout.onToggle(e) };
+      context.$adminlte_theme &&
+      context.$adminlte_theme.onChange ) {
+    handleClick = (e) => { context.$adminlte_theme.onChange(e) };
   }
 
   return (
@@ -52,8 +52,8 @@ SidebarToggle.defaultProps = {
 };
 
 SidebarToggle.contextTypes = {
-  $adminlte_layout: PropTypes.shape({
-    toggleMainSidebar: PropTypes.func
+  $adminlte_theme: PropTypes.shape({
+    onChange: PropTypes.func
   })
 };
 
