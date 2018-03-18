@@ -8,8 +8,6 @@ import {
   BoxTitle,
   BoxToolButton,
   Content,
-  ContentHeader,
-  ContentWrapper,
   InfoBox,
   InfoBoxProgressBar,
   Label,
@@ -80,26 +78,14 @@ const BoxToolButtonTest = () => (
 
 const ContentTest = () => (
   <Content
+    breadcrumb={<div>nom nom nom</div>}
     component="div"
-  >
-    <div />
-  </Content>
-);
-
-const ContentHeaderTest = () => (
-  <ContentHeader
-    component="div"
+    headerComponent="div"
     subtitle="small fries"
     title="king size"
   >
     <div />
-  </ContentHeader>
-);
-
-const ContentWrapperTest = () => (
-  <ContentWrapper>
-    <div />
-  </ContentWrapper>
+  </Content>
 );
 
 const InfoBoxTest = () => (

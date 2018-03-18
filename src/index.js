@@ -11,8 +11,6 @@ export { default as Label } from './Label';
 export { default as MainFooter } from './MainFooter';
 export { default as MainHeader } from './MainHeader';
 export { default as Content } from './Content';
-export { default as ContentHeader } from './ContentHeader';
-export { default as ContentWrapper } from './ContentWrapper';
 export { default as LoginPage } from './LoginPage';
 export { default as LoginBox } from './LoginBox';
 export { default as LoginBoxBody } from './LoginBoxBody';

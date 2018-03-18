@@ -1,17 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders breadcrumb 1`] = `
+<div
+  className="content-wrapper"
+>
+  <section
+    className="content-header"
+  >
+    <h1>
+      <small />
+    </h1>
+    nom nom nom
+  </section>
+  <section
+    className="content"
+  >
+    <div />
+  </section>
+</div>
+`;
+
 exports[`renders custom component 1`] = `
 <div
-  className="content"
+  className="content-wrapper"
 >
-  <div />
+  <section
+    className="content-header"
+  >
+    <h1>
+      <small />
+    </h1>
+  </section>
+  <div
+    className="content"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`renders custom header component 1`] = `
+<div
+  className="content-wrapper"
+>
+  <div
+    className="content-header"
+  >
+    <h1>
+      <small />
+    </h1>
+  </div>
+  <section
+    className="content"
+  >
+    <div />
+  </section>
 </div>
 `;
 
 exports[`renders default 1`] = `
-<section
-  className="content"
+<div
+  className="content-wrapper"
 >
-  <div />
-</section>
+  <section
+    className="content-header"
+  >
+    <h1>
+      <small />
+    </h1>
+  </section>
+  <section
+    className="content"
+  >
+    <div />
+  </section>
+</div>
+`;
+
+exports[`renders subtitle 1`] = `
+<div
+  className="content-wrapper"
+>
+  <section
+    className="content-header"
+  >
+    <h1>
+      <small>
+        But only a little
+      </small>
+    </h1>
+  </section>
+  <section
+    className="content"
+  >
+    <div />
+  </section>
+</div>
+`;
+
+exports[`renders title 1`] = `
+<div
+  className="content-wrapper"
+>
+  <section
+    className="content-header"
+  >
+    <h1>
+      Super important
+      <small />
+    </h1>
+  </section>
+  <section
+    className="content"
+  >
+    <div />
+  </section>
+</div>
 `;
