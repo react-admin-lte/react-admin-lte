@@ -38,7 +38,11 @@ const MainHeader = ({
     <Component className={className} {...other}>
       {logo}
       <div className="navbar navbar-static-top">
-        <a className="sidebar-toggle" onClick={handleCollapseClick} />
+        <a
+          className="sidebar-toggle"
+          onClick={handleCollapseClick}
+          role="button"
+        />
         <div className="navbar-custom-menu">
           {children}
         </div>

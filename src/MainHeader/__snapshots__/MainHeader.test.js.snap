@@ -21,6 +21,7 @@ exports[`renders children 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -52,6 +53,7 @@ exports[`renders custom component 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -81,6 +83,7 @@ exports[`renders custom logo 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -110,6 +113,7 @@ exports[`renders default 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -146,6 +150,7 @@ exports[`renders large logo 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -176,6 +181,7 @@ exports[`renders logo href 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
@@ -212,6 +218,7 @@ exports[`renders mini logo 1`] = `
   >
     <a
       className="sidebar-toggle"
+      role="button"
     />
     <div
       className="navbar-custom-menu"
