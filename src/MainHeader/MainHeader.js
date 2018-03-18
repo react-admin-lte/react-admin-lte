@@ -42,7 +42,9 @@ const MainHeader = ({
           className="sidebar-toggle"
           onClick={handleCollapseClick}
           role="button"
-        />
+        >
+          <span className="sr-only">Toggle navigation</span>
+        </a>
         <div className="navbar-custom-menu">
           {children}
         </div>
