@@ -24,7 +24,12 @@ the [AdminLTE site][admin-lte].
 `<MainHeader.Logo>` - The logo on the navbar, above the sidebar.
 
 #### Props
+
+ - __children__ (node) - Content to render inside the component.
+
  - __href__ (string) - Link which will be attached to the logo.
+ 
+ - __onClick__ (fn) - A function to handle click events.
 
  - __mini__ (node) - This will be used as the logo when the users screen size too small for the
    regular logo (`large` prop).
