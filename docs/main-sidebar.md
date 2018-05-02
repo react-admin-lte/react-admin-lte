@@ -32,7 +32,7 @@ Here is an example of the [sidebar component][sidebar-component].
 text in a `<li>`.
 
 #### Props
- - __title__ (string) - The header text.
+ - __children__ (node) - The header text/content.
 
 ## MainSidebar Menu Item
 `<MainSidebar.Menu.Item>` - A sidebar link/button. Renders children (for example, an icon and a string) 
